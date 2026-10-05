@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" font-family="Consolas, Menlo, monospace">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#333"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="800" fill="#ffffff"/>
+  <text x="40" y="56" font-size="28" font-weight="bold" fill="#d62a1e">ARPI on AWS</text>
+  <text x="40" y="84" font-size="16" fill="#555">One Lambda serves the page and the decoder. The phone keeps the evidence, the function keeps nothing.</text>
+
+  <!-- phone -->
+  <rect x="40" y="170" width="300" height="300" rx="14" fill="#fff6f5" stroke="#d62a1e" stroke-width="2"/>
+  <text x="62" y="208" font-size="20" font-weight="bold" fill="#111">Phone browser</text>
+  <text x="62" y="244" font-size="15" fill="#333">camera, getUserMedia</text>
+  <text x="62" y="270" font-size="15" fill="#333">HUD drawn on a canvas</text>
+  <text x="62" y="296" font-size="15" fill="#333">next frame goes as soon</text>
+  <text x="62" y="316" font-size="15" fill="#333">as the last answer is back</text>
+  <text x="62" y="352" font-size="15" fill="#333">holds the summed evidence</text>
+  <text x="62" y="372" font-size="15" fill="#333">(a few hundred numbers)</text>
+  <text x="62" y="408" font-size="15" fill="#333">optional code list (CSV)</text>
+  <text x="62" y="444" font-size="15" fill="#d62a1e">person confirms the code</text>
+
+  <!-- arrows phone <-> lambda -->
+  <line x1="345" y1="270" x2="455" y2="270" stroke="#333" stroke-width="2" marker-end="url(#a)"/>
+  <text x="352" y="236" font-size="13" fill="#333">frame JPEG</text>
+  <text x="352" y="252" font-size="13" fill="#333">+ state</text>
+  <line x1="455" y1="370" x2="345" y2="370" stroke="#333" stroke-width="2" marker-end="url(#a)"/>
+  <text x="352" y="396" font-size="13" fill="#333">result,</text>
+  <text x="352" y="412" font-size="13" fill="#333">overlay,</text>
+  <text x="352" y="428" font-size="13" fill="#333">new state</text>
+  <text x="352" y="320" font-size="13" fill="#888">https</text>
+  <text x="352" y="336" font-size="13" fill="#888">Function URL</text>
+
+  <!-- lambda -->
+  <rect x="460" y="130" width="380" height="430" rx="14" fill="#f7f7f7" stroke="#222" stroke-width="2"/>
+  <text x="482" y="168" font-size="20" font-weight="bold" fill="#111">AWS Lambda, eu-west-1</text>
+  <text x="482" y="192" font-size="14" fill="#555">container image, 3008 MB, 30 s timeout</text>
+  <text x="482" y="212" font-size="14" fill="#555">OpenCV 5, numpy, CRNN text model</text>
+  <line x1="482" y1="228" x2="818" y2="228" stroke="#ccc"/>
+  <text x="482" y="256" font-size="15" fill="#111">GET  /         scanner page</text>
+  <text x="482" y="282" font-size="15" fill="#111">POST /scan     one frame</text>
+  <text x="482" y="308" font-size="15" fill="#111">POST /report   damage report</text>
+  <text x="482" y="334" font-size="15" fill="#111">POST /upload   presigned S3 POST</text>
+  <text x="482" y="360" font-size="15" fill="#111">POST /decode   full-size photo</text>
+  <rect x="482" y="384" width="336" height="150" rx="8" fill="#ffffff" stroke="#d62a1e"/>
+  <text x="498" y="412" font-size="15" fill="#d62a1e">/scan, per frame</text>
+  <text x="498" y="438" font-size="14" fill="#333">1. OpenCV barcode decoder</text>
+  <text x="498" y="460" font-size="14" fill="#333">2. ARPI: bars, digits, list</text>
+  <text x="522" y="482" font-size="14" fill="#333">OpenCV's read checked too</text>
+  <text x="498" y="504" font-size="14" fill="#333">3. agent rules: stop or ask</text>
+  <text x="522" y="526" font-size="14" fill="#333">for another shot</text>
+
+  <!-- right column -->
+  <rect x="900" y="130" width="260" height="100" rx="10" fill="#fffaf0" stroke="#c98a00" stroke-width="2"/>
+  <text x="918" y="162" font-size="18" font-weight="bold" fill="#111">DynamoDB</text>
+  <text x="918" y="188" font-size="14" fill="#333">daily counters: scans,</text>
+  <text x="918" y="208" font-size="14" fill="#333">model calls. Over = 429</text>
+
+  <rect x="900" y="250" width="260" height="110" rx="10" fill="#fffaf0" stroke="#c98a00" stroke-width="2"/>
+  <text x="918" y="282" font-size="18" font-weight="bold" fill="#111">Bedrock</text>
+  <text x="918" y="306" font-size="14" fill="#333">Claude Haiku 4.5</text>
+  <text x="918" y="328" font-size="14" fill="#333">phrases the measured facts</text>
+  <text x="918" y="348" font-size="14" fill="#333">in two sentences</text>
+
+  <rect x="900" y="380" width="260" height="100" rx="10" fill="#fffaf0" stroke="#c98a00" stroke-width="2"/>
+  <text x="918" y="412" font-size="18" font-weight="bold" fill="#111">S3, private</text>
+  <text x="918" y="436" font-size="14" fill="#333">full photos only. Deleted</text>
+  <text x="918" y="456" font-size="14" fill="#333">after decode, 1-day expiry</text>
+
+  <rect x="900" y="500" width="260" height="60" rx="10" fill="#fffaf0" stroke="#c98a00" stroke-width="2"/>
+  <text x="918" y="530" font-size="18" font-weight="bold" fill="#111">CloudWatch</text>
+  <text x="918" y="550" font-size="14" fill="#333">logs, kept one week</text>
+
+  <line x1="845" y1="180" x2="895" y2="180" stroke="#333" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="845" y1="305" x2="895" y2="305" stroke="#333" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="845" y1="430" x2="895" y2="430" stroke="#333" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="845" y1="530" x2="895" y2="530" stroke="#333" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- build -->
+  <rect x="40" y="620" width="300" height="110" rx="10" fill="#f2f6ff" stroke="#3a6fd8" stroke-width="2"/>
+  <text x="58" y="652" font-size="18" font-weight="bold" fill="#111">GitHub</text>
+  <text x="58" y="678" font-size="14" fill="#333">pinned dependencies</text>
+  <text x="58" y="698" font-size="14" fill="#333">Actions: tests on every push</text>
+  <text x="58" y="718" font-size="14" fill="#333">history scanned for secrets</text>
+
+  <rect x="460" y="620" width="380" height="110" rx="10" fill="#f2f6ff" stroke="#3a6fd8" stroke-width="2"/>
+  <text x="478" y="652" font-size="18" font-weight="bold" fill="#111">AWS CDK + ECR</text>
+  <text x="478" y="678" font-size="14" fill="#333">cdk deploy builds the image with</text>
+  <text x="478" y="698" font-size="14" fill="#333">Docker, pushes it to ECR, creates</text>
+  <text x="478" y="718" font-size="14" fill="#333">everything above. One config.yaml</text>
+
+  <line x1="345" y1="675" x2="455" y2="675" stroke="#333" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="650" y1="615" x2="650" y2="565" stroke="#333" stroke-width="2" marker-end="url(#a)"/>
+
+  <text x="900" y="640" font-size="14" fill="#555">Not stored anywhere:</text>
+  <text x="900" y="662" font-size="14" fill="#555">camera frames, results.</text>
+  <text x="900" y="694" font-size="14" fill="#555">Runs without Bedrock:</text>
+  <text x="900" y="716" font-size="14" fill="#555">the report falls back to</text>
+  <text x="900" y="738" font-size="14" fill="#555">a template.</text>
+</svg>

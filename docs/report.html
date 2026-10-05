@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ARPI technical report</title>
+<style>
+  :root { --red: #d62a1e; --amber: #b87e00; --ink: #161616; --dim: #5a5a5a; --line: #d9d9d9; --bg: #ffffff; }
+  @page { size: A4; margin: 16mm 16mm 18mm 16mm; }
+  html { background: var(--bg); }
+  body { font-family: "Segoe UI", Arial, sans-serif; color: var(--ink); font-size: 10.5pt; line-height: 1.5; margin: 0 auto; max-width: 820px; padding: 0 16px; background: var(--bg); }
+  h1, h2, h3, .mono, code, table { font-family: Consolas, Menlo, monospace; }
+  h1 { font-size: 30pt; color: var(--red); letter-spacing: 0.06em; margin: 0 0 4px; }
+  h2 { font-size: 14pt; color: var(--red); margin: 26px 0 8px; break-after: avoid; }
+  h3 { font-size: 11pt; margin: 18px 0 6px; break-after: avoid; }
+  p { margin: 0 0 9px; }
+  .sub { color: var(--dim); font-size: 11pt; margin-bottom: 18px; }
+  .meta { font-family: Consolas, Menlo, monospace; font-size: 9pt; color: var(--dim); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 8px 0; margin: 14px 0 18px; }
+  .meta div { margin: 2px 0; }
+  code { font-size: 9.2pt; background: #f4f4f4; padding: 0 3px; }
+  pre { font-family: Consolas, Menlo, monospace; font-size: 8.8pt; background: #f6f6f6; border-left: 3px solid var(--red); padding: 8px 10px; white-space: pre-wrap; break-inside: avoid; }
+  table { border-collapse: collapse; font-size: 8.8pt; margin: 6px 0 12px; width: 100%; break-inside: avoid; }
+  th, td { border-bottom: 1px solid var(--line); padding: 4px 6px; text-align: right; vertical-align: top; }
+  th:first-child, td:first-child { text-align: left; }
+  th { color: var(--dim); font-weight: normal; border-bottom: 1px solid #999; }
+  table.text td, table.text th { text-align: left; }
+  table.text { break-inside: auto; }
+  td.hl { color: var(--red); font-weight: bold; }
+  figure { margin: 10px 0 16px; break-inside: avoid; }
+  figure img { width: 100%; border: 1px solid var(--line); display: block; }
+  figcaption { font-size: 9pt; color: var(--dim); margin-top: 4px; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .two figure { margin: 4px 0 8px; }
+  ul { margin: 0 0 10px; padding-left: 20px; }
+  li { margin: 2px 0; }
+  .pb { break-before: page; }
+  .note { font-size: 9.5pt; color: var(--dim); }
+  .eq { font-family: Consolas, Menlo, monospace; text-align: center; margin: 8px 0 12px; font-size: 10.5pt; }
+  @media (max-width: 600px) { .two { grid-template-columns: 1fr; } h1 { font-size: 24pt; } }
+</style>
+</head>
+<body>
+
+<h1>ARPI</h1>
+<div class="sub">Reads barcodes too damaged to scan. Technical report, OpenCV AI Competition 2026.</div>
+
+<div class="meta">
+  <div>Author: Juha Lilja (APN201)</div>
+  <div>Live: https://eu2oqybdr2td26obiljef6xopu0jsmwo.lambda-url.eu-west-1.on.aws/</div>
+  <div>Code: https://github.com/apn201/Arpi</div>
+  <div>Results quoted here: results/2026-10-05/ in the repo, frozen with tool versions and hashes</div>
+</div>
+
+<figure>
+  <img src="../submission/gallery/01-opencv-wrong-arpi-right.jpg" alt="Torn barcode in the scanner: OpenCV reads a wrong code, ARPI's top candidate matches the print">
+  <figcaption>A torn code from the test set, run through the scanner page. OpenCV returns 0350038583700, which passes its checksum and is wrong. ARPI finds the tear (break between digit 10 and 11, +1.4 modules), says the bars disagree with OpenCV, and its top candidate 0350038585148 is the printed code.</figcaption>
+</figure>
+
+<h2>1. Problem</h2>
+
+<p>You try to read a barcode with a phone and it does not read. A label that has been through a warehouse, a torn corner, a strip of tape over it. The scanner beeps, you try again, and after a few tries you type the digits by hand. That was the fallback on the handheld terminals I specified for a printing ink plant in 2006 (my bachelor's thesis, "Implementation of Barcode Functionality in ERP-system"), and it is still the fallback.</p>
+
+<p>An EAN-13 has twelve data digits and one check digit, and that is the whole defence:</p>
+<div class="eq">sum(w_i * d_i, i = 1..12) + d_13 = 0 (mod 10),  w = 1, 3, 1, 3, ...</div>
+
+<p>A normal reader that loses part of the code fails the checksum and gives up. Or worse, it finds a wrong code that passes. One check digit catches nine wrong codes in ten, so a damaged read that is not rejected can still be wrong, and the output is a drug, a part or a price.</p>
+
+<p>A damaged code is not a random string though. Each digit is seven modules with a fixed shape. The guard bars are fixed. The left half hides the 13th digit in an odd/even parity pattern, and 54 of the 64 possible patterns are illegal. The leading digits must be an assigned GS1 prefix. And in a real warehouse the code is one of the few thousand that exist in the company's ERP. Put together, two destroyed digits usually come down to a handful of candidates, and with a code list often to one.</p>
+
+<p>QR and Data Matrix are out of scope on purpose. They carry Reed-Solomon error correction and already recover from serious damage by themselves.</p>
+
+<h2>2. Users</h2>
+
+<p>Anyone who scans 1D codes for a living and loses time on the ones that do not read: warehouse and goods-in staff, stock takes, returns, a pharmacy counter, a shop till. Also the occasional person with a phone and a crumpled receipt. The product is a web page, so there is nothing to install: open the link, point the camera at one code, hold still.</p>
+
+<p>The deployment I had in mind is plain. The customer drops a CSV of their valid codes next to it, exported from the ERP. No connector, no integration. It also works with no list at all, and then it says so when the answer is not unique.</p>
+
+<h2>3. What it does</h2>
+
+<ul>
+  <li>OpenCV's own barcode decoder goes first. It is fast and reads the easy codes.</li>
+  <li>ARPI takes what OpenCV cannot read. It also checks what OpenCV does read against the bars, because OpenCV is sometimes confidently wrong (section 9).</li>
+  <li>Every frame adds evidence. Glare and blur move when the phone moves, so the next frame fills in what the last one hid.</li>
+  <li>After each frame a small agent decides: stop, or ask for a specific better shot, and it cites the measurement behind the request.</li>
+  <li>The answer is one of four things: a clean read, the only code in your list that fits, ranked candidates, or just the digits that were readable.</li>
+</ul>
+
+<p>The safety rule: ARPI never asserts a code it had to reconstruct. A reconstruction is shown as options with their fit and the person picks. When the list leaves only one code, the page says "Reconstructed. Only this code in your list fits" and still asks the person to confirm. The system selects, the human confirms.</p>
+
+<div class="two">
+  <figure>
+    <img src="../submission/gallery/03-known-list-unique.jpg" alt="Torn code resolved by the known-code list">
+    <figcaption>Torn and distorted, three digits unreadable from the bars. With the list loaded only one code fits. It is the right one, and it still needs Confirm.</figcaption>
+  </figure>
+  <figure>
+    <img src="../submission/gallery/04-hidden-digit-recovered.jpg" alt="First digit hidden under paper, recovered">
+    <figcaption>The leading digit is under a piece of paper. The bars carry it only through the left half's parity pattern, which is enough.</figcaption>
+  </figure>
+</div>
+
+<h2>4. Architecture</h2>
+
+<figure>
+  <img src="architecture.png" alt="Architecture diagram: phone browser, Lambda Function URL, DynamoDB, Bedrock, S3, CloudWatch, CDK and ECR">
+  <figcaption>The deployed system. One Lambda container serves the page and the decoder. The phone holds the accumulated evidence and sends it back with each frame, so the function is stateless.</figcaption>
+</figure>
+
+<p>The phone side is a single HTML page with no framework: camera through getUserMedia, a canvas HUD, and a loop that sends the next frame as soon as the last answer is back. The server side is one Lambda function behind a Function URL. Serving the page from the same function gives the phone https, which a camera needs, without a separate web host.</p>
+
+<p>The function holds nothing between requests. The evidence for the code being scanned is a few hundred numbers (a log-likelihood per digit per position). The phone keeps it and sends it back with the next frame. That is what makes a multi-frame scanner fit on Lambda.</p>
+
+<h2>5. OpenCV 5 implementation</h2>
+
+<figure>
+  <img src="pipeline.png" alt="Pipeline diagram: OpenCV decoder, check, ARPI vision, evidence, K-best search, result, agent, person">
+  <figcaption>One frame. Everything left of the confidence map looks at pixels; everything after it does not.</figcaption>
+</figure>
+
+<h3>The cascade</h3>
+<p><code>cv2.barcode.BarcodeDetector</code> goes first. Its boxes are reused when it found a symbol it could not read. Its reads are checked before they are accepted: anything that is not EAN-13 or UPC-A goes to ARPI (in this set the commonest wrong read is an EAN-8 read out of part of an EAN-13), and the read is accepted only if it explains the bars nearly as well as ARPI's best candidate.</p>
+
+<h3>Vision</h3>
+<ul>
+  <li><b>Localise.</b> Gradient orientation coherence: bars give a strong single direction over an area, which generic contour finding does not see under damage. Two bugs the real photos found here: the paper edge is a closed loop of coherent gradient and hid every code inside it, and the torn-fragment merger once chained twelve codes and a keyboard into one region.</li>
+  <li><b>Rectify.</b> Perspective correction from the symbol's own quadrilateral, so module widths can be compared at all.</li>
+  <li><b>Grid fit on 32 scanlines.</b> Each line gets an offset, a mean module width and a bend term (a label tilted away from the camera has modules growing from one end to the other). The fit is scored by asking whether every digit looks like some legal digit, not by finding edges. That is why it survives destroyed guard bars. Module means are integrated from a cumulative sum, so it works at sub-pixel precision.</li>
+  <li><b>Piecewise warp.</b> Wrinkles and torn pieces that were put back a bit wrong are followed by splitting the grid where the fit says it broke. The acceptance margin was set from an end-to-end comparison, not guessed.</li>
+  <li><b>Confidence map.</b> 95 modules, each with two numbers: how dark it looked and how much to believe that. They are never collapsed into one. A sticker reads as a confident white run, and confidence is what lets the next stage say "seven white modules in a row never happens in EAN-13, do not trust this".</li>
+</ul>
+
+<h3>Printed digits</h3>
+<p>The digits under the bars are a second, independent witness, read with <code>cv2.dnn</code> and the CRNN text model from OpenCV Zoo (pinned by hash). The bar grid already says which columns hold each digit, so each cell is cut out by geometry and the cells go to the network as two clean strips. No text detection. Orientation comes from the bars, never from the text: upside-down digits read as confident nonsense.</p>
+
+<h2>6. Reasoning</h2>
+
+<p>Every source becomes the same thing: a log-likelihood for every digit at every position, with the left half split by parity because the bars can tell the two digit sets apart and nothing else can. Sources add up. They do not vote on finished answers, because a vote would make the checksum one opinion among several.</p>
+
+<p>The search is an exact K-best over checksum residue and parity, so a fully destroyed digit costs nothing extra. The structural rules (guards, parity, checksum, GS1 prefix) stay hard inside it, so no source can produce a code the rules forbid. Each soft source is capped so it cannot outvote clearly read bars, and that ceiling has its own test. Frames of the same label are not independent (the same smudge is in all of them), so n frames are scaled by n to the power -0.5 rather than trusted n times.</p>
+
+<p>With a code list, the list is scored directly against the evidence. If one list code is clearly ahead of every other, the answer is "only one code in your list fits". If two fit about equally, both are shown.</p>
+
+<h2>7. The agent</h2>
+
+<p>After each frame the agent reads the scan's measurements (glare fraction, sharpness, contrast, per-half confidence, what the printed digits gave, how the code resolved) and returns one decision with the evidence it acted on:</p>
+
+<table class="text">
+  <tr><th>decision</th><th>when</th></tr>
+  <tr><td>aim</td><td>no code in view, or the frame was skipped (bad grid fit, low contrast)</td></tr>
+  <tr><td>stop</td><td>read and checked</td></tr>
+  <tr><td>stop, confirm</td><td>only one code in the list fits</td></tr>
+  <tr><td>stop, pick one</td><td>many frames and still no single answer: more of the same view will not help</td></tr>
+  <tr><td>reshoot: tilt</td><td>share of the code washed white by glare over the limit</td></tr>
+  <tr><td>reshoot: hold still</td><td>sharpness under the limit</td></tr>
+  <tr><td>reshoot: one half</td><td>the halves differ ("right half confidence 0.38, other half 1.00")</td></tr>
+  <tr><td>show the digits</td><td>the bars give nothing at some positions and the printed digits have not been read there</td></tr>
+  <tr><td>load a list</td><td>more than one code fits what is visible</td></tr>
+  <tr><td>reshoot: other angle</td><td>none of the above: another view adds evidence</td></tr>
+</table>
+
+<p>Each request changes what the person does next, and the next frame's evidence is added to what is already known. That is the loop: an OpenCV measurement leads to a request, the request leads to a different picture, the picture changes the answer.</p>
+
+<p>The rules are deterministic and are the default. I also wired Claude on Bedrock to the same decision, given the same measurements and the rules' proposal, and required to cite what it acted on. In live use it added long, often pointless comments on codes that were already read, every one a model call, and it made the same decisions as the rules. So it is switched off and kept switchable. Bedrock (Claude Haiku 4.5) does one job in the deployed version: it phrases the measured damage facts in at most two sentences when a scan locks. The facts are extracted in code. Model output that gives advice or runs long is discarded and the template version of the same facts is shown.</p>
+
+<h2>8. AWS deployment</h2>
+
+<ul>
+  <li><b>Compute.</b> Lambda container image (OpenCV, numpy and the text model pass the 250 MB zip limit), 3008 MB, 30 s timeout, eu-west-1, behind a Function URL.</li>
+  <li><b>Repeatable.</b> One <code>cdk deploy</code> builds the image with Docker, pushes it to ECR and creates the function, bucket, table, log group and IAM policy. <code>infra/config.yaml</code> is the only place a region, model or limit is named. Dependencies are pinned in <code>requirements.txt</code> and the Dockerfile.</li>
+  <li><b>Observable.</b> CloudWatch logs, kept one week. Every result carries which path produced it (OpenCV checked, ARPI over OpenCV, ARPI alone) and the timing of each stage, and the HUD shows them.</li>
+  <li><b>Secure.</b> IAM limited to the one log group, the one bucket, the one table and Bedrock model invocation. S3 bucket private with all public access blocked. No account id in the repo; CDK reads it from the profile. A script scans the whole git history for keys before anything is pushed. GitHub Actions runs the tests on every push without AWS credentials.</li>
+  <li><b>Cost and abuse.</b> A public URL is an open invitation, so limits are in code, not only in AWS Budgets: upload size, list size and model calls per request, and daily counters in DynamoDB for scans and model calls. Over the ceiling the endpoint says so (HTTP 429). It never fails open.</li>
+</ul>
+
+<h2>9. Evaluation</h2>
+
+<h3>Dataset</h3>
+<p>The dataset was built first. 72 EAN-13 codes from random GS1 prefixes, printed on six A4 sheets at nominal size (0.34 mm module), each with an id printed beside it. Then damaged by category: scratch, tear, crumple, fade, ink smear, tape and objects over the codes, glare through a plastic sleeve, motion blur. Photographed with a Samsung phone at 4080 x 3060. Ground truth is exact because I printed it. 23 photos; a manifest records each file's hash, sheet and damage.</p>
+
+<p>Codes are matched to their truth by OpenCV's reads, by the printed id and by the 2 x 6 layout, never by ARPI's answer. Two runs:</p>
+<ul>
+  <li><b>Sheets</b>: every code in the whole-sheet photo, 240 slots in 20 photos. The two motion-blur photos and the one where fingers cover most codes could not be anchored and are not scored.</li>
+  <li><b>Singles</b>: each code cut out with a close-up's margin and run through exactly the path the phone runs, one frame. 225 crops at about 4.7 px per module, a phone held about 30 cm away. 15 of them caught more than one label (angled photos, the margin reaches the next code) and are not scored, which leaves 210.</li>
+</ul>
+<p>"Asserted" means the system committed to one code: a clean read, or "only one code in the list fits". Ranked candidates are not an assertion. The row I watch most is asserted and wrong.</p>
+
+<h3>Whole sheets, 240 codes</h3>
+<table>
+  <tr><th></th><th>OpenCV</th><th>ARPI alone</th><th>ARPI + list</th><th>cascade, checked</th><th>cascade + list</th></tr>
+  <tr><td>right code first</td><td>152</td><td>210</td><td>229</td><td>212</td><td>229</td></tr>
+  <tr><td>asserted</td><td>154</td><td>110</td><td>228</td><td>168</td><td>226</td></tr>
+  <tr><td>asserted and wrong</td><td class="hl">2</td><td class="hl">0</td><td class="hl">0</td><td class="hl">0</td><td class="hl">0</td></tr>
+</table>
+<p>The cascade without the check (trust OpenCV) asserts 169 right and 2 wrong. The free symbology check removes one; the full check against the bars removes both, at the cost of one right read and ARPI's time on every symbol.</p>
+
+<h3>Single codes, 210 crops, the phone's path</h3>
+<table>
+  <tr><th></th><th>OpenCV</th><th>ARPI alone</th><th>ARPI + list</th><th>cascade</th><th>cascade + list</th></tr>
+  <tr><td>right code first</td><td>160</td><td>188</td><td>196</td><td>186</td><td>194</td></tr>
+  <tr><td>asserted</td><td>161</td><td>103</td><td>194</td><td>162</td><td>190</td></tr>
+  <tr><td>asserted and wrong</td><td class="hl">1</td><td class="hl">0</td><td class="hl">0</td><td class="hl">0</td><td class="hl">0</td></tr>
+</table>
+
+<p>The 15 crops left out are not clean either. In one of them, with the list loaded, ARPI answered with the code of the label above the one aimed at (A02 for A04, both in the crop). That is a real code in the picture, but not the one the person pointed at, and it is the kind of mistake the phone's aiming (the symbol nearest the centre) is there to prevent. An earlier run of the same set, before the last fixes, had three wrong "only one code in the list fits" answers on steep angles and glare; they now come back as candidates. Any answer of that kind is shown as "Reconstructed, only this code in your list fits" with a Confirm button, never as a plain read.</p>
+
+<h3>By damage, sheets, no list</h3>
+<table>
+  <tr><th>damage</th><th>codes</th><th>OpenCV right</th><th>ARPI first</th><th>ARPI asserted</th><th>ARPI wrong</th></tr>
+  <tr><td>clean (straight + angled)</td><td>144</td><td>98</td><td>126</td><td>85</td><td>0</td></tr>
+  <tr><td>glare</td><td>24</td><td>11</td><td>20</td><td>6</td><td>0</td></tr>
+  <tr><td>tear</td><td>24</td><td>17</td><td>21</td><td>3</td><td>0</td></tr>
+  <tr><td>crumple</td><td>12</td><td>9</td><td>11</td><td>2</td><td>0</td></tr>
+  <tr><td>fade</td><td>12</td><td>8</td><td>10</td><td>6</td><td>0</td></tr>
+  <tr><td>smear</td><td>12</td><td>7</td><td>12</td><td>8</td><td>0</td></tr>
+  <tr><td>tape</td><td>12</td><td>2</td><td>10</td><td>0</td><td>0</td></tr>
+</table>
+<p>Without a list ARPI asserts little on damaged codes and ranks the truth first on most of them. That is the rule working: a reconstruction is a candidate list. The list is what turns it into an answer.</p>
+
+<h3>Synthetic</h3>
+<p>Rendered labels, labelled synthetic wherever quoted. On 224 images over ten damage kinds OpenCV read 144, ARPI ranked the right code first on 186 and asserted 85, none wrong. An earlier synthetic run covered the hard case the physical set does not have: a list of 1000 codes from one company prefix, where neighbours differ in one digit. On 48 tears and occlusions of 6-20% width OpenCV read 10, ARPI asserted 35 with 0 wrong and returned the rest as candidates.</p>
+
+<h3>Failure cases</h3>
+<figure>
+  <img src="../submission/gallery/05-ranked-not-guessed.jpg" alt="Taped code: 32 codes fit, ARPI shows candidates and does not choose">
+  <figcaption>Tape over a third of the code, no list loaded. 27 of 95 modules masked, 32 codes fit. ARPI does not answer. The true code, 9120547365484, is second at 19%. The agent asks for a reshoot of the right half.</figcaption>
+</figure>
+<ul>
+  <li>Motion blur: both motion photos had nothing readable to anchor the sheet. Not scored, and not solved.</li>
+  <li>Translucent tape lowers contrast without lowering ARPI's confidence enough, so faint bars under it can read as confidently wrong. They come back as candidates, but the truth is not always first.</li>
+  <li>A crop holding two labels: with the list, ARPI once answered the neighbour's code.</li>
+  <li>Heavy displaced tears (a piece moved more than 3 modules, or overlapping and hiding bars) stay mostly unread in the synthetic set: 2 of 8, OpenCV 0.</li>
+</ul>
+
+<h2>10. Limitations</h2>
+<ul>
+  <li>EAN-13 and UPC-A only. Code 128, GS1-128 and Code 39 are not implemented.</li>
+  <li>The physical set is small: 72 codes, one phone, one person, one day, indoor light. The numbers say what happened on it, not more.</li>
+  <li>The list in the physical test is 72 codes from random prefixes, which is forgiving.</li>
+  <li>Rectification assumes a flat label. A long code wrapped round a can is not handled.</li>
+  <li>Single crops are at about 4.7 px per module. A code filling the frame at close range has not been measured on its own.</li>
+  <li>The agent's requests are tested in code and used live, but how often a request turned a failure into a read has not been measured.</li>
+  <li>The demo's daily scan ceiling can run out under heavy use, and then it returns 429 until midnight UTC.</li>
+</ul>
+
+<h2>11. Responsible use</h2>
+<ul>
+  <li><b>Never assert a reconstruction.</b> A code that had to be filled in is shown as candidates with their fit, or as the only list code that fits, and a person confirms. This is in the UI, not a footnote. The false positive rate is measured and published above, including the cases where it was not zero.</li>
+  <li><b>No storage.</b> Camera frames are decoded in memory and not stored. Full-size photos go through a private bucket, are deleted after decoding, and anything left behind expires in a day.</li>
+  <li><b>No personal data in the test set.</b> The physical set is printed test codes. Photos stay out of the repo; their hashes are in the manifest.</li>
+  <li><b>The model does not decide.</b> Decoding and the candidate engine are deterministic. The model only phrases measured facts, and its output is checked and replaced if it advises or runs long.</li>
+  <li><b>Bounded cost.</b> Hard limits in code per request and per day, so a public link cannot run up a bill.</li>
+  <li><b>Runs without the network.</b> The decoder and the code list work offline (<code>python -m arpi photo.jpg --known codes.csv</code>), for sites that will not let anything leave.</li>
+</ul>
+
+<h2>12. Prior art</h2>
+<p>Damaged-barcode reconstruction is patented in several places: Intermec's permutation-based reconstruction of irregularly damaged codes (US6039252, 1998), self-checkout systems that predict the full code from a partial scan and offer ranked candidates, parcel networks that match a damaged code against candidates using shipper and date, Brady's machine-learning diagnosis of why a decode failed (US12001916) and Socure's generative enhancement of barcode images (US11875259). Commercial SDKs also read damaged and curved codes. That says the problem is worth money. I did not find an earlier system that puts machine vision, an exact constraint search and an agent that asks for a better photo together, open, with its false positive rate published.</p>
+
+<h2>13. Reproduce</h2>
+<pre>pip install -r requirements.txt
+python tools/fetch_models.py              # CRNN text model, pinned by hash
+python -m pytest                          # 63 tests
+python tools/serve_local.py               # scanner page at http://localhost:8013
+python -m arpi photo.jpg --known codes.csv
+python tools/eval_sheets.py data/physical/photos --cascade
+python tools/eval_singles.py data/physical/photos
+python tools/evaluate.py --n 8            # synthetic sweep
+
+aws sso login --profile &lt;profile&gt;
+cd infra &amp;&amp; npx cdk deploy --profile &lt;profile&gt;</pre>
+<p class="note">The physical photos are not in the repo (size, and the background of a few shows things that are not mine to publish). The manifest lists each file with its SHA-256.</p>
+
+<h2>14. Next</h2>
+<p>Two problems from my own use, both Code 128. GS1-128 labels on our 1 kg ink tins at work are long and curve round the tin, and a static scanner sometimes cannot read them at all. With a streaming camera you can turn the tin, or the camera, and stitch the parts across frames. And Finnish invoice barcodes for payments, read from a pdf on a pc screen. The bank barcode has its own stack of checks (IBAN, reference number, due date), and a payment is exactly where a wrong code must never be asserted.</p>
+
+</body>
+</html>
