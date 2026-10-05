@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ARPI scanner</title>
+<style>
+  :root {
+    --bg: #050505;
+    --hud: #ff3b30;
+    --hud-dim: rgba(255, 59, 48, 0.55);
+    --amber: #ffb000;
+    --ok: #39ff88;
+    --cyan: #3fd0ff;
+    --ink: #f2f2f2;
+    --panel: rgba(8, 4, 4, 0.78);
+    --mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink);
+               font-family: var(--mono); overflow: hidden; }
+  #stage { position: fixed; inset: 0; }
+  video, #still { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  #still { object-fit: contain; display: none; background: #111; }
+  canvas#hud { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+
+  .panel { position: absolute; background: var(--panel); border: 1px solid var(--hud-dim);
+           color: var(--hud); font-size: 11px; line-height: 1.45; letter-spacing: 0.04em;
+           text-transform: uppercase; padding: 8px 10px; }
+
+  /* One line that always says what the scanner is doing. */
+  #status { top: max(10px, env(safe-area-inset-top)); left: 10px; right: 10px; max-width: 560px;
+            display: flex; align-items: center; gap: 10px; font-size: 13px; pointer-events: none; }
+  #status .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--hud); flex: none; }
+  #status.tracking .dot { animation: blink 0.8s infinite; background: var(--amber); }
+  #status.locked .dot { background: var(--ok); }
+  #status.locked.recon .dot { background: var(--amber); }
+  #status .what { flex: none; color: var(--ink); }
+  #status .meter { flex: 1; height: 6px; background: rgba(255,176,0,0.15); min-width: 40px; }
+  #status .meter i { display: block; height: 100%; background: var(--amber); transition: width 0.3s; }
+  #status.locked .meter { display: none; }
+  #status .hint { color: var(--hud-dim); font-size: 11px; white-space: nowrap; overflow: hidden;
+                  text-overflow: ellipsis; }
+  @keyframes blink { 50% { opacity: 0.3; } }
+
+  /* The full readout, behind DETAIL. */
+  #readout { top: calc(max(10px, env(safe-area-inset-top)) + 44px); left: 10px; right: 10px;
+             max-width: 560px; pointer-events: none; max-height: 55vh; overflow: hidden; }
+  #readout .row { display: flex; justify-content: space-between; gap: 10px; }
+  #readout .key { color: var(--hud-dim); flex: none; }
+  #readout .val { text-align: right; }
+  #digits { display: grid; grid-template-columns: repeat(13, 1fr); gap: 3px; margin: 6px 0 2px; }
+  .dg { border: 1px solid var(--hud-dim); text-align: center; font-size: 15px; padding: 2px 0 0;
+        position: relative; height: 32px; }
+  .dg .bar { position: absolute; left: 2px; bottom: 2px; height: 3px; background: var(--hud); }
+  .dg .src { position: absolute; left: 2px; bottom: 7px; height: 2px; background: var(--cyan); }
+  .dg.weak { color: var(--amber); }
+  .dg.gone { color: var(--hud-dim); }
+  .notes { color: var(--amber); }
+  #report { text-transform: none; font-size: 13px; color: var(--ink); letter-spacing: 0.01em;
+            padding-bottom: 6px; margin-bottom: 6px; border-bottom: 1px solid rgba(255,59,48,0.25); }
+
+  #verdict { left: 10px; right: 10px; bottom: calc(64px + env(safe-area-inset-bottom));
+             max-width: 560px; font-size: 13px; }
+  #verdict .big { font-size: 24px; letter-spacing: 0.08em; color: var(--ink); }
+  #verdict .dim { opacity: 0.55; }
+  #verdict.read { border-color: var(--ok); color: var(--ok); }
+  #verdict.recon { border-color: var(--amber); color: var(--amber); }
+  #verdict.disputed { border-color: var(--hud); color: var(--hud); }
+  #verdict.tracking { border-color: var(--hud-dim); color: var(--amber); }
+  #verdict button { font: inherit; color: var(--ink); background: transparent;
+                    border: 1px solid currentColor; padding: 8px 10px; margin: 6px 6px 0 0;
+                    letter-spacing: 0.04em; }
+  #verdict .confirmed { color: var(--ok); }
+
+  #bar { position: absolute; left: 0; right: 0; bottom: 0; display: flex; gap: 6px;
+         padding: 10px 10px calc(10px + env(safe-area-inset-bottom));
+         background: linear-gradient(transparent, rgba(0,0,0,0.85)); }
+  #bar button, #bar label { flex: 1; font: 12px var(--mono); text-transform: uppercase;
+         letter-spacing: 0.06em; color: var(--hud); background: rgba(0,0,0,0.5);
+         border: 1px solid var(--hud-dim); padding: 10px 2px; text-align: center; cursor: pointer; }
+  #bar input { display: none; }
+  #bar .on { background: rgba(255,59,48,0.2); }
+
+  #start { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center;
+           justify-content: center; gap: 18px; text-align: center; padding: 24px; }
+  #start h1 { font-size: 34px; letter-spacing: 0.3em; color: var(--hud); margin: 0; font-weight: 600; }
+  #start p { max-width: 34ch; color: #bbb; font-size: 13px; line-height: 1.6; margin: 0; }
+  #start button { font: 14px var(--mono); letter-spacing: 0.2em; color: var(--bg); background: var(--hud);
+                  border: 0; padding: 14px 28px; text-transform: uppercase; cursor: pointer; }
+  #start .alt { background: transparent; color: var(--hud); border: 1px solid var(--hud-dim); }
+
+  /* Simple mode: the cascade, told in two lines. Big enough for a video. */
+  #cascade { left: 10px; right: 10px; bottom: calc(64px + env(safe-area-inset-bottom));
+             max-width: 560px; font-size: 14px; padding: 12px 14px; }
+  #cascade .stage { display: grid; grid-template-columns: 9.5ch 1fr; gap: 10px; align-items: baseline;
+                    padding: 6px 0; }
+  #cascade .stage + .stage { border-top: 1px solid rgba(255,59,48,0.25); }
+  #cascade .who { color: var(--hud-dim); font-size: 12px; }
+  #cascade .say { color: var(--ink); text-transform: none; letter-spacing: 0.02em; }
+  #cascade .say.bad { color: var(--hud); }
+  #cascade .say.good { color: var(--ok); }
+  #cascade .say.warn { color: var(--amber); }
+  #cascade .code { font-size: 26px; letter-spacing: 0.08em; }
+  #cascade .meter { height: 5px; background: rgba(255,176,0,0.15); margin-top: 6px; }
+  #cascade .meter i { display: block; height: 100%; background: var(--amber); transition: width 0.3s; }
+  #cascade button { font: inherit; font-size: 16px; color: var(--ink); background: transparent;
+                    border: 1px solid var(--amber); padding: 8px 10px; margin: 6px 6px 0 0; }
+  #cascade .confirmed { color: var(--ok); margin-top: 6px; }
+
+  /* Candidates without a list: shown, not chosen. Digits where the candidates
+     differ are marked, so the damage is visible in the numbers themselves. */
+  .cands { margin-top: 6px; }
+  .cand { display: flex; align-items: baseline; gap: 12px; font-size: 20px;
+          letter-spacing: 0.06em; color: var(--ink); text-transform: none; }
+  .cand + .cand { margin-top: 2px; }
+  .cand:first-child { font-size: 24px; }
+  .cand .d.x { color: var(--amber); text-decoration: underline; text-underline-offset: 4px; }
+  .cand .fit { font-size: 12px; color: var(--hud-dim); letter-spacing: 0.04em; }
+  .cand.other .d { opacity: 0.75; }
+
+  body.simple #readout, body.simple #verdict, body.simple #status { display: none !important; }
+  body.full #cascade { display: none !important; }
+  .hidden { display: none !important; }
+</style>
+</head>
+<body class="simple">
+<div id="stage">
+  <video id="video" playsinline muted></video>
+  <img id="still" alt="">
+  <canvas id="hud"></canvas>
+
+  <div id="status" class="panel hidden">
+    <span class="dot"></span><span class="what" id="what">Searching</span>
+    <span class="meter"><i id="meter" style="width:0%"></i></span>
+    <span class="hint" id="hint"></span>
+  </div>
+
+  <div id="readout" class="panel hidden">
+    <div class="report notes hidden" id="report"></div>
+    <div class="row"><span class="key">Frames</span><span class="val" id="frames">-</span></div>
+    <div class="row"><span class="key">OpenCV</span><span class="val" id="opencv">-</span></div>
+    <div class="row"><span class="key">Path</span><span class="val" id="path">-</span></div>
+    <div class="row"><span class="key">Damage</span><span class="val notes" id="damage">-</span></div>
+    <div class="row"><span class="key">Signal</span><span class="val" id="signal">-</span></div>
+    <div class="row"><span class="key">Printed</span><span class="val" id="printed">-</span></div>
+    <div id="digits"></div>
+    <div class="row"><span class="key">Checks</span><span class="val" id="checks">-</span></div>
+    <div class="row"><span class="key">Time</span><span class="val" id="timing">-</span></div>
+    <div class="row"><span class="key">Agent</span><span class="val notes" id="agent">-</span></div>
+  </div>
+
+  <div id="verdict" class="panel hidden"></div>
+
+  <div id="cascade" class="panel hidden">
+    <div class="stage"><span class="who">Standard<br>scanner</span><span class="say" id="c-ocv">Point at a barcode</span></div>
+    <div class="stage"><span class="who">ARPI</span><div><div class="say" id="c-arpi">Standing by</div><div id="c-more"></div></div></div>
+  </div>
+
+  <div id="bar" class="hidden">
+    <button id="reset">New scan</button>
+    <label>List<input id="list" type="file" accept=".csv,.txt,text/csv,text/plain"></label>
+    <label>Photo<input id="photo" type="file" accept="image/*"></label>
+    <button id="modebtn">Full</button>
+  </div>
+
+  <div id="start">
+    <h1>ARPI</h1>
+    <p>Reads barcodes that are too damaged for a normal scanner. EAN-13 and UPC-A for now.
+       Point at one code and hold still until it locks. If digits had to be filled in,
+       it shows the options and you pick the right one.</p>
+    <button id="go">Start camera</button>
+    <label><button class="alt" id="pick">Use a photo</button></label>
+  </div>
+</div>
+
+<script>
+"use strict";
+const $ = (id) => document.getElementById(id);
+const video = $("video"), still = $("still"), hud = $("hud"), ctx = hud.getContext("2d");
+
+// Three phases, and the screen always says which:
+//   searching  nothing trustworthy in view
+//   tracking   evidence building on one code; best-so-far shown dimmed
+//   locked     result held still until a different code is in view, or New scan
+const LOCK_STREAK = 3;        // top candidate stayed in the previous top 3 this many frames
+const LOCK_FRAMES = 5;        // or this many accepted frames: more of the same view won't settle it
+const PROBE_MS = 900;         // while locked, how often to check the view
+const S = {
+  running: false, busy: false, source: "camera", phase: "searching",
+  view: null,          // latest server response, for the overlay
+  locked: null,        // the response the verdict is frozen on
+  state: null, known: null, confirmed: null, frameSize: null,
+  streak: 0, lastTop3: [], accepted: 0, sinceAgent: 0, agent: null,
+  // What the standard scanner managed on this code, over all its frames, so
+  // the simple view does not flicker between "cannot decode" and a read.
+  ocv: { frames: 0, detected: 0, read: null, rejected: null },
+};
+
+// ---- geometry ---------------------------------------------------------------
+function transform() {
+  const W = S.frameSize ? S.frameSize[0] : 1, H = S.frameSize ? S.frameSize[1] : 1;
+  const cw = hud.clientWidth, ch = hud.clientHeight;
+  const s = S.source === "camera" ? Math.max(cw / W, ch / H) : Math.min(cw / W, ch / H);
+  return { s, ox: (cw - W * s) / 2, oy: (ch - H * s) / 2 };
+}
+const toScreen = (t, p) => [t.ox + p[0] * t.s, t.oy + p[1] * t.s];
+
+// ---- camera and frames -----------------------------------------------------
+async function startCamera() {
+  // Full resolution: on torn codes it was worth a code or two in the tests.
+  const stream = await navigator.mediaDevices.getUserMedia({
+    audio: false,
+    video: { facingMode: { ideal: "environment" }, width: { ideal: 3840 }, height: { ideal: 2160 } },
+  });
+  video.srcObject = stream;
+  await video.play();
+  S.source = "camera";
+  still.style.display = "none";
+  video.style.display = "block";
+  begin();
+}
+
+function begin() {
+  $("start").classList.add("hidden");
+  $("bar").classList.remove("hidden");
+  $("status").classList.remove("hidden");
+  $("cascade").classList.remove("hidden");
+  S.running = true;
+  resize();
+  requestAnimationFrame(draw);
+  showStatus();
+  if (S.source === "camera") loop();
+}
+
+function grabFrame() {
+  const W = video.videoWidth, H = video.videoHeight;
+  if (!W || !H) return null;
+  const c = document.createElement("canvas");
+  c.width = W; c.height = H;
+  c.getContext("2d").drawImage(video, 0, 0, W, H);
+  return c;
+}
+
+function toB64(canvas) {
+  return new Promise((ok) => canvas.toBlob((blob) => {
+    const r = new FileReader();
+    r.onload = () => ok(String(r.result).split(",")[1]);
+    r.readAsDataURL(blob);
+  }, "image/jpeg", 0.88));
+}
+
+async function send(canvas) {
+  S.busy = true;
+  try {
+    // The model is asked when a code is first acquired, every few frames
+    // after that, and at lock. Every other frame gets the free rules.
+    const wantAgent = S.phase !== "locked" && (S.accepted === 0 || S.sinceAgent >= 4);
+    const body = { image_b64: await toB64(canvas), state: S.state, agent: wantAgent };
+    if (S.known) body.known = S.known;
+    const res = await fetch("./scan", { method: "POST", headers: { "content-type": "application/json" },
+                                        body: JSON.stringify(body) });
+    const out = await res.json();
+    if (!res.ok) throw new Error(out.error || res.status);
+    if (wantAgent) S.sinceAgent = 0; else S.sinceAgent++;
+    accept(out);
+  } catch (e) {
+    $("hint").textContent = "link error: " + e.message;
+  } finally {
+    S.busy = false;
+  }
+}
+
+const RANK = { read: 4, "unique-in-list": 3, disputed: 2, reconstructed: 1 };
+const MIN_FIT_SHOWN = 0.05;   // candidates below this share are not shown
+const topOf = (r) => (r.code || (r.candidate_order || [])[0] || null);
+
+function accept(out) {
+  S.frameSize = out.frame;
+  S.view = out;
+  // Advice is for while the scan is building. Once locked it is finished,
+  // and stale advice ("start again") on a code already read was confusing.
+  if (out.agent && S.phase !== "locked") S.agent = out.agent;
+
+  const ok = out.found && out.frame_quality && out.frame_quality.accepted;
+  if (out.target_changed) {
+    S.changes = (S.changes || 0) + 1;
+    if (S.phase === "locked" && S.changes < 2) {
+      // One frame of something else is not a new code. Taking the label away
+      // shows the camera a keyboard or a desk, and one such frame used to
+      // wipe a finished result. The evidence sent next time is still the old
+      // code's, so a real new code says "changed" again and gets through.
+      showStatus();
+      return;
+    }
+    // A different code is in view. What was locked or building belonged to
+    // the old one, but its card stays on screen as the last scan until the
+    // new code has evidence of its own.
+    if (S.locked) holdLast();
+    S.locked = null; S.confirmed = null; S.streak = 0; S.lastTop3 = []; S.accepted = 0;
+    S.ocv = { frames: 0, detected: 0, read: null, rejected: null };
+    S.reportFor = null; $("report").classList.add("hidden");
+    S.phase = "tracking";
+    S.changes = 0;
+  } else if (ok) {
+    S.changes = 0;
+  }
+  S.ocv.frames++;
+  if (out.opencv_detected) S.ocv.detected++;
+  if (out.opencv) {
+    const v = out.opencv.verdict;
+    if (out.opencv.plausible && (v === "verified" || out.status === "disputed")) S.ocv.read = out.opencv.read;
+    else S.ocv.rejected = out.opencv.read + ", " +
+      (out.opencv.plausible ? v : "an " + out.opencv.type.replace("_", "-") + ", not this code");
+  }
+  if (ok) {
+    S.state = out.state;
+    S.accepted++;
+    // Steady means the leader stays among the previous leaders. On a badly
+    // damaged code with no list, dozens of candidates are near-tied and the
+    // exact top flips from frame to frame; demanding the same top never locked.
+    const top = topOf(out);
+    S.streak = top && S.lastTop3.includes(top) ? S.streak + 1 : 1;
+    S.lastTop3 = (out.candidate_order || []).slice(0, 3);
+  }
+
+  if (S.phase === "locked") {
+    // Locked results never jump. They only get better: a reconstruction that
+    // becomes the single fit in the list, or a verified read.
+    if (ok && RANK[out.status] > RANK[S.locked.status]) S.locked = out;
+  } else if (ok) {
+    S.phase = "tracking";
+    const settled = out.status === "read" || out.status === "unique-in-list" ||
+      (S.streak >= LOCK_STREAK && (out.frames || 0) >= LOCK_STREAK) ||
+      (out.frames || 0) >= LOCK_FRAMES ||
+      (out.agent && out.agent.action === "stop" && out.frames >= 2);
+    if (settled) { S.phase = "locked"; S.locked = out; }
+  } else if (!S.state) {
+    S.phase = "searching";
+  }
+  showStatus();
+  renderDetail(S.phase === "locked" ? S.locked : out);
+  renderVerdict();
+  renderCascade();
+  maybeReport();
+}
+
+async function loop() {
+  while (S.running && S.source === "camera") {
+    if (!S.busy) {
+      const f = grabFrame();
+      if (f) await send(f);
+    }
+    await new Promise((r) => setTimeout(r, S.phase === "locked" ? PROBE_MS : 80));
+  }
+}
+
+// ---- status line -------------------------------------------------------------
+function showStatus() {
+  const st = $("status");
+  st.classList.remove("tracking", "locked", "recon");
+  const v = S.view, a = S.agent;
+  let what = "Searching", hint = "point at one barcode", fill = 0;
+  if (S.phase === "tracking") {
+    st.classList.add("tracking");
+    what = "Tracking";
+    fill = Math.min(1, S.streak / LOCK_STREAK);
+    const fq = v && v.frame_quality;
+    hint = fq && fq.accepted === false ? "frame skipped, " + fq.reason
+         : (a && a.request && a.action !== "stop" ? a.request : "hold still");
+  } else if (S.phase === "locked") {
+    st.classList.add("locked");
+    if (S.locked.status !== "read") st.classList.add("recon");
+    what = S.locked.status === "read" ? "Locked, read" : "Locked, check it";
+    hint = "point at another code or press New scan";
+  }
+  $("what").textContent = what;
+  $("hint").textContent = hint;
+  $("meter").style.width = Math.round(fill * 100) + "%";
+}
+
+// ---- verdict card ------------------------------------------------------------
+function renderVerdict() {
+  if (S.held && S.phase !== "locked" && S.accepted < 2) return;   // renderCascade shows it
+  const v = $("verdict");
+  v.className = "panel";
+  v.innerHTML = "";
+  const line = (cls, text) => { const e = document.createElement("div"); if (cls) e.className = cls; e.textContent = text; v.appendChild(e); return e; };
+
+  if (S.phase === "searching") { v.classList.add("hidden"); return; }
+  if (S.phase === "tracking") {
+    // Best so far, deliberately dim and with nothing to press: it may change.
+    const r = S.view;
+    v.classList.add("tracking");
+    const top = r && topOf(r);
+    if (top) line("big dim", top);
+    line("", top ? "Reading, " + (r.frames || 0) + " frame" + ((r.frames || 0) === 1 ? "" : "s") + " so far"
+                 : "Looking");
+    return;
+  }
+  const r = S.locked;
+  const order = r.candidate_order || [];
+  if (r.status === "read") {
+    v.classList.add("read");
+    line("big", r.code);
+    line("", r.path === "opencv-verified" ? "Read by OpenCV, the bars agree" : "Read from the bars");
+    return;
+  }
+  if (r.status === "unique-in-list") {
+    // With a list there is a real decision to sign off, so this one asks.
+    v.classList.add("recon");
+    line("big", r.code);
+    line("", "Reconstructed. Only this code in your list fits.");
+    const b = document.createElement("button");
+    b.textContent = S.confirmed ? "Confirmed" : "Confirm";
+    b.onclick = () => { S.confirmed = r.code; renderVerdict(); renderCascade(); };
+    v.appendChild(b);
+    return;
+  }
+  if (r.status === "disputed") {
+    v.classList.add("disputed");
+    line("", "OpenCV and ARPI disagree.");
+  } else {
+    v.classList.add("recon");
+    line("", r.live_count > 1 ? "Reconstructed. " + r.live_count + " codes fit, strongest:"
+                              : "Reconstructed:");
+  }
+  v.appendChild(candidateRows(r, order, 3));
+  if (r.status !== "disputed" && r.live_count > 3 && !S.known) line("dim", "A code list would narrow this down.");
+}
+
+// ---- the last result, held -------------------------------------------------------
+// A finished result stays readable after the label is taken away. When a new
+// code comes into view, the old card is frozen with a "Last scan" tag and
+// stays until the new code has two accepted frames.
+function holdLast() {
+  S.held = {
+    cascade: $("cascade").innerHTML,
+    verdict: $("verdict").innerHTML,
+    verdictClass: $("verdict").className,
+  };
+}
+
+function showHeld() {
+  if (!S.held || S.phase === "locked" || S.accepted >= 2) return false;
+  $("cascade").innerHTML = S.held.cascade;
+  $("verdict").className = S.held.verdictClass;
+  $("verdict").innerHTML = S.held.verdict;
+  for (const box of [$("cascade"), $("verdict")]) {
+    box.querySelectorAll("button").forEach((b) => b.remove());
+    const tag = document.createElement("div");
+    tag.className = "say dim";
+    tag.textContent = "Last scan. Looking at a new code.";
+    box.prepend(tag);
+  }
+  S.heldShown = true;
+  return true;
+}
+
+// ---- candidates, for display ------------------------------------------------------
+// The three strongest codes, digit by digit. Positions where they differ are
+// marked. The fit is each code's share of the evidence among the codes found,
+// not a calibrated probability, so it is labelled fit, not confidence.
+function candidateRows(r, order, n) {
+  const box = document.createElement("div");
+  box.className = "cands";
+  // Only codes with some real share of the evidence. A 99% leader shows alone;
+  // two 0% rows next to it said nothing. OpenCV's own read stays in a
+  // disagreement, since showing it is the point.
+  const shareOf = (code) => { const c = (r.candidates || []).find((x) => x.code === code); return c ? c.share : null; };
+  const shown = order.slice(0, n).filter((code, k) => k === 0 ||
+    (shareOf(code) !== null ? shareOf(code) >= MIN_FIT_SHOWN :
+     r.status === "disputed" && r.opencv && r.opencv.read === code));
+  const differ = new Set();
+  for (let i = 0; i < 13; i++) {
+    if (new Set(shown.map((c) => c[i])).size > 1) differ.add(i);
+  }
+  shown.forEach((code, k) => {
+    const row = document.createElement("div");
+    row.className = "cand" + (k ? " other" : "");
+    const digits = document.createElement("span");
+    for (let i = 0; i < code.length; i++) {
+      const d = document.createElement("span");
+      d.className = "d" + (differ.has(i) ? " x" : "");
+      d.textContent = code[i];
+      digits.appendChild(d);
+    }
+    row.appendChild(digits);
+    const c = (r.candidates || []).find((x) => x.code === code);
+    const fit = document.createElement("span");
+    fit.className = "fit";
+    fit.textContent = c ? "fit " + Math.round(c.share * 100) + "%" :
+      (r.opencv && r.opencv.read === code ? "OpenCV" : "");
+    row.appendChild(fit);
+    box.appendChild(row);
+  });
+  return box;
+}
+
+// ---- damage report: once per locked scan, Full view only -----------------------
+async function maybeReport() {
+  if (S.phase !== "locked" || !document.body.classList.contains("full")) return;
+  if (S.reportFor === S.locked) return;
+  S.reportFor = S.locked;
+  const r = S.locked;
+  const el = $("report");
+  el.classList.remove("hidden");
+  el.textContent = "...";
+  const scan = { status: r.status, path: r.path, frames: r.frames, live_count: r.live_count,
+                 opencv: r.opencv, opencv_detected: r.opencv_detected, diagnostics: r.diagnostics,
+                 per_digit: r.per_digit, printed_digits: r.printed_digits };
+  try {
+    const res = await fetch("./report", { method: "POST", headers: { "content-type": "application/json" },
+                                          body: JSON.stringify({ scan }) });
+    const out = await res.json();
+    if (S.reportFor === r) el.textContent = out.report || "";
+  } catch (e) {
+    el.textContent = "";
+  }
+}
+
+// ---- simple view: the cascade in two lines -------------------------------------
+const CASCADE_HTML = () => '<div class="stage"><span class="who">Standard<br>scanner</span><span class="say" id="c-ocv"></span></div>' +
+  '<div class="stage"><span class="who">ARPI</span><div><div class="say" id="c-arpi"></div><div id="c-more"></div></div></div>';
+
+function renderCascade() {
+  if (showHeld()) return;
+  if (S.heldShown || !$("c-ocv")) { $("cascade").innerHTML = CASCADE_HTML(); S.heldShown = false; }
+  const o = S.ocv, ocvEl = $("c-ocv"), arpiEl = $("c-arpi"), more = $("c-more");
+  more.innerHTML = "";
+  const r = S.phase === "locked" ? S.locked : S.view;
+  const say = (el, cls, text) => { el.className = "say" + (cls ? " " + cls : ""); el.textContent = text; };
+
+  // The standard scanner, reporting itself the way a normal scanner would.
+  const verified = r && r.path === "opencv-verified";
+  const disputed = r && r.status === "disputed";
+  if (!o.frames) say(ocvEl, "", "Point at a barcode");
+  else if (verified) say(ocvEl, "good", "Read " + r.code);
+  else if (disputed && o.read) say(ocvEl, "bad", "Read " + o.read + ", but the bars say otherwise");
+  else if (o.rejected && !o.read) say(ocvEl, "bad", "Read " + o.rejected);
+  else if (o.read) say(ocvEl, "warn", "Read " + o.read + ", checking");
+  else if (o.detected) say(ocvEl, "bad", "Found a barcode, could not read it");
+  else say(ocvEl, "bad", "No barcode found");
+
+  // ARPI.
+  if (!r || !r.found || S.phase === "searching") { say(arpiEl, "", o.frames ? "Looking for the code" : "Waiting"); return; }
+  if (verified) { say(arpiEl, "good", "Bars match"); return; }
+  if (S.phase === "tracking") {
+    const fq = r.frame_quality;
+    const n = r.frames || 0;
+    say(arpiEl, "warn", fq && fq.accepted === false ? "Hold still..." :
+        "Reconstructing, " + n + " frame" + (n === 1 ? "" : "s") + " so far");
+    const m = document.createElement("div"); m.className = "meter";
+    const i = document.createElement("i");
+    i.style.width = Math.round(Math.min(1, Math.max(S.streak / LOCK_STREAK, n / LOCK_FRAMES)) * 100) + "%";
+    m.appendChild(i); more.appendChild(m);
+    return;
+  }
+  // Locked.
+  const order = r.candidate_order || [];
+  if (r.status === "read") { say(arpiEl, "good code", r.code); return; }
+  if (r.status === "unique-in-list") {
+    say(arpiEl, "warn code", r.code);
+    const n = document.createElement("div"); n.className = "say warn";
+    n.textContent = "Reconstructed. Only this code in your list fits.";
+    more.appendChild(n);
+    const b = document.createElement("button");
+    b.textContent = S.confirmed ? "Confirmed" : "Confirm";
+    b.onclick = () => { S.confirmed = r.code; renderCascade(); renderVerdict(); };
+    more.appendChild(b);
+    return;
+  }
+  say(arpiEl, "warn", r.status === "disputed" ? "Disagrees. Strongest candidates:" :
+      r.live_count > 1 ? "Reconstructed. " + r.live_count + " codes fit, strongest:" : "Reconstructed:");
+  more.appendChild(candidateRows(r, order, 3));
+  if (r.status !== "disputed" && r.live_count > 3 && !S.known) {
+    const n = document.createElement("div"); n.className = "say dim";
+    n.textContent = "A code list would narrow this down.";
+    more.appendChild(n);
+  }
+}
+
+// ---- detail readout ------------------------------------------------------------
+function renderDetail(r) {
+  if (!r) return;
+  $("frames").textContent = r.frames ? r.frames + (S.phase === "locked" ? " (locked)" : "") : "-";
+  const ocv = r.opencv;
+  $("opencv").textContent = !ocv ? (r.found ? "no read" : "-") :
+    ocv.read + (ocv.plausible ? "" : " (" + ocv.type + ") rejected");
+  $("path").textContent = (r.path || "-").replace(/-/g, " ");
+  const d = r.diagnostics || {};
+  const notes = (d.warp_notes || []).concat(d.impossible_runs ? [d.impossible_runs + " modules masked"] : []);
+  $("damage").textContent = notes.length ? notes.join(", ") : (r.found ? "none found" : "-");
+  $("signal").textContent = r.found && d.contrast != null ?
+    `contrast ${d.contrast} sharp ${d.sharpness} glare ${d.glare_fraction} fit ${d.grid_fit}` : "-";
+  const pd = r.printed_digits;
+  $("printed").textContent = pd ? pd.text.split("").join(" ") : "-";
+  const grid = $("digits");
+  grid.innerHTML = "";
+  const textRows = (r.ledger && r.ledger.text) || [];
+  (r.per_digit || []).forEach((p, i) => {
+    const el = document.createElement("div");
+    el.className = "dg" + (p.confidence < 0.5 ? " gone" : p.confidence < 0.9 ? " weak" : "");
+    el.textContent = p.confidence < 0.2 ? "?" : p.best;
+    const bar = document.createElement("i");
+    bar.className = "bar"; bar.style.width = `calc(${Math.round(p.confidence * 100)}% - 4px)`;
+    el.appendChild(bar);
+    const t = textRows[i];
+    if (t && t.digit === p.best) {
+      const sb = document.createElement("i");
+      sb.className = "src"; sb.style.width = `calc(${Math.round(t.share * 100)}% - 4px)`;
+      el.appendChild(sb);
+    }
+    grid.appendChild(el);
+  });
+  const top = (r.candidates || [])[0];
+  $("checks").textContent = top ? ["checksum", "parity", top.prefix && top.prefix !== "unassigned" ?
+    "gs1: " + top.prefix.replace(/^GS1 /, "") : null].filter(Boolean).join(" / ") : "-";
+  const t = r.timings || {};
+  $("timing").textContent = t.total_s != null ? `opencv ${t.opencv_s}s arpi ${t.arpi_s}s` : "-";
+  const a = S.agent;
+  $("agent").textContent = a ? `[${a.source}] ${a.action}: ${a.reason}` : "-";
+}
+
+// ---- drawing ---------------------------------------------------------------
+function resize() {
+  const dpr = window.devicePixelRatio || 1;
+  hud.width = hud.clientWidth * dpr; hud.height = hud.clientHeight * dpr;
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+}
+window.addEventListener("resize", resize);
+
+function draw(now) {
+  if (!S.running) return;
+  const cw = hud.clientWidth, ch = hud.clientHeight;
+  ctx.clearRect(0, 0, cw, ch);
+  reticle(cw, ch, now);
+  // The overlay shows the latest frame looked at, so it follows the hand;
+  // the verdict is what stays still.
+  const r = S.view;
+  if (r && r.found && S.frameSize && S.phase !== "searching") {
+    const t = transform();
+    ctx.globalAlpha = r.frame_quality && r.frame_quality.accepted === false ? 0.35 : 0.9;
+    if (r.polygon) outline(t, r.polygon);
+    if (r.grid && r.modules && document.body.classList.contains("full")) modules(t, r.grid, r.modules);
+    ctx.globalAlpha = 1;
+  }
+  requestAnimationFrame(draw);
+}
+
+function reticle(cw, ch, now) {
+  const w = Math.min(cw, ch) * 0.62, h = w * 0.55, x = (cw - w) / 2, y = (ch - h) / 2, L = 22;
+  const col = S.phase === "locked" ? (S.locked.status === "read" ? "57,255,136" : "255,176,0") : "255,59,48";
+  const pulse = S.phase === "locked" ? 0.9 : 0.55 + 0.35 * Math.sin(now / 380);
+  ctx.strokeStyle = `rgba(${col},${pulse})`; ctx.lineWidth = 2;
+  [[x, y, 1, 1], [x + w, y, -1, 1], [x, y + h, 1, -1], [x + w, y + h, -1, -1]].forEach(([px, py, sx, sy]) => {
+    ctx.beginPath(); ctx.moveTo(px, py + sy * L); ctx.lineTo(px, py); ctx.lineTo(px + sx * L, py); ctx.stroke();
+  });
+  if (S.busy && S.phase !== "locked") {
+    const k = (now / 900) % 1;
+    ctx.fillStyle = "rgba(255,59,48,0.18)";
+    ctx.fillRect(x + k * w, y, 3, h);
+  }
+}
+
+function outline(t, poly) {
+  const col = S.phase === "locked" ? (S.locked.status === "read" ? "#39ff88" : "#ffb000") : "#ff3b30";
+  ctx.strokeStyle = col; ctx.lineWidth = 1.5;
+  ctx.beginPath();
+  const hull = poly.length > 12 ? poly.filter((_, i) => i % Math.ceil(poly.length / 24) === 0) : poly;
+  hull.forEach((p, i) => { const [sx, sy] = toScreen(t, p); i ? ctx.lineTo(sx, sy) : ctx.moveTo(sx, sy); });
+  ctx.closePath(); ctx.stroke();
+}
+
+// Every module as a sliver between two grid lines: red where a bar was seen,
+// faint cyan where a space was, opacity by confidence. Masked or torn-away
+// modules show as gaps in the pattern - the damage, made visible.
+function modules(t, grid, mod) {
+  for (let m = 0; m < 95; m++) {
+    const a = grid[m], b = grid[m + 1];
+    const p = mod.p_bar[m], c = mod.confidence[m];
+    const quad = [[a[0], a[1]], [b[0], b[1]], [b[2], b[3]], [a[2], a[3]]].map((q) => toScreen(t, q));
+    ctx.beginPath();
+    quad.forEach(([x, y], i) => (i ? ctx.lineTo(x, y) : ctx.moveTo(x, y)));
+    ctx.closePath();
+    ctx.fillStyle = p > 0.5 ? `rgba(255,59,48,${0.10 + 0.4 * c})` : `rgba(63,208,255,${0.04 + 0.14 * c})`;
+    ctx.fill();
+    if (c < 0.35) {
+      ctx.strokeStyle = "rgba(255,176,0,0.5)"; ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.moveTo(quad[0][0], quad[0][1]); ctx.lineTo(quad[2][0], quad[2][1]); ctx.stroke();
+    }
+  }
+  ctx.strokeStyle = "rgba(255,255,255,0.7)"; ctx.lineWidth = 1;
+  [0, 3, 45, 50, 92, 95].forEach((m) => {
+    const [x1, y1] = toScreen(t, [grid[m][0], grid[m][1]]), [x2, y2] = toScreen(t, [grid[m][2], grid[m][3]]);
+    ctx.beginPath(); ctx.moveTo(x1, y1 - 6); ctx.lineTo(x2, y2 + 6); ctx.stroke();
+  });
+}
+
+// ---- controls --------------------------------------------------------------
+function newScan() {
+  S.state = null; S.view = null; S.locked = null; S.confirmed = null;
+  S.streak = 0; S.lastTop3 = []; S.accepted = 0; S.sinceAgent = 0; S.agent = null;
+  S.ocv = { frames: 0, detected: 0, read: null, rejected: null };
+  S.reportFor = null; $("report").classList.add("hidden");
+  S.held = null; S.changes = 0;
+  if (!$("c-ocv")) $("cascade").innerHTML = CASCADE_HTML();
+  S.phase = "searching";
+  showStatus(); renderVerdict(); renderCascade();
+}
+
+$("go").onclick = () => startCamera().catch((e) => {
+  $("start").querySelector("p").textContent = "No camera (" + e.message + "). Use a photo instead.";
+});
+$("pick").onclick = (e) => { e.preventDefault(); $("photo").click(); };
+$("reset").onclick = newScan;
+// Simple: the cascade in two lines, for the demo. Full: the analytic HUD.
+$("modebtn").onclick = () => {
+  const full = document.body.classList.toggle("full");
+  document.body.classList.toggle("simple", !full);
+  $("readout").classList.toggle("hidden", !full);
+  $("modebtn").textContent = full ? "Simple" : "Full";
+  maybeReport();
+};
+
+$("photo").onchange = async (e) => {
+  const f = e.target.files[0];
+  if (!f) return;
+  const url = URL.createObjectURL(f);
+  const img = new Image();
+  img.onload = async () => {
+    const c = document.createElement("canvas");
+    c.width = img.naturalWidth; c.height = img.naturalHeight;
+    c.getContext("2d").drawImage(img, 0, 0);
+    if (video.srcObject) video.srcObject.getTracks().forEach((tr) => tr.stop());
+    S.source = "photo"; newScan();
+    video.style.display = "none"; still.src = url; still.style.display = "block";
+    if (!S.running) begin();
+    await send(c);
+    // A single photo is all the evidence there will be: show it as final.
+    if (S.view && S.view.found && S.phase === "tracking") { S.phase = "locked"; S.locked = S.view; showStatus(); renderVerdict(); }
+  };
+  img.src = url;
+  e.target.value = "";
+};
+
+// The known-code list: any cell with 12 or 13 digits. Sent with each frame;
+// the server keeps nothing.
+$("list").onchange = async (e) => {
+  const f = e.target.files[0];
+  if (!f) return;
+  const text = await f.text();
+  const codes = (text.match(/\d[\d ]{10,16}\d/g) || []).map((s) => s.replace(/\D/g, ""))
+    .filter((s) => s.length === 12 || s.length === 13);
+  S.known = codes.length ? Array.from(new Set(codes)) : null;
+  e.target.parentElement.firstChild.textContent = S.known ? `List ${S.known.length}` : "List";
+  e.target.value = "";
+  newScan();
+};
+</script>
+</body>
+</html>

@@ -10,18 +10,21 @@ differences are the ones the work forces:
 * architecture comes from config, so the Graviton run for the COOL award is a
   one-line change and a rebuild.
 
-No API Gateway, no VPC, no container registry. A zip with OpenCV 5 headless
-and numpy fits inside the 250 MB limit, and the bundler needs no Docker.
+No API Gateway, no VPC. The function is a container image rather than a
+zip: OpenCV 5, numpy and the text model together pass the 250 MB zip limit.
+CDK builds it from the Dockerfile and pushes it to the bootstrap registry.
+It also serves the scanner page, so a phone gets camera access over the
+Function URL's https with nothing else to host.
 
 Least privilege is not decoration: the function can read and delete uploads,
 bump one counter and call one model family, and nothing else.
 """
-import os
 import pathlib
 
 import yaml
 from aws_cdk import CfnOutput, Duration, RemovalPolicy, Stack
 from aws_cdk import aws_dynamodb as dynamodb
+from aws_cdk import aws_ecr_assets as ecr_assets
 from aws_cdk import aws_iam as iam
 from aws_cdk import aws_lambda as lambda_
 from aws_cdk import aws_logs as logs
@@ -29,10 +32,6 @@ from aws_cdk import aws_s3 as s3
 from constructs import Construct
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-# Same escape hatch as WhyF: Dropbox holds file locks that make an in-place
-# rebuild fail at random, so the bundle can live outside the repo.
-_override = os.environ.get("ARPI_BUNDLE")
-BUNDLE = pathlib.Path(_override).resolve() if _override else ROOT / "build" / "lambda"
 
 
 def load_config():
@@ -49,9 +48,10 @@ class ArpiStack(Stack):
         profile_regions = config.get("inference_profile_regions") or [self.region]
         arm = (config.get("architecture") or "x86_64") == "arm64"
 
-        if not BUNDLE.exists():
+        model = ROOT / "models" / "text_recognition_CRNN_EN_2021sep.onnx"
+        if not model.exists():
             raise FileNotFoundError(
-                "no bundle at {}. Run: python tools/build_lambda.py".format(BUNDLE))
+                "text model missing. Run: python tools/fetch_models.py")
 
         # ---- uploads -------------------------------------------------------
         bucket = s3.Bucket(
@@ -137,18 +137,23 @@ class ArpiStack(Stack):
         )
 
         # ---- the function --------------------------------------------------
-        function = lambda_.Function(
+        # A container image, built by CDK from the Dockerfile at the repo
+        # root: OpenCV, numpy and the text model together are over the 250 MB
+        # zip limit. The image is built for the architecture in config.
+        function = lambda_.DockerImageFunction(
             self, "Decoder",
             function_name="arpi-decoder",
-            runtime=lambda_.Runtime.PYTHON_3_12,
             architecture=(lambda_.Architecture.ARM_64 if arm
                           else lambda_.Architecture.X86_64),
-            handler="arpi.handler.handler",
-            code=lambda_.Code.from_asset(str(BUNDLE)),
+            code=lambda_.DockerImageCode.from_image_asset(
+                str(ROOT),
+                platform=(ecr_assets.Platform.LINUX_ARM64 if arm
+                          else ecr_assets.Platform.LINUX_AMD64)),
             role=role,
-            # The grid search is numpy on one core per 1769 MB. Memory is the
-            # CPU knob; 2048 buys a little over one full vCPU.
-            memory_size=2048,
+            # The grid search is numpy, mostly on one core, and the live
+            # scanner wants an answer in a couple of seconds. Memory is the
+            # CPU knob: 3008 MB is about two vCPUs.
+            memory_size=3008,
             timeout=Duration.seconds(30),
             log_group=log_group,
             environment={
@@ -156,6 +161,8 @@ class ArpiStack(Stack):
                 "ARPI_TABLE": table.table_name,
                 "ARPI_BUCKET": bucket.bucket_name,
                 "ARPI_AGENT_MODEL": models.get("agent", ""),
+                "ARPI_AGENT": config.get("agent_policy", "rules"),
+                "ARPI_REPORT": config.get("report_policy", "template"),
                 "ARPI_DAILY_DECODE_CEILING": str(
                     limits.get("daily_decode_ceiling", 5000)),
                 "PYTHONUNBUFFERED": "1",
@@ -169,13 +176,14 @@ class ArpiStack(Stack):
             auth_type=lambda_.FunctionUrlAuthType.NONE,
             cors=lambda_.FunctionUrlCorsOptions(
                 allowed_origins=["*"],
-                allowed_methods=[lambda_.HttpMethod.POST],
+                # GET serves the page itself; POST is the API.
+                allowed_methods=[lambda_.HttpMethod.GET, lambda_.HttpMethod.POST],
                 allowed_headers=["content-type"],
                 max_age=Duration.hours(1),
             ),
         )
 
         CfnOutput(self, "DemoUrl", value=url.url,
-                  description="POST /upload, then POST /decode {\"key\": ...}")
+                  description="Open on a phone: GET / is the scanner")
         CfnOutput(self, "UploadBucket", value=bucket.bucket_name)
         CfnOutput(self, "LogGroup", value=log_group.log_group_name)

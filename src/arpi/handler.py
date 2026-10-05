@@ -12,6 +12,7 @@ OpenCV is imported once per container, at first use. It is the cold start.
 """
 import base64
 import json
+import os
 import time
 import uuid
 
@@ -132,12 +133,157 @@ def _decode(payload):
     return _response(200, body)
 
 
+def _page():
+    """The scanner page, served by the same function so the phone gets it
+    over the Function URL's https, which is what allows the camera."""
+    from pathlib import Path
+    here = Path(__file__).resolve().parent
+    for p in (here.parent.parent / "web" / "index.html", here.parent / "web" / "index.html"):
+        if p.exists():
+            return {"statusCode": 200,
+                    "headers": {"content-type": "text/html; charset=utf-8",
+                                "cache-control": "no-store"},
+                    "body": p.read_text(encoding="utf-8")}
+    return _response(404, {"error": "page not bundled"})
+
+
+def _scan(payload):
+    """One frame of the live scanner. The image comes inline: a phone frame
+    as JPEG is a few hundred kB, well under the 6 MB body limit, and a
+    round trip through S3 would double the latency the HUD shows."""
+    import cv2
+    import numpy as np
+    from . import live
+
+    cfg = _config()
+    known = payload.get("known")
+    if known is not None:
+        if not isinstance(known, list) or len(known) > cfg.limits.max_known_codes:
+            return _response(413, {"error": "known-code list too long, max {}"
+                                    .format(cfg.limits.max_known_codes)})
+        known = [str(c) for c in known]
+    counter = _counter()
+    if counter:
+        from .limits import BudgetExceeded
+        try:
+            counter.bump("scan", cfg.limits.daily_decode_ceiling)
+        except BudgetExceeded:
+            return _response(429, {"error": "the demo's daily limit is used up. "
+                                            "It resets at midnight UTC."})
+        except Exception as exc:
+            print("spend counter unavailable: {}".format(type(exc).__name__))
+    try:
+        raw = base64.b64decode(payload.get("image_b64") or "", validate=True)
+    except (ValueError, TypeError):
+        return _response(400, {"error": "image_b64 is not base64"})
+    if not raw or len(raw) > cfg.limits.max_upload_bytes:
+        return _response(413, {"error": "image missing or too large"})
+    img = cv2.imdecode(np.frombuffer(raw, np.uint8), cv2.IMREAD_GRAYSCALE)
+    if img is None:
+        return _response(400, {"error": "that is not an image"})
+    state = payload.get("state") if isinstance(payload.get("state"), dict) else None
+    out = live.scan(img, state=state, known_codes=known)
+    # The page asks for a model decision only now and then (see web/
+    # index.html): a live loop at a frame a second would otherwise call the
+    # model every frame. Other frames get the rules, which cost nothing.
+    if payload.get("agent") is False:
+        from . import agent
+        out["agent"] = agent.decide_rules(out)
+    else:
+        out["agent"] = _agent_decision(out)
+    return _response(200, json.loads(json.dumps(out, default=_jsonable)))
+
+
+def _report(payload):
+    """POST /report {"scan": {...}}: a short factual damage report for a
+    finished scan. Bedrock phrases measured facts when report_policy is
+    bedrock; the template otherwise, or whenever the model's text is not a
+    plain report."""
+    from . import report
+    scan = report.sanitise(payload.get("scan"))
+    cfg = _config()
+    if os.environ.get("ARPI_REPORT", "template") != "bedrock" or not cfg.agent_model:
+        return _response(200, report.write(scan))
+    return _response(200, report.write(scan, _bedrock(), cfg.agent_model, _model_budget))
+
+
+def _bedrock():
+    if "bedrock" not in _STATE:
+        try:
+            import boto3
+            _STATE["bedrock"] = boto3.client("bedrock-runtime", region_name=_config().region)
+        except Exception as exc:
+            print("no bedrock client ({})".format(type(exc).__name__))
+            _STATE["bedrock"] = None
+    return _STATE["bedrock"]
+
+
+def _model_budget():
+    """Model calls have their own daily ceiling, far below the scan ceiling:
+    they are the only part of this that costs real money."""
+    counter = _counter()
+    if counter is None:
+        return True
+    from .limits import BudgetExceeded
+    try:
+        counter.bump("model", _config().limits.daily_model_call_ceiling)
+        return True
+    except BudgetExceeded:
+        return False
+    except Exception:
+        return True
+
+
+def _agent_decision(scan):
+    """Bedrock when a model is configured and reachable, the rules otherwise.
+    Model calls count against their own daily ceiling, far below the scan
+    ceiling: they are the only part of this that costs real money."""
+    from . import agent
+    cfg = _config()
+    if os.environ.get("ARPI_AGENT", "rules") != "bedrock" or not cfg.agent_model:
+        return agent.decide_rules(scan)
+    if "bedrock" not in _STATE:
+        try:
+            import boto3
+            _STATE["bedrock"] = boto3.client("bedrock-runtime", region_name=cfg.region)
+        except Exception as exc:
+            print("no bedrock client ({})".format(type(exc).__name__))
+            _STATE["bedrock"] = None
+
+    def budget():
+        counter = _counter()
+        if counter is None:
+            return True
+        from .limits import BudgetExceeded
+        try:
+            counter.bump("model", cfg.limits.daily_model_call_ceiling)
+            return True
+        except BudgetExceeded:
+            return False
+        except Exception:
+            return True
+
+    return agent.decide(scan, _STATE["bedrock"], cfg.agent_model, budget)
+
+
+def _jsonable(x):
+    import numpy as np
+    if isinstance(x, np.generic):
+        return x.item()
+    if isinstance(x, np.ndarray):
+        return x.tolist()
+    return str(x)
+
+
 def handler(event, context=None):
     method = (event.get("requestContext", {}).get("http", {})
               .get("method", "POST")).upper()
     if method == "OPTIONS":
         return _response(204, {})
     path = (event.get("rawPath") or "/").rstrip("/") or "/"
+    if method == "GET":
+        return _page() if path in ("/", "/index.html") else _response(
+            404, {"error": "GET / for the scanner"})
     try:
         payload = json.loads(event.get("body") or "{}")
     except (TypeError, ValueError):
@@ -147,7 +293,11 @@ def handler(event, context=None):
             return _upload()
         if path == "/decode":
             return _decode(payload)
-        return _response(404, {"error": "POST /upload or /decode"})
+        if path == "/scan":
+            return _scan(payload)
+        if path == "/report":
+            return _report(payload)
+        return _response(404, {"error": "POST /scan, /upload or /decode"})
     except Exception as exc:
         # Never leak a stack trace to a public URL. The logs have it.
         print("{} failed: {}: {}".format(path, type(exc).__name__, exc))

@@ -326,6 +326,7 @@ def _grid_search(profile, a_range, b_range, k_range, off=None):
 K_COARSE = np.array([-0.12, 0.0, 0.12])
 COARSE_DOWNSAMPLE = True
 RESCAN_FULL_BELOW = 0.93
+WIDTH_STEP = 0.025         # coarse module-width step, as a share of the guess
 
 
 def module_from_runs(profile):
@@ -381,10 +382,13 @@ def fit_grid(profile, pad=None, hint=None):
         pad = CROP_PAD if pad is None else pad
         W = len(profile)
         nominal = W / (1 + 2 * pad) / ean13.MODULES
-        widths = list(nominal * np.arange(0.70, 1.15, 0.01))
+        # Widths in 2.5% steps, then the best few refined. Searching every 1%
+        # was most of the scan's time on Lambda's slower cores, and a 2.5%
+        # step is still close enough for the refinement to find the peak.
+        widths = list(nominal * np.arange(0.70, 1.15, WIDTH_STEP))
         from_runs = module_from_runs(profile)
         if from_runs:
-            widths += list(from_runs * np.arange(0.85, 1.16, 0.01))
+            widths += list(from_runs * np.arange(0.85, 1.16, WIDTH_STEP))
         # Coarse pass on a half-resolution profile: the crop is upsampled to
         # about five pixels a module, and two and a half is plenty to find
         # roughly where the grid sits. The fine pass is at full resolution.
@@ -392,16 +396,27 @@ def fit_grid(profile, pad=None, hint=None):
         small = profile if f == 1 else cv2.resize(
             profile.astype(np.float32).reshape(1, -1),
             (int(round(W / f)), 1), interpolation=cv2.INTER_AREA).ravel()
-        best = (0.0, nominal, 0.0, -1e9)
+        hits = []
         for b in widths:
             if ean13.MODULES * b > W:
                 continue
             bs = b / f
             a_range = np.arange(0, max(1.0, len(small) - ean13.MODULES * bs), 0.25 * bs)
-            hit = _grid_search(small, a_range, np.array([bs]), K_COARSE)
+            hits.append(_grid_search(small, a_range, np.array([bs]), K_COARSE))
+        if not hits:
+            hits = [(0.0, nominal / f, 0.0, -1e9)]
+        # Refine the three best coarse hits on the full profile: between two
+        # coarse width steps, the true peak can sit under either neighbour.
+        hits.sort(key=lambda h: -h[3])
+        best = (0.0, nominal, 0.0, -1e9)
+        for ha, hb, hk, _ in hits[:3]:
+            hit = _grid_search(profile,
+                               ha * f + np.arange(-1.0, 1.01, 0.125) * hb * f,
+                               hb * f * np.arange(0.975, 1.0251, 0.005),
+                               hk + np.array([-0.06, 0.0, 0.06]))
             if hit[3] > best[3]:
                 best = hit
-        a, b, k = best[0] * f, best[1] * f, best[2]
+        a, b, k = best[0], best[1], best[2]
     a, b, k, _ = _grid_search(profile,
                               a + np.arange(-0.4, 0.401, 0.04) * b,
                               b * np.arange(0.985, 1.0151, 0.0015),

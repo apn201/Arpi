@@ -28,11 +28,14 @@ Physical sheets printed, not photographed yet. No agent loop, no phone page, not
 | Lambda handler, S3 upload, spend cap | `src/arpi/handler.py` | offline-tested |
 | CDK stack | `infra/` | synthesises, not deployed |
 | physical set | `data/` | **sheets printed, photos next**, protocol in `data/README.md` |
-| piecewise warp: wrinkles, torn pieces put back wrong | `src/arpi/vision.py` | works on synthetic |
-| damage description, scene context (Bedrock vision) | | Oct 12-23 |
-| agent loop (Bedrock) | | Oct 12-23 |
-| camera HUD: live overlay, evidence ledger | | Oct 12-23 |
-| phone web page | | Oct 12-23 |
+| piecewise warp: wrinkles, torn pieces put back wrong | `src/arpi/vision.py` | works on synthetic and photos |
+| OpenCV first, ARPI fallback, OpenCV's read checked against the bars | `src/arpi/cascade.py` | done |
+| live scanner: aimed code, evidence carried between frames | `src/arpi/live.py` | done |
+| agent: stop or ask for a better shot, citing the evidence | `src/arpi/agent.py` | rules done, Bedrock written, untested |
+| phone page with HUD | `web/index.html` | works locally on photos |
+| Lambda container image, page served by the function | `Dockerfile`, `infra/` | synthesises, not built |
+| physical set: 23 photos, 6 sheets, manifest | `data/physical/` | shot; results in `results/` |
+| scene context and damage description (Bedrock vision) | | next |
 
 ## First numbers. Synthetic, n = 8 per cell, small
 
@@ -198,26 +201,29 @@ come back as ranked candidates for a person to confirm.
 
 ```bash
 pip install -r requirements.txt
+python tools/fetch_models.py              # text model, pinned by hash
 python -m pytest
-python -m arpi photo.jpg
+python tools/serve_local.py               # http://localhost:8013, the scanner page
 python -m arpi photo.jpg --known codes.csv
-python tools/evaluate.py --n 8
-python tools/print_sheet.py --sheets 6
-python tools/eval_physical.py --fuse
+python tools/evaluate.py --n 8            # synthetic sweep
+python tools/eval_sheets.py data/physical/photos --cascade
+python tools/eval_singles.py data/physical/photos
 ```
+
+The page needs https for a phone camera, so locally use a desktop browser
+(webcam, or the Photo button). On a phone, use the deployed URL.
 
 ## AWS, reused from WhyF
 
 Same account, same region (`eu-west-1`), same profile (`whyf`), same patterns:
 config.yaml as the one place a region or model is named, the six-region
-Bedrock policy, an in-code daily ceiling, a Docker-free Lambda bundler, the
-probe and the history secrets scan. New: a private S3 bucket for uploads with
-presigned POST and one-day expiry.
-
-The bundle is 211 MB unpacked against Lambda's 250 MB. Fine now; if the agent
-adds much, it becomes a container image.
+Bedrock policy, an in-code daily ceiling, the probe and the history secrets
+scan. New: the function is a container image (OpenCV, numpy and the text
+model pass the 250 MB zip limit), it serves the scanner page itself so the
+phone gets https, and a private S3 bucket for uploads with one-day expiry.
 
 ```bash
-python tools/build_lambda.py --out C:/arpi-bundle    # outside Dropbox
-cd infra && ARPI_BUNDLE=C:/arpi-bundle npx cdk deploy --profile whyf
+aws sso login --profile whyf
+python tools/fetch_models.py
+cd infra && npx cdk deploy --profile whyf      # builds the image with Docker
 ```

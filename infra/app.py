@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """CDK entry point. Ported from WhyF.
 
-    python tools/build_lambda.py --out C:/arpi-bundle
-    set ARPI_BUNDLE=C:/arpi-bundle
-    cd infra && npx cdk deploy --profile whyf
+    python tools/fetch_models.py
+    cd infra && npx cdk deploy --profile whyf      # builds the image with Docker
 
 Account comes from the profile at synth time and is never written down. Region
 comes from infra/config.yaml, the single place this project names one.

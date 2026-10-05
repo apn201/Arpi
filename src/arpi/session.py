@@ -47,6 +47,10 @@ class Session:
         self.max_frames = max_frames
         self.frames = []
         self.misses = 0
+        # Evidence carried in from earlier frames this process never saw: a
+        # phone sends back what the server returned last time, so the server
+        # stays stateless. name -> (summed Evidence, frame count).
+        self.prior = {}
 
     # ---- per frame ---------------------------------------------------------
     def add(self, gray):
@@ -73,7 +77,8 @@ class Session:
         t0 = t0 or time.time()
         t1 = t1 or t0
         if backwards is None:
-            backwards = orientation_score(from_map(reading.cmap.reversed())) >                 orientation_score(from_map(reading.cmap))
+            backwards = (orientation_score(from_map(reading.cmap.reversed()))
+                         > orientation_score(from_map(reading.cmap)))
         if backwards:
             reading.flip()
         bars = from_map(reading.cmap)
@@ -93,17 +98,62 @@ class Session:
         return frame
 
     # ---- across frames -----------------------------------------------------
+    def _sums(self):
+        """Per source: (unscaled sum of evidence, number of frames)."""
+        out = {}
+        for name in ("bars", "text"):
+            evs = [getattr(f, name) for f in self.frames if getattr(f, name) is not None]
+            prior, n_prior = self.prior.get(name, (None, 0))
+            if prior is not None:
+                evs = evs + [prior]
+            n = sum(1 for f in self.frames if getattr(f, name) is not None) + n_prior
+            if evs:
+                out[name] = (total(evs), n)
+        return out
+
     def sources(self):
         out = []
-        for name, attr in (("bars", "bars"), ("text", "text")):
-            evs = [getattr(f, attr) for f in self.frames if getattr(f, attr) is not None]
-            if not evs:
-                continue
-            s = total(evs).scaled(len(evs) ** -self.alpha)
+        for name, (summed, n) in self._sums().items():
+            s = summed.scaled(max(n, 1) ** -self.alpha)
             s.source = name
-            s.detail = {"frames": len(evs)}
+            s.detail = {"frames": n}
             out.append(s)
         return out
+
+    # ---- carrying evidence between requests ---------------------------------
+    def state(self):
+        """Everything needed to continue this scan in another process: the
+        summed evidence per source and how many frames it came from. A few
+        hundred numbers, small enough to round-trip through a phone."""
+        out = {}
+        for name, (summed, n) in self._sums().items():
+            out[name] = {"n": n,
+                         "left": np.round(summed.left, 3).tolist(),
+                         "right": np.round(summed.right, 3).tolist(),
+                         "lead": np.round(summed.lead, 3).tolist()}
+        return out
+
+    def load_state(self, state):
+        """Inverse of state(). Malformed input is ignored rather than
+        trusted: it comes from a phone."""
+        self.prior = {}
+        for name in ("bars", "text"):
+            d = (state or {}).get(name)
+            if not isinstance(d, dict):
+                continue
+            try:
+                left = np.asarray(d["left"], float).reshape(6, 2, 10)
+                right = np.asarray(d["right"], float).reshape(6, 10)
+                lead = np.asarray(d["lead"], float).reshape(10)
+                n = int(d["n"])
+            except (KeyError, TypeError, ValueError):
+                continue
+            if not (0 < n <= self.max_frames) or not (
+                    np.isfinite(left).all() and np.isfinite(right).all()
+                    and np.isfinite(lead).all()):
+                continue
+            self.prior[name] = (Evidence(name, left, right, lead), n)
+        return self
 
     def result(self, **kwargs):
         srcs = self.sources()

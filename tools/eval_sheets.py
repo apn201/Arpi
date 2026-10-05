@@ -59,6 +59,11 @@ def slot_xy(index):
     return float(col), float(row)
 
 
+def _norm(code, kind=None):
+    """OpenCV reports UPC-A as 12 digits; the set stores 13."""
+    return code if len(code) == 13 else ("0" + code if len(code) == 12 else code)
+
+
 def opencv_pass(gray):
     """OpenCV's detector and decoder, once. Returns (decodes, polygons):
     decodes as (code, centre), polygons for every detection, read or not."""
@@ -71,7 +76,7 @@ def opencv_pass(gray):
         return out, polys
     for d, p in zip(decoded, polys):
         if d:
-            code = d if len(d) == 13 else ("0" + d if len(d) == 12 else d)
+            code = _norm(d)
             out.append((code, p.mean(0)))
     return out, polys
 
@@ -198,7 +203,7 @@ def _fit_grid(src, dst):
 
 
 def evaluate_photo(path, by_code, by_sheet, known, use_text, sessions, hints,
-                   use_detector=True):
+                   use_detector=True, run_cascade=False):
     gray = cv2.imread(str(path), cv2.IMREAD_GRAYSCALE)
     t0 = time.time()
     base, polygons = opencv_pass(gray)
@@ -261,19 +266,42 @@ def evaluate_photo(path, by_code, by_sheet, known, use_text, sessions, hints,
 
     opencv_slot = {}
     for c, xy in base:
-        i = nearest(xy)
+        i = index[c] if c in index else nearest(xy)
         if i is not None:
             opencv_slot[i] = c
 
+    def slot_of(xy, asserted=None):
+        """A symbol whose asserted code is one of this sheet's printed codes
+        belongs to that code's slot, whatever the fitted grid says. On a
+        steep shot with a row missing, the grid extrapolates and was one row
+        out: a correct read of A10 got scored against A12's code, as a
+        false positive that was the evaluator's. A wrong read cannot exploit
+        this; it would have to be exactly another printed code."""
+        if asserted in index:
+            return index[asserted]
+        return nearest(xy)
+
     arpi_slot = {}
     for centre, r, score, diag in found:
-        i = nearest(centre)
+        asserted = r.candidates[0].code if r.status in ("read", "unique-in-list") else None
+        i = slot_of(centre, asserted)
         if i is None:
             continue
         if i not in arpi_slot or score > arpi_slot[i][1]:
             arpi_slot[i] = (r, score, diag)
     n_arpi_anchors = sum(1 for a in anchors if a[2] == "arpi-read")
     anchor_kinds = sorted({a[2] for a in anchors})
+
+    # The cascade, scored at all three verification levels from one pass.
+    cascade_slot = {}
+    if run_cascade:
+        from arpi import cascade
+        for sym in cascade.scan(gray, known_codes=known, verify="full",
+                                use_text=use_text):
+            i = slot_of(np.array(sym.centre), sym.code)
+            if i is None or i in cascade_slot:
+                continue
+            cascade_slot[i] = sym
 
     damage = classify(path.stem, sheet, sessions)
     rows = []
@@ -294,10 +322,39 @@ def evaluate_photo(path, by_code, by_sheet, known, use_text, sessions, hints,
             "top": codes[:3],
             "warp_notes": arpi_slot[i][2].get("warp_notes", []) if r else [],
         })
+        sym = cascade_slot.get(i)
+        for mode in ("none", "symbology", "full"):
+            code, top = cascade_answer(sym, mode)
+            rows[-1]["cascade_" + mode] = {
+                "asserted": code is not None, "right": code == truth,
+                "wrong": code is not None and code != truth,
+                "top1": top == truth}
     return {"photo": path.name, "sheet": sheet, "damage": damage,
             "anchors": len(anchors), "arpi_anchors": n_arpi_anchors,
             "anchor_kinds": anchor_kinds, "seconds": round(time.time() - t0, 1),
             "slots": rows}
+
+
+def cascade_answer(sym, mode):
+    """What the cascade would answer at each verification level, derived
+    from one full-verification pass. Returns (asserted code or None, top)."""
+    if sym is None:
+        return None, None
+    arpi_code = None
+    arpi_top = None
+    if sym.result is not None and sym.result.candidates:
+        arpi_top = sym.result.candidates[0].code
+        if sym.result.status in ("read", "unique-in-list"):
+            arpi_code = arpi_top
+    if mode == "none":
+        if sym.opencv_read:
+            return sym.opencv_read, sym.opencv_read
+        return arpi_code, arpi_top
+    if mode == "symbology":
+        if sym.opencv_read and sym.opencv_plausible:
+            return sym.opencv_read, sym.opencv_read
+        return arpi_code, arpi_top
+    return sym.code, (sym.candidates[0] if sym.candidates else None)
 
 
 def summary(rows):
@@ -321,6 +378,9 @@ def main():
     ap.add_argument("--sheet", action="append", default=[],
                     help="stem=letter, for photos nothing can be read in, "
                          "e.g. '2026-10-05 11.01.32=C'")
+    ap.add_argument("--cascade", action="store_true",
+                    help="also score OpenCV-first cascades at three "
+                         "verification levels (slow: ARPI scans every symbol)")
     ap.add_argument("--own-localiser", action="store_true",
                     help="ignore OpenCV's detections; ARPI finds symbols alone")
     ap.add_argument("--out")
@@ -338,7 +398,8 @@ def main():
     results = []
     for p in photos:
         res = evaluate_photo(p, by_code, by_sheet, known, not args.no_text,
-                             sessions, hints, not args.own_localiser)
+                             sessions, hints, not args.own_localiser,
+                             args.cascade)
         results.append(res)
         if "error" in res:
             print("{:<26} {}".format(p.stem, res["error"]))
@@ -361,6 +422,16 @@ def main():
     allrows = [r for rows in by_damage.values() for r in rows]
     print("  {:<10} n={n:<3} opencv {opencv:<3} top1 {top1:<3} top3 {top3:<3} "
           "asserted {asserted:<3} false+ {false_pos}".format("ALL", **summary(allrows)))
+    if args.cascade and allrows:
+        print()
+        print("cascade, OpenCV first (slots):")
+        for mode in ("none", "symbology", "full"):
+            k = "cascade_" + mode
+            n_right = sum(r[k]["right"] for r in allrows)
+            n_wrong = sum(r[k]["wrong"] for r in allrows)
+            n_top = sum(r[k]["top1"] for r in allrows)
+            print("  verify={:<10} asserted right {:<4} asserted WRONG {:<3} "
+                  "right code first {}".format(mode, n_right, n_wrong, n_top))
     if args.out:
         Path(args.out).write_text(json.dumps(results, indent=1, default=str),
                                   encoding="utf-8")

@@ -14,9 +14,22 @@ upload_bucket_prefix: arpi-uploads   # full name is <prefix>-<account>-<region>
 # this line plus a rebuild. Decide after the core works, not before.
 architecture: x86_64
 
+# Who decides the scanner's next request: "rules" (deterministic, free, the
+# default) or "bedrock" (Claude, given the same measurements). Bedrock was
+# switched off on 5 October: in live use it added long, often pointless
+# comments on codes already read, and every one was a model call. The rules
+# make the same decisions. Kept switchable for the report's comparison.
+agent_policy: rules
+
+# The damage report shown in the Full view once a scan locks: "bedrock" has
+# Claude phrase the measured facts in two sentences, "template" joins them.
+# Either way the facts come from the measurements, and model text that gives
+# advice or runs long is discarded for the template.
+report_policy: bedrock
+
+# The model is called only for the damage report (report_policy: bedrock) and,
+# if switched on, the agent. The decoder and the candidate engine never call it.
 # Fill with `python tools/probe_bedrock.py --region eu-west-1 --test --write`.
-# Only the agent loop calls a model. The decoder and the candidate engine are
-# deterministic and never do.
 models:
   agent: "eu.anthropic.claude-haiku-4-5-20251001-v1:0"
 

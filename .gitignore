@@ -22,6 +22,7 @@ data/*
 !data/physical/
 data/physical/*
 !data/physical/codes.csv
+!data/physical/manifest.csv
 
 # secrets. nothing here should ever exist, but belt and braces.
 .env
@@ -37,3 +38,6 @@ desktop.ini
 
 # Model weights: fetched by tools/fetch_models.py, pinned by hash.
 models/
+
+# Local tool settings (launch config holds a machine-specific python path).
+.claude/

@@ -1,0 +1,8 @@
+# Only what the image needs. Everything else stays out of the build context,
+# above all the photos and the build/ scratch area.
+*
+!src/arpi/**
+!web/**
+!infra/config.yaml
+!models/text_recognition_CRNN_EN_2021sep.onnx
+**/__pycache__

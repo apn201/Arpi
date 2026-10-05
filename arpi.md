@@ -16,7 +16,7 @@ It also has perfect ground truth, for free. Print a barcode, you know what it sa
 
 OpenCV AI Competition 2026, powered by AWS. opencv26.devpost.com
 
-- Deadline Oct 26 23:59 PDT = Oct 27 09:59 Finnish.
+- Deadline Oct 26 23:45 PDT = Oct 27 09:45 Finnish. The rules page says 11:45pm, the overview 11:59pm; the earlier one counts.
 - Must use OpenCV 5 for substantive image or video analysis.
 - Must run a meaningful component on AWS.
 - Deliverables: technical report, judge-accessible repo, pinned deps plus build/deploy/test instructions, architecture diagram, working endpoint or live demo, video max 5 min, evaluation evidence including failure cases.
@@ -195,7 +195,7 @@ A project that publishes its own false positive rate reads as serious. Most entr
 
 ## Timeline, and the honest problem
 
-One deadline: Oct 26 23:59 PDT, which is Oct 27 09:59 Finnish time. No grant, so no other competition dates. Other projects run in parallel and do not block this one.
+One deadline: Oct 26 23:45 PDT, which is Oct 27 09:45 Finnish time. No grant, so no other competition dates. Other projects run in parallel and do not block this one.
 
 **Oct 5-11, the proving window.** Local Python, no cloud, no app.
 - Photograph the physical set. The sheets are printed.
