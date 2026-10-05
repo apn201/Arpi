@@ -147,6 +147,7 @@
     <div id="digits"></div>
     <div class="row"><span class="key">Checks</span><span class="val" id="checks">-</span></div>
     <div class="row"><span class="key">Time</span><span class="val" id="timing">-</span></div>
+    <div class="row"><span class="key">Camera</span><span class="val" id="camera">-</span></div>
     <div class="row"><span class="key">Agent</span><span class="val notes" id="agent">-</span></div>
   </div>
 
@@ -161,6 +162,7 @@
     <button id="reset">New scan</button>
     <label>List<input id="list" type="file" accept=".csv,.txt,text/csv,text/plain"></label>
     <label>Photo<input id="photo" type="file" accept="image/*"></label>
+    <button id="cambtn">Cam</button>
     <button id="modebtn">Full</button>
   </div>
 
@@ -207,18 +209,117 @@ function transform() {
 const toScreen = (t, p) => [t.ox + p[0] * t.s, t.oy + p[1] * t.s];
 
 // ---- camera and frames -----------------------------------------------------
-async function startCamera() {
-  // Full resolution: on torn codes it was worth a code or two in the tests.
+// Phones have several rear cameras, and "environment" does not say which.
+// On a Samsung A55 it gave a fixed-focus one and every frame was blurred. So
+// each rear camera is checked once, and the one that reports continuous
+// autofocus and the most pixels wins. Wide, macro, depth and tele lenses are
+// avoided by name. The choice is remembered; the Cam button overrides it.
+const store = {
+  get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+  set(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* private mode */ } },
+};
+const CAM_KEY = "arpi.camera";
+const VIDEO = { width: { ideal: 1920 }, height: { ideal: 1080 } };
+
+async function rearCameras() {
+  // Labels are only filled in after permission, so ask once first.
+  const probe = await navigator.mediaDevices.getUserMedia({ video: { facingMode: { ideal: "environment" } } });
+  const devices = (await navigator.mediaDevices.enumerateDevices()).filter((d) => d.kind === "videoinput");
+  probe.getTracks().forEach((t) => t.stop());
+  const back = devices.filter((d) => /back|rear|environment/i.test(d.label));
+  return back.length ? back : devices;
+}
+
+function camScore(label, caps) {
+  let score = 0;
+  if (caps.focusMode && caps.focusMode.includes("continuous")) score += 100;
+  if (caps.width && caps.width.max) score += caps.width.max / 100;
+  if (/wide|ultra|macro|depth|tele|tof/i.test(label)) score -= 80;
+  if (/camera2 0|camera 0\b|facing back:? ?0/i.test(label)) score += 20;   // Android main camera
+  return score;
+}
+
+async function chooseCamera(cams) {
+  const saved = store.get(CAM_KEY);
+  if (saved && cams.some((c) => c.deviceId === saved)) return saved;
+  let best = null;
+  for (const c of cams) {
+    let caps = {};
+    try {
+      const st = await navigator.mediaDevices.getUserMedia({ video: { deviceId: { exact: c.deviceId } } });
+      const tr = st.getVideoTracks()[0];
+      caps = tr.getCapabilities ? tr.getCapabilities() : {};
+      st.getTracks().forEach((t) => t.stop());
+    } catch (e) { continue; }
+    const sc = camScore(c.label, caps);
+    if (!best || sc > best.score) best = { id: c.deviceId, score: sc };
+  }
+  return best ? best.id : cams[0].deviceId;
+}
+
+async function openCamera(deviceId) {
+  if (video.srcObject) video.srcObject.getTracks().forEach((t) => t.stop());
   const stream = await navigator.mediaDevices.getUserMedia({
     audio: false,
-    video: { facingMode: { ideal: "environment" }, width: { ideal: 3840 }, height: { ideal: 2160 } },
+    video: deviceId ? Object.assign({ deviceId: { exact: deviceId } }, VIDEO)
+                    : Object.assign({ facingMode: { ideal: "environment" } }, VIDEO),
   });
+  const track = stream.getVideoTracks()[0];
+  S.track = track;
+  const caps = track.getCapabilities ? track.getCapabilities() : {};
+  if (caps.focusMode && caps.focusMode.includes("continuous")) {
+    try { await track.applyConstraints({ advanced: [{ focusMode: "continuous" }] }); } catch (e) { /* not supported */ }
+  }
   video.srcObject = stream;
   await video.play();
+  const set = track.getSettings ? track.getSettings() : {};
+  S.camLabel = (track.label || "camera") + " " + (set.width || "?") + "x" + (set.height || "?") +
+    (caps.focusMode ? " focus: " + caps.focusMode.join("/") : " focus: unknown");
+  $("camera").textContent = S.camLabel;
+}
+
+async function startCamera() {
+  let cams = [];
+  try { cams = await rearCameras(); } catch (e) { cams = []; }
+  S.cams = cams;
+  const id = cams.length ? await chooseCamera(cams) : null;
+  await openCamera(id);
+  S.camIndex = Math.max(0, cams.findIndex((c) => c.deviceId === id));
+  $("cambtn").textContent = cams.length > 1 ? "Cam " + (S.camIndex + 1) + "/" + cams.length : "Cam";
   S.source = "camera";
   still.style.display = "none";
   video.style.display = "block";
   begin();
+}
+
+async function nextCamera() {
+  if (!S.cams || S.cams.length < 2 || S.source !== "camera") return;
+  S.camIndex = (S.camIndex + 1) % S.cams.length;
+  const id = S.cams[S.camIndex].deviceId;
+  store.set(CAM_KEY, id);
+  await openCamera(id);
+  $("cambtn").textContent = "Cam " + (S.camIndex + 1) + "/" + S.cams.length;
+  newScan();
+}
+
+// Tap the picture to refocus, where the phone allows it.
+async function refocus(ev) {
+  const t = S.track;
+  if (!t || !t.getCapabilities) return;
+  const caps = t.getCapabilities();
+  const adv = {};
+  if (caps.pointsOfInterest !== undefined) {
+    const r = video.getBoundingClientRect();
+    adv.pointsOfInterest = [{ x: (ev.clientX - r.left) / r.width, y: (ev.clientY - r.top) / r.height }];
+  }
+  if (caps.focusMode && caps.focusMode.includes("single-shot")) adv.focusMode = "single-shot";
+  if (!Object.keys(adv).length) return;
+  try {
+    await t.applyConstraints({ advanced: [adv] });
+    if (caps.focusMode && caps.focusMode.includes("continuous")) {
+      setTimeout(() => t.applyConstraints({ advanced: [{ focusMode: "continuous" }] }).catch(() => {}), 1500);
+    }
+  } catch (e) { /* not supported */ }
 }
 
 function begin() {
@@ -709,6 +810,8 @@ function newScan() {
   showStatus(); renderVerdict(); renderCascade();
 }
 
+$("cambtn").onclick = () => nextCamera().catch((e) => { $("hint").textContent = "camera: " + e.message; });
+video.addEventListener("click", refocus);
 $("go").onclick = () => startCamera().catch((e) => {
   $("start").querySelector("p").textContent = "No camera (" + e.message + "). Use a photo instead.";
 });

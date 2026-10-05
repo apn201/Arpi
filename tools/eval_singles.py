@@ -8,8 +8,8 @@ So this cuts each printed code out of the full-resolution sheet photos with
 a close-up's margin, and runs the one-code path on each crop:
 
     opencv      cv2.barcode on the crop
-    arpi        decode.decode: the plain single-symbol pipeline
-    cascade     cascade.scan with full verification, nearest symbol
+    arpi        ARPI alone on the symbol nearest the centre, as the phone aims
+    cascade     live.scan, exactly the path the phone runs, one frame
 
 Real paper, real camera, real damage, one symbol per frame, at the sheet
 photos' resolution (about 4.7 px per module, a phone held about 30 cm away).
@@ -31,7 +31,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import eval_sheets as S  # noqa: E402
-from arpi import cascade, decode, vision  # noqa: E402
+from arpi import live, vision  # noqa: E402
 from arpi.session import Session  # noqa: E402
 
 
@@ -80,44 +80,66 @@ def crops(gray, pred):
             yield i, gray[y0:y1, x0:x1]
 
 
+def _centre_reading(crop, polys):
+    """The symbol nearest the centre of the crop, as the phone chooses it:
+    OpenCV's detection nearest the centre, else ARPI's own region."""
+    h, w = crop.shape
+    centre = np.array([w / 2, h / 2])
+    regions = vision.propose(crop, polys)
+    if not regions:
+        return None
+    region = min(regions, key=lambda r: np.linalg.norm(r.points.mean(0) - centre))
+    readings = vision.read_frame(crop, regions=[region])
+    return readings[0] if readings else None
+
+
 def score_crop(crop, truth, known, sheet_codes=()):
     out = {}
     det = cv2.barcode.BarcodeDetector()
-    ok, dec, kinds, _ = det.detectAndDecodeWithType(crop)
+    ok, dec, kinds, pts = det.detectAndDecodeWithType(crop)
+    polys = [np.asarray(q).reshape(-1, 2) for q in pts] if pts is not None else []
     reads = [S._norm(d, k) for d, k in zip(dec, kinds) if d] if ok else []
     # On a steep shot the fitted grid can put a crop over the neighbouring
     # label: C04's crop held C02. If OpenCV - an independent decoder - reads
-    # another code from this same sheet, the crop shows that label, and that
-    # is its truth. OpenCV's genuine misreads are not codes on the sheet, so
-    # they are unaffected.
-    other = [r for r in reads if r in sheet_codes and r != truth]
-    out["relabelled_from"] = truth if other else None
-    if other:
-        truth = other[0]
+    # exactly one code from this sheet and it is not the slot's, the crop
+    # shows that label instead. If it reads the slot's own code as well, the
+    # crop holds both and nothing is relabelled: the first version picked
+    # the neighbour there and scored correct reads as wrong.
+    others = {r for r in reads if r in sheet_codes and r != truth}
+    relabel = truth not in reads and len(others) == 1
+    out["relabelled_from"] = truth if relabel else None
+    if relabel:
+        truth = others.pop()
+    # More than one symbol in the crop is not a single-code test. Counted
+    # separately, so the single-code numbers mean what they say.
+    out["multi"] = len(polys) > 1 or len({r for r in reads if r in sheet_codes}) > 1
     out["truth"] = truth
     out["opencv_reads"] = reads
     out["opencv"] = {"right": truth in reads, "wrong": any(r != truth for r in reads)}
 
-    r, _ = decode.decode(crop, known_codes=known)
+    # ARPI alone, on the symbol nearest the centre: the one being aimed at.
+    rd = _centre_reading(crop, polys)
+    r = None
+    if rd is not None:
+        sess = Session(known_codes=known)
+        sess.add_reading(rd)
+        r = sess.result()
     codes = [c.code for c in r.candidates] if r else []
     asserted = bool(r) and r.status in ("read", "unique-in-list")
     out["arpi"] = {"top1": codes[:1] == [truth], "asserted": asserted,
                    "right": asserted and codes[:1] == [truth],
                    "wrong": asserted and codes[:1] != [truth],
-                   "status": r.status if r else "none"}
+                   "status": r.status if r else "none",
+                   "code": codes[0] if asserted else None}
 
-    h, w = crop.shape
-    syms = cascade.scan(crop, known_codes=known, verify="full")
-    if syms:
-        sym = min(syms, key=lambda s: np.hypot(s.centre[0] - w / 2, s.centre[1] - h / 2))
-        top = sym.candidates[0] if sym.candidates else None
-        out["cascade"] = {"top1": top == truth, "asserted": sym.code is not None,
-                          "right": sym.code == truth,
-                          "wrong": sym.code is not None and sym.code != truth,
-                          "path": sym.path, "status": sym.status}
-    else:
-        out["cascade"] = {"top1": False, "asserted": False, "right": False,
-                          "wrong": False, "path": "", "status": "none"}
+    # The cascade exactly as the phone runs it: live.scan, one frame.
+    lv = live.scan(crop, known_codes=known)
+    code = lv.get("code")
+    top = (lv.get("candidate_order") or [None])[0]
+    out["cascade"] = {"top1": (code or top) == truth, "asserted": code is not None,
+                      "right": code == truth, "wrong": code is not None and code != truth,
+                      "path": lv.get("path", ""), "status": lv.get("status", "none"),
+                      "code": code}
     return out
 
 
@@ -163,9 +185,14 @@ def main():
 
     print("\nrelabelled crops (the grid put the crop on a neighbour): {}".format(
         sum(1 for r in rows if r.get("relabelled_from"))))
+    print("\ncrops holding more than one symbol (scored apart): {}".format(
+        sum(1 for r in rows if r.get("multi"))))
+    single = [r for r in rows if not r.get("multi")]
     print("\nsingle-code crops:")
-    for d in sorted({r["damage"] for r in rows}):
-        line(d, [r for r in rows if r["damage"] == d])
+    for d in sorted({r["damage"] for r in single}):
+        line(d, [r for r in single if r["damage"] == d])
+    line("ALL", single)
+    print("\nall crops, including multi-symbol:")
     line("ALL", rows)
     if args.out:
         Path(args.out).write_text(json.dumps(rows, indent=1), encoding="utf-8")

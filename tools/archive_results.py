@@ -80,15 +80,22 @@ def sheets_table(rows_by_photo):
 
 
 def singles_table(rows):
-    n = len(rows)
-    f = lambda who, k: sum(1 for r in rows if r[who][k])  # noqa: E731
-    return "\n".join([
+    """Single-code crops only. Crops that caught more than one label (steep
+    shots, where rows bunch up) are counted but not scored: they test which
+    of several codes was aimed at, not reading one damaged code."""
+    single = [r for r in rows if not r.get("multi")]
+    n, multi = len(single), len(rows) - len(single)
+    f = lambda who, k: sum(1 for r in single if r[who][k])  # noqa: E731
+    return "
+".join([
         "| | count of {} single-code crops |".format(n), "|---|---|",
         "| OpenCV right / wrong | {} / {} |".format(f("opencv", "right"), f("opencv", "wrong")),
         "| ARPI ranked first / asserted / wrong | {} / {} / {} |".format(
             f("arpi", "top1"), f("arpi", "asserted"), f("arpi", "wrong")),
         "| cascade ranked first / asserted / wrong | {} / {} / {} |".format(
             f("cascade", "top1"), f("cascade", "asserted"), f("cascade", "wrong")),
+        "",
+        "{} more crops held more than one label and are not scored.".format(multi),
     ])
 
 
