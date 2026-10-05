@@ -1,0 +1,41 @@
+# Single source of truth for anything that differs between accounts or regions.
+# Ported from WhyF. Same account, same region, same reasoning.
+
+region: eu-west-1
+# Deliberately not here. The repo is public, and an account id in a public repo
+# is free reconnaissance. CDK reads it from the profile at synth time.
+account_id: ""                 # leave empty. never commit a real value.
+
+table_name: arpi               # daily spend counter only
+upload_bucket_prefix: arpi-uploads   # full name is <prefix>-<account>-<region>
+
+# x86_64 first. arm64 is the Graviton run for the Best Use of COOL award, and
+# both OpenCV 5 and numpy publish manylinux_2_28 wheels for it, so switching is
+# this line plus a rebuild. Decide after the core works, not before.
+architecture: x86_64
+
+# Fill with `python tools/probe_bedrock.py --region eu-west-1 --test --write`.
+# Only the agent loop calls a model. The decoder and the candidate engine are
+# deterministic and never do.
+models:
+  agent: "eu.anthropic.claude-haiku-4-5-20251001-v1:0"
+
+# Hard caps enforced in code, not just in Budgets. See src/arpi/limits.py.
+limits:
+  max_model_calls_per_request: 3
+  max_upload_bytes: 8000000        # one phone photo, not a video
+  max_known_codes: 50000
+  daily_decode_ceiling: 5000       # OpenCV in Lambda, cents per thousand
+  daily_model_call_ceiling: 500
+  upload_ttl_days: 1               # photos are deleted by lifecycle rule
+
+# An EU inference profile can route to any of these, so the runtime IAM policy
+# has to allow the foundation model in every one. Six, not four: WhyF lost an
+# afternoon to the two that are easy to leave out.
+inference_profile_regions:
+  - eu-west-1
+  - eu-central-1
+  - eu-west-3
+  - eu-north-1
+  - eu-south-1
+  - eu-south-2

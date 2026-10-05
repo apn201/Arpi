@@ -1,0 +1,39 @@
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+
+# cdk / node
+node_modules/
+cdk.out/
+.cdk.staging/
+
+# build artifacts: lambda bundle, wheels, eval scratch
+build/
+dist/
+
+# The physical photo set is large and goes to a release or S3, not git.
+# data/README.md describes it and stays tracked.
+data/*
+!data/README.md
+!data/physical/
+data/physical/*
+!data/physical/codes.csv
+
+# secrets. nothing here should ever exist, but belt and braces.
+.env
+*.pem
+credentials
+private/
+
+# dropbox / windows noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.sync-conflict-*
+
+# Model weights: fetched by tools/fetch_models.py, pinned by hash.
+models/

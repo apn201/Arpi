@@ -1,2 +1,4 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Normalise line endings. This is developed on Windows and will be read on
+# Linux by judges and by Lambda, and mixed endings in a public repo look like
+# carelessness.
+* text=auto eol=lf

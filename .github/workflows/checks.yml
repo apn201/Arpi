@@ -1,0 +1,33 @@
+# Runs on every push and pull request. Ported from WhyF. Nothing here needs
+# AWS credentials: the tests run the decoder and the handler offline.
+name: checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0    # check_secrets walks every commit, not just HEAD
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"    # the Lambda runtime, not the newest
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: No secrets anywhere in history
+        run: python tools/check_secrets.py
+
+      - name: Tests
+        run: python -m pytest

@@ -1,0 +1,9 @@
+{
+  "app": "python app.py",
+  "watch": { "exclude": ["**/__pycache__/**", "../build/**", "../private/**", "../data/**"] },
+  "context": {
+    "@aws-cdk/core:checkSecretUsage": true,
+    "@aws-cdk/aws-iam:minimizePolicies": true,
+    "@aws-cdk/core:target-partitions": ["aws"]
+  }
+}

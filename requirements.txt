@@ -1,0 +1,15 @@
+# Pinned. The competition asks for pinned dependencies, and WhyF showed what
+# unpinned costs: pip quietly resolved a different major and nothing errored.
+
+# runtime (goes into the Lambda bundle; tools/build_lambda.py pins the same)
+opencv-python-headless==5.0.0.93
+numpy==2.5.2
+pyyaml==6.0.3
+
+# runtime, provided by Lambda, needed locally for the handler and infra
+boto3==1.43.80
+
+# build and test only
+pytest==9.1.1
+aws-cdk-lib==2.266.0
+constructs==10.8.1
