@@ -1,0 +1,40 @@
+2026-10-05 10.57.34        A clean      12 crops
+2026-10-05 10.57.41        A clean      12 crops
+2026-10-05 10.57.48        B clean      12 crops
+2026-10-05 10.57.53        B clean      10 crops
+2026-10-05 10.58.06        C clean      12 crops
+2026-10-05 10.58.11        C clean      12 crops
+2026-10-05 10.58.22        D clean      12 crops
+2026-10-05 10.58.27        slots not located
+2026-10-05 10.58.43        E clean      12 crops
+2026-10-05 10.58.46        E clean      12 crops
+2026-10-05 10.59.08        F clean      12 crops
+2026-10-05 10.59.11        F clean      12 crops
+2026-10-05 11.00.50        A glare      11 crops
+2026-10-05 11.01.05        B glare      12 crops
+2026-10-05 11.01.32        slots not located
+2026-10-05 11.01.44        slots not located
+2026-10-05 11.04.20        B tear       12 crops
+2026-10-05 11.05.25        C crumple    12 crops
+2026-10-05 11.06.18        D fade       12 crops
+2026-10-05 11.07.03        E smear      12 crops
+2026-10-05 11.07.46        slots not located
+2026-10-05 11.39.38        B tear       12 crops
+2026-10-05 11.42.30        F occlusion  12 crops
+
+relabelled crops (the grid put the crop on a neighbour): 1
+
+crops holding more than one symbol (scored apart): 15
+
+single-code crops:
+  clean      n=123  opencv 99   (wrong 0 ) | arpi first 111  asserted 111  wrong 0  | cascade first 111  asserted 111  wrong 0
+  crumple    n=12   opencv 10   (wrong 0 ) | arpi first 12   asserted 11   wrong 0  | cascade first 12   asserted 10   wrong 0
+  fade       n=12   opencv 10   (wrong 0 ) | arpi first 12   asserted 12   wrong 0  | cascade first 10   asserted 10   wrong 0
+  glare      n=19   opencv 10   (wrong 0 ) | arpi first 18   asserted 18   wrong 0  | cascade first 18   asserted 18   wrong 0
+  occlusion  n=10   opencv 2    (wrong 0 ) | arpi first 10   asserted 9    wrong 0  | cascade first 10   asserted 9    wrong 0
+  smear      n=12   opencv 10   (wrong 0 ) | arpi first 11   asserted 11   wrong 0  | cascade first 11   asserted 11   wrong 0
+  tear       n=22   opencv 19   (wrong 1 ) | arpi first 22   asserted 22   wrong 0  | cascade first 22   asserted 21   wrong 0
+  ALL        n=210  opencv 160  (wrong 1 ) | arpi first 196  asserted 194  wrong 0  | cascade first 194  asserted 190  wrong 0
+
+all crops, including multi-symbol:
+  ALL        n=225  opencv 169  (wrong 4 ) | arpi first 208  asserted 207  wrong 1  | cascade first 206  asserted 202  wrong 0

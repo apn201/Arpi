@@ -1,0 +1,10 @@
+{
+ "python": "3.14.3",
+ "platform": "Windows-11-10.0.26220-SP0",
+ "opencv": "5.0.0",
+ "numpy": "2.5.2",
+ "text_model": "text_recognition_CRNN_EN_2021sep.onnx",
+ "text_model_sha256": "a84b1f6e11a65c2d733cb0cc1f014aae3f99051e3f11447dc282faa678eee544",
+ "photo_manifest_sha256": "266e1929301000e5a394e0059aac5ba526ae1b6f0fffac80454d428ea2109699",
+ "source_tree_sha256": "8d9bb58c2a729accd45c5ada5935bcf8508a5a036c0a4e077acd8a49aac3d6a0"
+}

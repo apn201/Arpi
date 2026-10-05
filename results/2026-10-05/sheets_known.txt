@@ -1,0 +1,39 @@
+photo                      sheet damage     | found opencv  top1  top3 assrt | false+
+2026-10-05 10.57.34            A clean      |    12     12    12    12    12 |      0
+2026-10-05 10.57.41            A clean      |    11      5    11    11    11 |      0
+2026-10-05 10.57.48            B clean      |    12     12    12    12    12 |      0
+2026-10-05 10.57.53            B clean      |    12      3    10    10    10 |      0
+2026-10-05 10.58.06            C clean      |    12     12    12    12    12 |      0
+2026-10-05 10.58.11            C clean      |    12      5    12    12    12 |      0
+2026-10-05 10.58.22            D clean      |    12     12    12    12    12 |      0
+2026-10-05 10.58.27            D clean      |    11      1    10    10    10 |      0
+2026-10-05 10.58.43            E clean      |    12     12    12    12    12 |      0
+2026-10-05 10.58.46            E clean      |    10      6    10    10    10 |      0
+2026-10-05 10.59.08            F clean      |    12     10    12    12    12 |      0
+2026-10-05 10.59.11            F clean      |    12      8    12    12    12 |      0
+2026-10-05 11.00.50            A glare      |    12      5    12    12    12 |      0
+2026-10-05 11.01.05            B glare      |    12      6    12    12    12 |      0
+2026-10-05 11.01.32        0 anchors, need 4
+2026-10-05 11.01.44        0 anchors, need 4
+2026-10-05 11.04.20            B tear       |    11     10    11    11    11 |      0
+2026-10-05 11.05.25            C crumple    |    11      9    11    11    11 |      0
+2026-10-05 11.06.18            D fade       |    11      8    10    10    10 |      0
+2026-10-05 11.07.03            E smear      |    12      7    12    12    12 |      0
+2026-10-05 11.07.46        3 anchors, need 4
+2026-10-05 11.39.38            B tear       |    12      7    12    12    12 |      0
+2026-10-05 11.42.30            F occlusion  |    12      2    12    12    11 |      0
+
+by damage (slots):
+  clean      n=144 opencv 98  top1 137 top3 137 asserted 137 false+ 0  opencv wrong 1
+  glare      n=24  opencv 11  top1 24  top3 24  asserted 24  false+ 0  opencv wrong 0
+  tear       n=24  opencv 17  top1 23  top3 23  asserted 23  false+ 0  opencv wrong 1
+  crumple    n=12  opencv 9   top1 11  top3 11  asserted 11  false+ 0  opencv wrong 0
+  fade       n=12  opencv 8   top1 10  top3 10  asserted 10  false+ 0  opencv wrong 0
+  smear      n=12  opencv 7   top1 12  top3 12  asserted 12  false+ 0  opencv wrong 0
+  occlusion  n=12  opencv 2   top1 12  top3 12  asserted 11  false+ 0  opencv wrong 0
+  ALL        n=240 opencv 152 top1 229 top3 229 asserted 228 false+ 0
+
+cascade, OpenCV first (slots):
+  verify=none       asserted right 226  asserted WRONG 2   right code first 227
+  verify=symbology  asserted right 227  asserted WRONG 1   right code first 228
+  verify=full       asserted right 226  asserted WRONG 0   right code first 229

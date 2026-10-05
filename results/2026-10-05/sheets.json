@@ -1,0 +1,8667 @@
+[
+ {
+  "photo": "2026-10-05 10.57.34.jpg",
+  "sheet": "A",
+  "damage": "clean",
+  "anchors": 12,
+  "arpi_anchors": 0,
+  "anchor_kinds": [
+   "opencv"
+  ],
+  "seconds": 55.7,
+  "slots": [
+   {
+    "id": "A01",
+    "truth": "2843146184269",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "2843146184269"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "A02",
+    "truth": "3686808208007",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "3686808208007"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "A03",
+    "truth": "0988207781376",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0988207781376"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "A04",
+    "truth": "0980067650533",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0980067650533",
+     "0980081650533",
+     "0980087650537"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "A05",
+    "truth": "2306825549129",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "2306825549129"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "A06",
+    "truth": "5776852741570",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "5776852741570"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "A07",
+    "truth": "3512445453909",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "3512445453909"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "A08",
+    "truth": "3463581050845",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "3463581050845"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "A09",
+    "truth": "0141833038706",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0141833038706"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "A10",
+    "truth": "8346077379475",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "8346077379475"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "A11",
+    "truth": "2341436572418",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "2341436572418"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "A12",
+    "truth": "8062499517058",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "8062499517058",
+     "3009499517058",
+     "9062399517058"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   }
+  ]
+ },
+ {
+  "photo": "2026-10-05 10.57.41.jpg",
+  "sheet": "A",
+  "damage": "clean",
+  "anchors": 5,
+  "arpi_anchors": 0,
+  "anchor_kinds": [
+   "opencv"
+  ],
+  "seconds": 69.5,
+  "slots": [
+   {
+    "id": "A01",
+    "truth": "2843146184269",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "not found",
+    "top1": false,
+    "top3": false,
+    "asserted": false,
+    "false_pos": false,
+    "live": 0,
+    "top": [],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    }
+   },
+   {
+    "id": "A02",
+    "truth": "3686808208007",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "not found",
+    "top1": false,
+    "top3": false,
+    "asserted": false,
+    "false_pos": false,
+    "live": 0,
+    "top": [],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    }
+   },
+   {
+    "id": "A03",
+    "truth": "0988207781376",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0988207781376",
+     "0088207781373",
+     "0968207781378"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "A04",
+    "truth": "0980067650533",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": false,
+    "top3": false,
+    "asserted": false,
+    "false_pos": false,
+    "live": 133,
+    "top": [
+     "0684548208007",
+     "3687508208007",
+     "0689048208007"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "A05",
+    "truth": "2306825549129",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "2306825549129"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "A06",
+    "truth": "5776852741570",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "5776852741570",
+     "9776872741570",
+     "5776258741570"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "A07",
+    "truth": "3512445453909",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "3512445453909",
+     "9582145453909",
+     "2512415453909"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "A08",
+    "truth": "3463581050845",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "3463581050845"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "A09",
+    "truth": "0141833038706",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "not found",
+    "top1": false,
+    "top3": false,
+    "asserted": false,
+    "false_pos": false,
+    "live": 0,
+    "top": [],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    }
+   },
+   {
+    "id": "A10",
+    "truth": "8346077379475",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "8346077379475",
+     "4346675379475",
+     "0306857379475"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "A11",
+    "truth": "2341436572418",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "not found",
+    "top1": false,
+    "top3": false,
+    "asserted": false,
+    "false_pos": false,
+    "live": 0,
+    "top": [],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    }
+   },
+   {
+    "id": "A12",
+    "truth": "8062499517058",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "8062499517058",
+     "9062399517058",
+     "6067489517058"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   }
+  ]
+ },
+ {
+  "photo": "2026-10-05 10.57.48.jpg",
+  "sheet": "B",
+  "damage": "clean",
+  "anchors": 12,
+  "arpi_anchors": 0,
+  "anchor_kinds": [
+   "opencv"
+  ],
+  "seconds": 51.5,
+  "slots": [
+   {
+    "id": "B01",
+    "truth": "4977328803292",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "4977328803292"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B02",
+    "truth": "9045919442979",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "9045919442979",
+     "8041219442979",
+     "4047918442979"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B03",
+    "truth": "0483044521814",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0483044521814"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B04",
+    "truth": "9029951399682",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "9029951399682",
+     "3099851399682",
+     "1099952399682"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B05",
+    "truth": "0409546400099",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0409546400099"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B06",
+    "truth": "0780980231327",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0780980231327"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B07",
+    "truth": "0012972593503",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0012972593503"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B08",
+    "truth": "0350038585148",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0350038585148"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B09",
+    "truth": "2813757667154",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "2813757667154"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B10",
+    "truth": "2606655689867",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "2606655689867"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B11",
+    "truth": "2280889960390",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "2280889960390"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B12",
+    "truth": "9384698294165",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "9384698294165"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   }
+  ]
+ },
+ {
+  "photo": "2026-10-05 10.57.53.jpg",
+  "sheet": "B",
+  "damage": "clean",
+  "anchors": 4,
+  "arpi_anchors": 1,
+  "anchor_kinds": [
+   "arpi-read",
+   "opencv"
+  ],
+  "seconds": 82.1,
+  "slots": [
+   {
+    "id": "B01",
+    "truth": "4977328803292",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": false,
+    "top3": false,
+    "asserted": false,
+    "false_pos": false,
+    "live": 231,
+    "top": [
+     "4946215793855",
+     "0516273723855",
+     "0116273743855"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    }
+   },
+   {
+    "id": "B02",
+    "truth": "9045919442979",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": false,
+    "top3": false,
+    "asserted": false,
+    "false_pos": false,
+    "live": 319,
+    "top": [
+     "1005415442444",
+     "9045415442442",
+     "1005417442442"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    }
+   },
+   {
+    "id": "B03",
+    "truth": "0483044521814",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": false,
+    "top3": false,
+    "asserted": false,
+    "false_pos": false,
+    "live": 256,
+    "top": [
+     "4403000541614",
+     "5404040521719",
+     "5414040521619"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    }
+   },
+   {
+    "id": "B04",
+    "truth": "9029951399682",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": false,
+    "top3": false,
+    "asserted": false,
+    "false_pos": false,
+    "live": 254,
+    "top": [
+     "6186415851926",
+     "0100110851926",
+     "8180445850926"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    }
+   },
+   {
+    "id": "B05",
+    "truth": "0409546400099",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 15,
+    "top": [
+     "0409546400099",
+     "0407566400099",
+     "0406576400099"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B06",
+    "truth": "0780980231327",
+    "opencv": false,
+    "opencv_wrong": true,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 2,
+    "top": [
+     "0780980231327",
+     "5796986231327",
+     "4790916231327"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": false,
+     "wrong": true,
+     "top1": false
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B07",
+    "truth": "0012972593503",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0012972593503"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B08",
+    "truth": "0350038585148",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0350038585148"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B09",
+    "truth": "2813757667154",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "2813757667154",
+     "3813732667154",
+     "0815555667154"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B10",
+    "truth": "2606655689867",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "2606655689867",
+     "0600051689867",
+     "6466651689867"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B11",
+    "truth": "2280889960390",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "2280889960390"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B12",
+    "truth": "9384698294165",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "9384698294165",
+     "8383098294165",
+     "9784698274165"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   }
+  ]
+ },
+ {
+  "photo": "2026-10-05 10.58.06.jpg",
+  "sheet": "C",
+  "damage": "clean",
+  "anchors": 12,
+  "arpi_anchors": 0,
+  "anchor_kinds": [
+   "opencv"
+  ],
+  "seconds": 53.7,
+  "slots": [
+   {
+    "id": "C01",
+    "truth": "6232260287424",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "6232260287424"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C02",
+    "truth": "9077486093162",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "9077486093162",
+     "1017480093162",
+     "8071386093162"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C03",
+    "truth": "6482437956749",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "6482437956749"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C04",
+    "truth": "9390373224853",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "9390373224853"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C05",
+    "truth": "4775971246264",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "4775971246264"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C06",
+    "truth": "5709838114877",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "5709838114877"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C07",
+    "truth": "9828685569701",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "9828685569701"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C08",
+    "truth": "3321294129817",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "3321294129817"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C09",
+    "truth": "4775111367019",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "4775111367019"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C10",
+    "truth": "1290452442919",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "1290452442919"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C11",
+    "truth": "4404393826364",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "4404393826364"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C12",
+    "truth": "1264114651827",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "1264114651827"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   }
+  ]
+ },
+ {
+  "photo": "2026-10-05 10.58.11.jpg",
+  "sheet": "C",
+  "damage": "clean",
+  "anchors": 9,
+  "arpi_anchors": 4,
+  "anchor_kinds": [
+   "arpi-read",
+   "opencv"
+  ],
+  "seconds": 62.8,
+  "slots": [
+   {
+    "id": "C01",
+    "truth": "6232260287424",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "6232260287424",
+     "6232460287422",
+     "6232460287484"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C02",
+    "truth": "9077486093162",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "9077486093162",
+     "8071386093162",
+     "1017480093162"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C03",
+    "truth": "6482437956749",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "6482437956749"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C04",
+    "truth": "9390373224853",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "9390373224853",
+     "4398374224853",
+     "5390315224853"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C05",
+    "truth": "4775971246264",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "4775971246264",
+     "5773921246264",
+     "9773972246264"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C06",
+    "truth": "5709838114877",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "5709838114877",
+     "7708938114877",
+     "0742830114877"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C07",
+    "truth": "9828685569701",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "9828685569701"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C08",
+    "truth": "3321294129817",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 2,
+    "top": [
+     "3321294129817",
+     "9371194129817",
+     "1321791129817"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C09",
+    "truth": "4775111367019",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "4775111367019"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C10",
+    "truth": "1290452442919",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "1290452442919"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C11",
+    "truth": "4404393826364",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "4404393826364"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C12",
+    "truth": "1264114651827",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "1264114651827"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   }
+  ]
+ },
+ {
+  "photo": "2026-10-05 10.58.22.jpg",
+  "sheet": "D",
+  "damage": "clean",
+  "anchors": 12,
+  "arpi_anchors": 0,
+  "anchor_kinds": [
+   "opencv"
+  ],
+  "seconds": 45.7,
+  "slots": [
+   {
+    "id": "D01",
+    "truth": "3457741851397",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "3457741851397"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "D02",
+    "truth": "1215031693773",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "1215031693773"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "D03",
+    "truth": "5413808592403",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "5413808592403"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "D04",
+    "truth": "0287217960710",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0287217960710",
+     "0227213960710",
+     "0289211960710"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "D05",
+    "truth": "7000201497770",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "7000201497770",
+     "5004201497770",
+     "6006204497770"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "D06",
+    "truth": "3620564679626",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "3620564679626"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "D07",
+    "truth": "7626500793575",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "7626500793575"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "D08",
+    "truth": "7558078544610",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "7558078544610"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "D09",
+    "truth": "1350011574311",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "1350011574311"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "D10",
+    "truth": "0959872547239",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0959872547239"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "D11",
+    "truth": "8468978819192",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "8468978819192"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "D12",
+    "truth": "5092283237100",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "5092283237100",
+     "2022283237100",
+     "4097203237100"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   }
+  ]
+ },
+ {
+  "photo": "2026-10-05 10.58.27.jpg",
+  "sheet": "D",
+  "damage": "clean",
+  "anchors": 4,
+  "arpi_anchors": 3,
+  "anchor_kinds": [
+   "arpi-read",
+   "opencv"
+  ],
+  "seconds": 68.7,
+  "slots": [
+   {
+    "id": "D01",
+    "truth": "3457741851397",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "not found",
+    "top1": false,
+    "top3": false,
+    "asserted": false,
+    "false_pos": false,
+    "live": 0,
+    "top": [],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    }
+   },
+   {
+    "id": "D02",
+    "truth": "1215031693773",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "not found",
+    "top1": false,
+    "top3": false,
+    "asserted": false,
+    "false_pos": false,
+    "live": 0,
+    "top": [],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    }
+   },
+   {
+    "id": "D03",
+    "truth": "5413808592403",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "not found",
+    "top1": false,
+    "top3": false,
+    "asserted": false,
+    "false_pos": false,
+    "live": 0,
+    "top": [],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    }
+   },
+   {
+    "id": "D04",
+    "truth": "0287217960710",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "not found",
+    "top1": false,
+    "top3": false,
+    "asserted": false,
+    "false_pos": false,
+    "live": 0,
+    "top": [],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    }
+   },
+   {
+    "id": "D05",
+    "truth": "7000201497770",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": false,
+    "top3": false,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "5413808592403",
+     "2423008592403",
+     "7415008592403"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "D06",
+    "truth": "3620564679626",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "not found",
+    "top1": false,
+    "top3": false,
+    "asserted": false,
+    "false_pos": false,
+    "live": 0,
+    "top": [],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    }
+   },
+   {
+    "id": "D07",
+    "truth": "7626500793575",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "7626500793575"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "D08",
+    "truth": "7558078544610",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "7558078544610",
+     "2511078544610",
+     "2579078544610"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "D09",
+    "truth": "1350011574311",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "1350011574311"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "D10",
+    "truth": "0959872547239",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0959872547239",
+     "9978812547239",
+     "6972172547239"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "D11",
+    "truth": "8468978819192",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "8468978819192"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "D12",
+    "truth": "5092283237100",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": false,
+    "top3": false,
+    "asserted": false,
+    "false_pos": false,
+    "live": 224,
+    "top": [
+     "0163647011577",
+     "0163046011567",
+     "0163746011577"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    }
+   }
+  ]
+ },
+ {
+  "photo": "2026-10-05 10.58.43.jpg",
+  "sheet": "E",
+  "damage": "clean",
+  "anchors": 12,
+  "arpi_anchors": 0,
+  "anchor_kinds": [
+   "opencv"
+  ],
+  "seconds": 58.7,
+  "slots": [
+   {
+    "id": "E01",
+    "truth": "3495668447927",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "3495668447927"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E02",
+    "truth": "0467421407304",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0467421407304"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E03",
+    "truth": "1155428409368",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "1155428409368",
+     "2155328409368",
+     "9155420409368"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E04",
+    "truth": "7738988404178",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "7738988404178",
+     "5731288404178",
+     "2759988404178"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E05",
+    "truth": "5215929829846",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "5215929829846",
+     "4215999829846",
+     "1255929829846"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E06",
+    "truth": "0503035709998",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0503035709998"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E07",
+    "truth": "0960291884799",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0960291884799"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E08",
+    "truth": "8209000182279",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "8209000182279",
+     "3288000182279",
+     "3262000182279"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E09",
+    "truth": "1131319667444",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "1131319667444"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E10",
+    "truth": "7640876079521",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "7640876079521",
+     "2616876079521",
+     "4640916079521"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E11",
+    "truth": "3397833976907",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "3397833976907"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E12",
+    "truth": "8457894637478",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "8457894637478"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   }
+  ]
+ },
+ {
+  "photo": "2026-10-05 10.58.46.jpg",
+  "sheet": "E",
+  "damage": "clean",
+  "anchors": 7,
+  "arpi_anchors": 1,
+  "anchor_kinds": [
+   "arpi-read",
+   "opencv"
+  ],
+  "seconds": 50.9,
+  "slots": [
+   {
+    "id": "E01",
+    "truth": "3495668447927",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "not found",
+    "top1": false,
+    "top3": false,
+    "asserted": false,
+    "false_pos": false,
+    "live": 0,
+    "top": [],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    }
+   },
+   {
+    "id": "E02",
+    "truth": "0467421407304",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "not found",
+    "top1": false,
+    "top3": false,
+    "asserted": false,
+    "false_pos": false,
+    "live": 0,
+    "top": [],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    }
+   },
+   {
+    "id": "E03",
+    "truth": "1155428409368",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "1155428409368",
+     "3155129409368",
+     "9155420409368"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E04",
+    "truth": "7738988404178",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 4,
+    "top": [
+     "7738988404178",
+     "5731288404178",
+     "2759988404178"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E05",
+    "truth": "5215929829846",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "5215929829846",
+     "4215999829846",
+     "1255929829846"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E06",
+    "truth": "0503035709998",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0503035709998",
+     "0103035109998",
+     "0503035109996"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E07",
+    "truth": "0960291884799",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0960291884799"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E08",
+    "truth": "8209000182279",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "8209000182279"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E09",
+    "truth": "1131319667444",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "1131319667444",
+     "1131319667468",
+     "2131479667444"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E10",
+    "truth": "7640876079521",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "7640876079521"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E11",
+    "truth": "3397833976907",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "3397833976907"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E12",
+    "truth": "8457894637478",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "8457894637478"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   }
+  ]
+ },
+ {
+  "photo": "2026-10-05 10.59.08.jpg",
+  "sheet": "F",
+  "damage": "clean",
+  "anchors": 11,
+  "arpi_anchors": 1,
+  "anchor_kinds": [
+   "arpi-read",
+   "opencv"
+  ],
+  "seconds": 60.2,
+  "slots": [
+   {
+    "id": "F01",
+    "truth": "9443789678632",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "9443789678632"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F02",
+    "truth": "5908628874933",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "5908628874933",
+     "5408628874983",
+     "5908628874483"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F03",
+    "truth": "2473296352630",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "2473296352630"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F04",
+    "truth": "9120547365484",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "9120547365484"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F05",
+    "truth": "6978805497025",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "6978805497025"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F06",
+    "truth": "6083517202543",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "6083517202543"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F07",
+    "truth": "0005604256792",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0005604256792"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F08",
+    "truth": "3309680351929",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "3309680351929"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F09",
+    "truth": "2413239925903",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "2413239925903"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F10",
+    "truth": "4931716019719",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "4931716019719",
+     "9938710019719",
+     "4931716910719"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F11",
+    "truth": "6120991441317",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "6120991441317"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F12",
+    "truth": "6068946507032",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "6068946507032",
+     "9068806507032",
+     "6068243507032"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   }
+  ]
+ },
+ {
+  "photo": "2026-10-05 10.59.11.jpg",
+  "sheet": "F",
+  "damage": "clean",
+  "anchors": 10,
+  "arpi_anchors": 2,
+  "anchor_kinds": [
+   "arpi-read",
+   "opencv"
+  ],
+  "seconds": 58.6,
+  "slots": [
+   {
+    "id": "F01",
+    "truth": "9443789678632",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "9443789678632"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F02",
+    "truth": "5908628874933",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "5908628874933",
+     "5908628874438",
+     "5908628874957"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F03",
+    "truth": "2473296352630",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "2473296352630"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F04",
+    "truth": "9120547365484",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "9120547365484",
+     "1120545365484",
+     "3120147365484"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F05",
+    "truth": "6978805497025",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "6978805497025"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F06",
+    "truth": "6083517202543",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "6083517202543"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F07",
+    "truth": "0005604256792",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0005604256792"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F08",
+    "truth": "3309680351929",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "3309680351929"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F09",
+    "truth": "2413239925903",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "2413239925903"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F10",
+    "truth": "4931716019719",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "4931716019719"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F11",
+    "truth": "6120991441317",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "6120991441317"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F12",
+    "truth": "6068946507032",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "6068946507032"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   }
+  ]
+ },
+ {
+  "photo": "2026-10-05 11.00.50.jpg",
+  "sheet": "A",
+  "damage": "glare",
+  "anchors": 5,
+  "arpi_anchors": 0,
+  "anchor_kinds": [
+   "opencv"
+  ],
+  "seconds": 70.6,
+  "slots": [
+   {
+    "id": "A01",
+    "truth": "2843146184269",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "not found",
+    "top1": false,
+    "top3": false,
+    "asserted": false,
+    "false_pos": false,
+    "live": 0,
+    "top": [],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    }
+   },
+   {
+    "id": "A02",
+    "truth": "3686808208007",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": false,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 32,
+    "top": [
+     "3686808208977",
+     "3686808207017",
+     "3686808208007"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    }
+   },
+   {
+    "id": "A03",
+    "truth": "0988207781376",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": false,
+    "top3": false,
+    "asserted": false,
+    "false_pos": false,
+    "live": 264,
+    "top": [
+     "1361436184269",
+     "4307486184269",
+     "0387420184269"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    }
+   },
+   {
+    "id": "A04",
+    "truth": "0980067650533",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 6,
+    "top": [
+     "0980067650533",
+     "0980067656573",
+     "0980067659543"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "A05",
+    "truth": "2306825549129",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": false,
+    "top3": false,
+    "asserted": false,
+    "false_pos": false,
+    "live": 37,
+    "top": [
+     "0988207781376",
+     "0188207781776",
+     "0088207781076"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    }
+   },
+   {
+    "id": "A06",
+    "truth": "5776852741570",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 25,
+    "top": [
+     "5776852741570",
+     "5776852741518",
+     "5776852741525"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "A07",
+    "truth": "3512445453909",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "3512445453909"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "A08",
+    "truth": "3463581050845",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "3463581050845",
+     "3463581050883",
+     "3483581050843"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "A09",
+    "truth": "0141833038706",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0141833038706",
+     "9117853038706",
+     "9105843038706"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "A10",
+    "truth": "8346077379475",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "8346077379475"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "A11",
+    "truth": "2341436572418",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "2341436572418"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "A12",
+    "truth": "8062499517058",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "8062499517058"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   }
+  ]
+ },
+ {
+  "photo": "2026-10-05 11.01.05.jpg",
+  "sheet": "B",
+  "damage": "glare",
+  "anchors": 7,
+  "arpi_anchors": 1,
+  "anchor_kinds": [
+   "arpi-read",
+   "opencv"
+  ],
+  "seconds": 102.0,
+  "slots": [
+   {
+    "id": "B01",
+    "truth": "4977328803292",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "4977328803292"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B02",
+    "truth": "9045919442979",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "9045919442979",
+     "3005919442979",
+     "8041219442979"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B03",
+    "truth": "0483044521814",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0483044521814",
+     "0441044521814",
+     "0467044521814"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B04",
+    "truth": "9029951399682",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 8,
+    "top": [
+     "9029951399682",
+     "9029951349687",
+     "9029951394687"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B05",
+    "truth": "0409546400099",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0409546400099",
+     "0496546400099",
+     "0400246400099"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B06",
+    "truth": "0780980231327",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0780980231327",
+     "0770980231328",
+     "0780989231328"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B07",
+    "truth": "0012972593503",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 2,
+    "top": [
+     "0012972593503",
+     "0012972506503",
+     "0312972590503"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B08",
+    "truth": "0350038585148",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0350038585148",
+     "0321038585148",
+     "0318038585148"
+    ],
+    "warp_notes": [
+     "smooth distortion, 0.5 modules end to end"
+    ],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B09",
+    "truth": "2813757667154",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "2813757667154",
+     "3813732667154",
+     "2673757667154"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B10",
+    "truth": "2606655689867",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "2606655689867",
+     "2806655689861",
+     "2606655689898"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B11",
+    "truth": "2280889960390",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "2280889960390"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B12",
+    "truth": "9384698294165",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 3,
+    "top": [
+     "9384698294165",
+     "9384698294172",
+     "9384698224162"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   }
+  ]
+ },
+ {
+  "photo": "2026-10-05 11.01.32.jpg",
+  "sheet": "C",
+  "error": "0 anchors, need 4"
+ },
+ {
+  "photo": "2026-10-05 11.01.44.jpg",
+  "sheet": "D",
+  "error": "0 anchors, need 4"
+ },
+ {
+  "photo": "2026-10-05 11.04.20.jpg",
+  "sheet": "B",
+  "damage": "tear",
+  "anchors": 10,
+  "arpi_anchors": 0,
+  "anchor_kinds": [
+   "opencv"
+  ],
+  "seconds": 56.0,
+  "slots": [
+   {
+    "id": "B01",
+    "truth": "4977328803292",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "4977328803292"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B02",
+    "truth": "9045919442979",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "9045919442979",
+     "9045919442986",
+     "9045919442962"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B03",
+    "truth": "0483044521814",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0483044521814",
+     "0553044521814",
+     "0425044521814"
+    ],
+    "warp_notes": [
+     "smooth distortion, 0.6 modules end to end"
+    ],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B04",
+    "truth": "9029951399682",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "9029951399682",
+     "3099851399682",
+     "5029955399682"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B05",
+    "truth": "0409546400099",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0409546400099",
+     "0400246400099",
+     "0400543400099"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B06",
+    "truth": "0780980231327",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0780980231327",
+     "5796986231327",
+     "5716984231327"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B07",
+    "truth": "0012972593503",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0012972593503",
+     "0632972593503",
+     "0009972593503"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B08",
+    "truth": "0350038585148",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0350038585148",
+     "8350658585148",
+     "9356048585148"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B09",
+    "truth": "2813757667154",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "not found",
+    "top1": false,
+    "top3": false,
+    "asserted": false,
+    "false_pos": false,
+    "live": 0,
+    "top": [],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    }
+   },
+   {
+    "id": "B10",
+    "truth": "2606655689867",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "2606655689867",
+     "0600051689867",
+     "6466651689867"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B11",
+    "truth": "2280889960390",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 2,
+    "top": [
+     "2280889960390",
+     "7298889960390",
+     "1280019960390"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B12",
+    "truth": "9384698294165",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "9384698294165",
+     "3304098294165",
+     "8383098294165"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   }
+  ]
+ },
+ {
+  "photo": "2026-10-05 11.05.25.jpg",
+  "sheet": "C",
+  "damage": "crumple",
+  "anchors": 9,
+  "arpi_anchors": 0,
+  "anchor_kinds": [
+   "opencv"
+  ],
+  "seconds": 67.6,
+  "slots": [
+   {
+    "id": "C01",
+    "truth": "6232260287424",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "6232260287424",
+     "0257160287424",
+     "3242200287424"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C02",
+    "truth": "9077486093162",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "9077486093162"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C03",
+    "truth": "6482437956749",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "6482437956749",
+     "5482131956749",
+     "8487447956749"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C04",
+    "truth": "9390373224853",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "9390373224853"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C05",
+    "truth": "4775971246264",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "4775971246264",
+     "7775251246264",
+     "8775274246264"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C06",
+    "truth": "5709838114877",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "5709838114877",
+     "7708938114877",
+     "0768830114877"
+    ],
+    "warp_notes": [
+     "smooth distortion, 1.9 modules end to end"
+    ],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C07",
+    "truth": "9828685569701",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 4,
+    "top": [
+     "9828685569701",
+     "4829687569701",
+     "4821681569701"
+    ],
+    "warp_notes": [
+     "break between digit 8 and digit 9, -1.6 modules"
+    ],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C08",
+    "truth": "3321294129817",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 7,
+    "top": [
+     "3321294129817",
+     "3181294129817",
+     "3871294129817"
+    ],
+    "warp_notes": [
+     "smooth distortion, 0.6 modules end to end"
+    ],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C09",
+    "truth": "4775111367019",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "4775111367019",
+     "4775101367012",
+     "4775111367026"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C10",
+    "truth": "1290452442919",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "1290452442919",
+     "2290352442919",
+     "3290351442919"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "C11",
+    "truth": "4404393826364",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "not found",
+    "top1": false,
+    "top3": false,
+    "asserted": false,
+    "false_pos": false,
+    "live": 0,
+    "top": [],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    }
+   },
+   {
+    "id": "C12",
+    "truth": "1264114651827",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 4,
+    "top": [
+     "1264114651827",
+     "2264724651827",
+     "5204154651827"
+    ],
+    "warp_notes": [
+     "smooth distortion, 0.5 modules end to end"
+    ],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   }
+  ]
+ },
+ {
+  "photo": "2026-10-05 11.06.18.jpg",
+  "sheet": "D",
+  "damage": "fade",
+  "anchors": 8,
+  "arpi_anchors": 0,
+  "anchor_kinds": [
+   "opencv"
+  ],
+  "seconds": 53.7,
+  "slots": [
+   {
+    "id": "D01",
+    "truth": "3457741851397",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": false,
+    "top3": false,
+    "asserted": false,
+    "false_pos": false,
+    "live": 212,
+    "top": [
+     "5747417057573",
+     "5747457037573",
+     "5747456050573"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    }
+   },
+   {
+    "id": "D02",
+    "truth": "1215031693773",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "1215031693773",
+     "2215641693773",
+     "4285031693773"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "D03",
+    "truth": "5413808592403",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "5413808592403",
+     "9413880592403",
+     "7415008592403"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "D04",
+    "truth": "0287217960710",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0287217960710",
+     "8297287960710",
+     "0261217960710"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "D05",
+    "truth": "7000201497770",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "7000201497770"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "D06",
+    "truth": "3620564679626",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "3620564679626"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "D07",
+    "truth": "7626500793575",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "7626500793575"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "D08",
+    "truth": "7558078544610",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "7558078544610"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "D09",
+    "truth": "1350011574311",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "1350011574311"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "D10",
+    "truth": "0959872547239",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0959872547239"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "D11",
+    "truth": "8468978819192",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "8468978819192",
+     "9460278819192",
+     "8468916819192"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "D12",
+    "truth": "5092283237100",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "not found",
+    "top1": false,
+    "top3": false,
+    "asserted": false,
+    "false_pos": false,
+    "live": 0,
+    "top": [],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    }
+   }
+  ]
+ },
+ {
+  "photo": "2026-10-05 11.07.03.jpg",
+  "sheet": "E",
+  "damage": "smear",
+  "anchors": 10,
+  "arpi_anchors": 3,
+  "anchor_kinds": [
+   "arpi-read",
+   "opencv"
+  ],
+  "seconds": 64.3,
+  "slots": [
+   {
+    "id": "E01",
+    "truth": "3495668447927",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "3495668447927"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E02",
+    "truth": "0467421407304",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0467421407304",
+     "0461421407302",
+     "0441421407304"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E03",
+    "truth": "1155428409368",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "1155428409368"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E04",
+    "truth": "7738988404178",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "7738988404178"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E05",
+    "truth": "5215929829846",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "5215929829846",
+     "4215999829846",
+     "1255929829846"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E06",
+    "truth": "0503035709998",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0503035709998"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E07",
+    "truth": "0960291884799",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0960291884799"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E08",
+    "truth": "8209000182279",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "8209000182279",
+     "3288000182279",
+     "3262000182279"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E09",
+    "truth": "1131319667444",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "1131319667444"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E10",
+    "truth": "7640876079521",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "7640876079521"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E11",
+    "truth": "3397833976907",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "3397833976907"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "E12",
+    "truth": "8457894637478",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "8457894637478",
+     "3452894637478",
+     "6452884637478"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   }
+  ]
+ },
+ {
+  "photo": "2026-10-05 11.07.46.jpg",
+  "sheet": "F",
+  "error": "3 anchors, need 4"
+ },
+ {
+  "photo": "2026-10-05 11.39.38.jpg",
+  "sheet": "B",
+  "damage": "tear",
+  "anchors": 8,
+  "arpi_anchors": 1,
+  "anchor_kinds": [
+   "arpi-read",
+   "opencv"
+  ],
+  "seconds": 67.4,
+  "slots": [
+   {
+    "id": "B01",
+    "truth": "4977328803292",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "4977328803292"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B02",
+    "truth": "9045919442979",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 11,
+    "top": [
+     "9045919442979",
+     "9045919442177",
+     "9045919442276"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B03",
+    "truth": "0483044521814",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0483044521814",
+     "0863044521814",
+     "0933044521814"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B04",
+    "truth": "9029951399682",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "9029951399682",
+     "9029951399668",
+     "9029951399675"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B05",
+    "truth": "0409546400099",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0409546400099",
+     "0409566200099",
+     "0409547700099"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B06",
+    "truth": "0780980231327",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0780980231327",
+     "4790916231327",
+     "4700908231327"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B07",
+    "truth": "0012972593503",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "0012972593503",
+     "0632972593503",
+     "0322972593503"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B08",
+    "truth": "0350038585148",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 3,
+    "top": [
+     "0350038585148",
+     "0350038583748",
+     "0350038587548"
+    ],
+    "warp_notes": [
+     "break between digit 10 and digit 11, +1.2 modules"
+    ],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B09",
+    "truth": "2813757667154",
+    "opencv": false,
+    "opencv_wrong": true,
+    "status": "reconstructed",
+    "top1": false,
+    "top3": false,
+    "asserted": false,
+    "false_pos": false,
+    "live": 34,
+    "top": [
+     "2813757667215",
+     "2813757667055",
+     "2813757667185"
+    ],
+    "warp_notes": [
+     "smooth distortion, 0.8 modules end to end"
+    ],
+    "cascade_none": {
+     "asserted": true,
+     "right": false,
+     "wrong": true,
+     "top1": false
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": false,
+     "wrong": true,
+     "top1": false
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    }
+   },
+   {
+    "id": "B10",
+    "truth": "2606655689867",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "read",
+    "top1": true,
+    "top3": true,
+    "asserted": true,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "2606655689867"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B11",
+    "truth": "2280889960390",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 2,
+    "top": [
+     "2280889960390",
+     "7298889960390",
+     "6210882960390"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "B12",
+    "truth": "9384698294165",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": false,
+    "top3": false,
+    "asserted": false,
+    "false_pos": false,
+    "live": 4,
+    "top": [
+     "1034690294165",
+     "1334691294165",
+     "0333688294165"
+    ],
+    "warp_notes": [
+     "break between digit 3 and digit 4, +2.1 modules"
+    ],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    }
+   }
+  ]
+ },
+ {
+  "photo": "2026-10-05 11.42.30.jpg",
+  "sheet": "F",
+  "damage": "occlusion",
+  "anchors": 5,
+  "arpi_anchors": 0,
+  "anchor_kinds": [
+   "id-text",
+   "opencv"
+  ],
+  "seconds": 75.8,
+  "slots": [
+   {
+    "id": "F01",
+    "truth": "9443789678632",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 6,
+    "top": [
+     "9443789678632",
+     "9443789748632",
+     "9443789128632"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F02",
+    "truth": "5908628874933",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 32,
+    "top": [
+     "5908628874933",
+     "5908628874353",
+     "5908628878733"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F03",
+    "truth": "2473296352630",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 10,
+    "top": [
+     "2473296352630",
+     "2473296352678",
+     "2473296352616"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F04",
+    "truth": "9120547365484",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": false,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 32,
+    "top": [
+     "9120547307484",
+     "9120547365484",
+     "9120547336484"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    }
+   },
+   {
+    "id": "F05",
+    "truth": "6978805497025",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 28,
+    "top": [
+     "6978805497025",
+     "6978805877025",
+     "6978805637025"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F06",
+    "truth": "6083517202543",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "6083517202543",
+     "5083112202543",
+     "9083347202543"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F07",
+    "truth": "0005604256792",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 10,
+    "top": [
+     "0005604256792",
+     "0005604256778",
+     "0005604256716"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F08",
+    "truth": "3309680351929",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 13,
+    "top": [
+     "3309680351929",
+     "3309635351929",
+     "3309659351929"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F09",
+    "truth": "2413239925903",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "2413239925903",
+     "5483239925903",
+     "2413209928903"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F10",
+    "truth": "4931716019719",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "4931716019719",
+     "4931976019719",
+     "4931136019719"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   },
+   {
+    "id": "F11",
+    "truth": "6120991441317",
+    "opencv": false,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": false,
+    "top3": false,
+    "asserted": false,
+    "false_pos": false,
+    "live": 159,
+    "top": [
+     "0211691441717",
+     "0210691441017",
+     "0211691441311"
+    ],
+    "warp_notes": [
+     "smooth distortion, 1.9 modules end to end"
+    ],
+    "cascade_none": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_symbology": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    },
+    "cascade_full": {
+     "asserted": false,
+     "right": false,
+     "wrong": false,
+     "top1": false
+    }
+   },
+   {
+    "id": "F12",
+    "truth": "6068946507032",
+    "opencv": true,
+    "opencv_wrong": false,
+    "status": "reconstructed",
+    "top1": true,
+    "top3": true,
+    "asserted": false,
+    "false_pos": false,
+    "live": 1,
+    "top": [
+     "6068946507032",
+     "6068446507037",
+     "6068926507038"
+    ],
+    "warp_notes": [],
+    "cascade_none": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_symbology": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    },
+    "cascade_full": {
+     "asserted": true,
+     "right": true,
+     "wrong": false,
+     "top1": true
+    }
+   }
+  ]
+ }
+]

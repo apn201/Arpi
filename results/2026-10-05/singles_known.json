@@ -1,0 +1,7097 @@
+[
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "2843146184269",
+  "opencv_reads": [
+   "2843146184269"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "2843146184269"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "2843146184269"
+  },
+  "photo": "2026-10-05 10.57.34.jpg",
+  "id": "A01",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "3686808208007",
+  "opencv_reads": [
+   "3686808208007"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "3686808208007"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "3686808208007"
+  },
+  "photo": "2026-10-05 10.57.34.jpg",
+  "id": "A02",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0988207781376",
+  "opencv_reads": [
+   "0988207781376"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "0988207781376"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0988207781376"
+  },
+  "photo": "2026-10-05 10.57.34.jpg",
+  "id": "A03",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0980067650533",
+  "opencv_reads": [
+   "0980067650533"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "0980067650533"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0980067650533"
+  },
+  "photo": "2026-10-05 10.57.34.jpg",
+  "id": "A04",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "2306825549129",
+  "opencv_reads": [
+   "2306825549129"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "2306825549129"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "2306825549129"
+  },
+  "photo": "2026-10-05 10.57.34.jpg",
+  "id": "A05",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "5776852741570",
+  "opencv_reads": [
+   "5776852741570"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "5776852741570"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "5776852741570"
+  },
+  "photo": "2026-10-05 10.57.34.jpg",
+  "id": "A06",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "3512445453909",
+  "opencv_reads": [
+   "3512445453909"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "3512445453909"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "3512445453909"
+  },
+  "photo": "2026-10-05 10.57.34.jpg",
+  "id": "A07",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "3463581050845",
+  "opencv_reads": [
+   "3463581050845"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "3463581050845"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "3463581050845"
+  },
+  "photo": "2026-10-05 10.57.34.jpg",
+  "id": "A08",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0141833038706",
+  "opencv_reads": [
+   "0141833038706"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "0141833038706"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0141833038706"
+  },
+  "photo": "2026-10-05 10.57.34.jpg",
+  "id": "A09",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "8346077379475",
+  "opencv_reads": [
+   "8346077379475"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "8346077379475"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "8346077379475"
+  },
+  "photo": "2026-10-05 10.57.34.jpg",
+  "id": "A10",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "2341436572418",
+  "opencv_reads": [
+   "2341436572418"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "2341436572418"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "2341436572418"
+  },
+  "photo": "2026-10-05 10.57.34.jpg",
+  "id": "A11",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "8062499517058",
+  "opencv_reads": [
+   "8062499517058"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "8062499517058"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "8062499517058"
+  },
+  "photo": "2026-10-05 10.57.34.jpg",
+  "id": "A12",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "2843146184269",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "status": "none",
+   "code": null
+  },
+  "cascade": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "path": "",
+   "status": "unreadable",
+   "code": null
+  },
+  "photo": "2026-10-05 10.57.41.jpg",
+  "id": "A01",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "3686808208007",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "status": "reconstructed",
+   "code": null
+  },
+  "cascade": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "path": "",
+   "status": "rejected",
+   "code": null
+  },
+  "photo": "2026-10-05 10.57.41.jpg",
+  "id": "A02",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": true,
+  "truth": "0988207781376",
+  "opencv_reads": [
+   "98221721"
+  ],
+  "opencv": {
+   "right": false,
+   "wrong": true
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "0988207781376"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "read",
+   "code": "0988207781376"
+  },
+  "photo": "2026-10-05 10.57.41.jpg",
+  "id": "A03",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": true,
+  "truth": "0980067650533",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": false,
+   "asserted": true,
+   "right": false,
+   "wrong": true,
+   "status": "unique-in-list",
+   "code": "3686808208007"
+  },
+  "cascade": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "path": "",
+   "status": "rejected",
+   "code": null
+  },
+  "photo": "2026-10-05 10.57.41.jpg",
+  "id": "A04",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "2306825549129",
+  "opencv_reads": [
+   "2306825549129"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "2306825549129"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "2306825549129"
+  },
+  "photo": "2026-10-05 10.57.41.jpg",
+  "id": "A05",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": true,
+  "truth": "5776852741570",
+  "opencv_reads": [
+   "5776852741570"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "5776852741570"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "5776852741570"
+  },
+  "photo": "2026-10-05 10.57.41.jpg",
+  "id": "A06",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "3512445453909",
+  "opencv_reads": [
+   "3512445453909"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "3512445453909"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "3512445453909"
+  },
+  "photo": "2026-10-05 10.57.41.jpg",
+  "id": "A07",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "3463581050845",
+  "opencv_reads": [
+   "3463581050845"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "3463581050845"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "3463581050845"
+  },
+  "photo": "2026-10-05 10.57.41.jpg",
+  "id": "A08",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0141833038706",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "0141833038706"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "0141833038706"
+  },
+  "photo": "2026-10-05 10.57.41.jpg",
+  "id": "A09",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "8346077379475",
+  "opencv_reads": [
+   "8346077379475"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "8346077379475"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "8346077379475"
+  },
+  "photo": "2026-10-05 10.57.41.jpg",
+  "id": "A10",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "2341436572418",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "status": "reconstructed",
+   "code": null
+  },
+  "cascade": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "path": "",
+   "status": "rejected",
+   "code": null
+  },
+  "photo": "2026-10-05 10.57.41.jpg",
+  "id": "A11",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "8062499517058",
+  "opencv_reads": [
+   "8062499517058"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "8062499517058"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "8062499517058"
+  },
+  "photo": "2026-10-05 10.57.41.jpg",
+  "id": "A12",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "4977328803292",
+  "opencv_reads": [
+   "4977328803292"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "4977328803292"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "4977328803292"
+  },
+  "photo": "2026-10-05 10.57.48.jpg",
+  "id": "B01",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "9045919442979",
+  "opencv_reads": [
+   "9045919442979"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "9045919442979"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "9045919442979"
+  },
+  "photo": "2026-10-05 10.57.48.jpg",
+  "id": "B02",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0483044521814",
+  "opencv_reads": [
+   "0483044521814"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "0483044521814"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0483044521814"
+  },
+  "photo": "2026-10-05 10.57.48.jpg",
+  "id": "B03",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "9029951399682",
+  "opencv_reads": [
+   "9029951399682"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "9029951399682"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "9029951399682"
+  },
+  "photo": "2026-10-05 10.57.48.jpg",
+  "id": "B04",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0409546400099",
+  "opencv_reads": [
+   "0409546400099"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "0409546400099"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0409546400099"
+  },
+  "photo": "2026-10-05 10.57.48.jpg",
+  "id": "B05",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0780980231327",
+  "opencv_reads": [
+   "0780980231327"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "0780980231327"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0780980231327"
+  },
+  "photo": "2026-10-05 10.57.48.jpg",
+  "id": "B06",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0012972593503",
+  "opencv_reads": [
+   "0012972593503"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "0012972593503"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0012972593503"
+  },
+  "photo": "2026-10-05 10.57.48.jpg",
+  "id": "B07",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0350038585148",
+  "opencv_reads": [
+   "0350038585148"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "0350038585148"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0350038585148"
+  },
+  "photo": "2026-10-05 10.57.48.jpg",
+  "id": "B08",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "2813757667154",
+  "opencv_reads": [
+   "2813757667154"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "2813757667154"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "2813757667154"
+  },
+  "photo": "2026-10-05 10.57.48.jpg",
+  "id": "B09",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "2606655689867",
+  "opencv_reads": [
+   "2606655689867"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "2606655689867"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "2606655689867"
+  },
+  "photo": "2026-10-05 10.57.48.jpg",
+  "id": "B10",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "2280889960390",
+  "opencv_reads": [
+   "2280889960390"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "2280889960390"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "2280889960390"
+  },
+  "photo": "2026-10-05 10.57.48.jpg",
+  "id": "B11",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "9384698294165",
+  "opencv_reads": [
+   "9384698294165"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "9384698294165"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "9384698294165"
+  },
+  "photo": "2026-10-05 10.57.48.jpg",
+  "id": "B12",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0483044521814",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "status": "none",
+   "code": null
+  },
+  "cascade": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "path": "",
+   "status": "unreadable",
+   "code": null
+  },
+  "photo": "2026-10-05 10.57.53.jpg",
+  "id": "B03",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "9029951399682",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "status": "none",
+   "code": null
+  },
+  "cascade": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "path": "",
+   "status": "unreadable",
+   "code": null
+  },
+  "photo": "2026-10-05 10.57.53.jpg",
+  "id": "B04",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0409546400099",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "0409546400099"
+  },
+  "cascade": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "path": "",
+   "status": "rejected",
+   "code": null
+  },
+  "photo": "2026-10-05 10.57.53.jpg",
+  "id": "B05",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": true,
+  "truth": "0780980231327",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "status": "reconstructed",
+   "code": null
+  },
+  "cascade": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "path": "",
+   "status": "rejected",
+   "code": null
+  },
+  "photo": "2026-10-05 10.57.53.jpg",
+  "id": "B06",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0012972593503",
+  "opencv_reads": [
+   "0012972593503"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "0012972593503"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0012972593503"
+  },
+  "photo": "2026-10-05 10.57.53.jpg",
+  "id": "B07",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": true,
+  "truth": "0350038585148",
+  "opencv_reads": [
+   "0350038585148",
+   "0780980231327"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": true
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "0350038585148"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0350038585148"
+  },
+  "photo": "2026-10-05 10.57.53.jpg",
+  "id": "B08",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "2813757667154",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "2813757667154"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "2813757667154"
+  },
+  "photo": "2026-10-05 10.57.53.jpg",
+  "id": "B09",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "2606655689867",
+  "opencv_reads": [
+   "2606655689867"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "2606655689867"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "2606655689867"
+  },
+  "photo": "2026-10-05 10.57.53.jpg",
+  "id": "B10",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "2280889960390",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "status": "reconstructed",
+   "code": null
+  },
+  "cascade": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "path": "",
+   "status": "rejected",
+   "code": null
+  },
+  "photo": "2026-10-05 10.57.53.jpg",
+  "id": "B11",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "9384698294165",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "9384698294165"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "9384698294165"
+  },
+  "photo": "2026-10-05 10.57.53.jpg",
+  "id": "B12",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "6232260287424",
+  "opencv_reads": [
+   "6232260287424"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "6232260287424"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "6232260287424"
+  },
+  "photo": "2026-10-05 10.58.06.jpg",
+  "id": "C01",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "9077486093162",
+  "opencv_reads": [
+   "9077486093162"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "9077486093162"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "9077486093162"
+  },
+  "photo": "2026-10-05 10.58.06.jpg",
+  "id": "C02",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "6482437956749",
+  "opencv_reads": [
+   "6482437956749"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "6482437956749"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "6482437956749"
+  },
+  "photo": "2026-10-05 10.58.06.jpg",
+  "id": "C03",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "9390373224853",
+  "opencv_reads": [
+   "9390373224853"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "9390373224853"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "9390373224853"
+  },
+  "photo": "2026-10-05 10.58.06.jpg",
+  "id": "C04",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "4775971246264",
+  "opencv_reads": [
+   "4775971246264"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "4775971246264"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "4775971246264"
+  },
+  "photo": "2026-10-05 10.58.06.jpg",
+  "id": "C05",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "5709838114877",
+  "opencv_reads": [
+   "5709838114877"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "5709838114877"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "5709838114877"
+  },
+  "photo": "2026-10-05 10.58.06.jpg",
+  "id": "C06",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "9828685569701",
+  "opencv_reads": [
+   "9828685569701"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "9828685569701"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "9828685569701"
+  },
+  "photo": "2026-10-05 10.58.06.jpg",
+  "id": "C07",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "3321294129817",
+  "opencv_reads": [
+   "3321294129817"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "3321294129817"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "3321294129817"
+  },
+  "photo": "2026-10-05 10.58.06.jpg",
+  "id": "C08",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "4775111367019",
+  "opencv_reads": [
+   "4775111367019"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "4775111367019"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "4775111367019"
+  },
+  "photo": "2026-10-05 10.58.06.jpg",
+  "id": "C09",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "1290452442919",
+  "opencv_reads": [
+   "1290452442919"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "1290452442919"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "1290452442919"
+  },
+  "photo": "2026-10-05 10.58.06.jpg",
+  "id": "C10",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "4404393826364",
+  "opencv_reads": [
+   "4404393826364"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "4404393826364"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "4404393826364"
+  },
+  "photo": "2026-10-05 10.58.06.jpg",
+  "id": "C11",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "1264114651827",
+  "opencv_reads": [
+   "1264114651827"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "1264114651827"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "1264114651827"
+  },
+  "photo": "2026-10-05 10.58.06.jpg",
+  "id": "C12",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "6232260287424",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "status": "none",
+   "code": null
+  },
+  "cascade": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "path": "",
+   "status": "unreadable",
+   "code": null
+  },
+  "photo": "2026-10-05 10.58.11.jpg",
+  "id": "C01",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "9077486093162",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "status": "reconstructed",
+   "code": null
+  },
+  "cascade": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "path": "",
+   "status": "rejected",
+   "code": null
+  },
+  "photo": "2026-10-05 10.58.11.jpg",
+  "id": "C02",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "6482437956749",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "status": "reconstructed",
+   "code": null
+  },
+  "cascade": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "path": "",
+   "status": "rejected",
+   "code": null
+  },
+  "photo": "2026-10-05 10.58.11.jpg",
+  "id": "C03",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": "9390373224853",
+  "multi": true,
+  "truth": "9077486093162",
+  "opencv_reads": [
+   "9077486093162"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "9077486093162"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "9077486093162"
+  },
+  "photo": "2026-10-05 10.58.11.jpg",
+  "id": "C04",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "4775971246264",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "4775971246264"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "4775971246264"
+  },
+  "photo": "2026-10-05 10.58.11.jpg",
+  "id": "C05",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "5709838114877",
+  "opencv_reads": [
+   "5709838114877"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "5709838114877"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "5709838114877"
+  },
+  "photo": "2026-10-05 10.58.11.jpg",
+  "id": "C06",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "9828685569701",
+  "opencv_reads": [
+   "9828685569701"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "9828685569701"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "9828685569701"
+  },
+  "photo": "2026-10-05 10.58.11.jpg",
+  "id": "C07",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "3321294129817",
+  "opencv_reads": [
+   "3321294129817"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "3321294129817"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "3321294129817"
+  },
+  "photo": "2026-10-05 10.58.11.jpg",
+  "id": "C08",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "4775111367019",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "4775111367019"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "read",
+   "code": "4775111367019"
+  },
+  "photo": "2026-10-05 10.58.11.jpg",
+  "id": "C09",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "1290452442919",
+  "opencv_reads": [
+   "1290452442919"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "1290452442919"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "1290452442919"
+  },
+  "photo": "2026-10-05 10.58.11.jpg",
+  "id": "C10",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "4404393826364",
+  "opencv_reads": [
+   "4404393826364"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "4404393826364"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "4404393826364"
+  },
+  "photo": "2026-10-05 10.58.11.jpg",
+  "id": "C11",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "1264114651827",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "1264114651827"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "read",
+   "code": "1264114651827"
+  },
+  "photo": "2026-10-05 10.58.11.jpg",
+  "id": "C12",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "3457741851397",
+  "opencv_reads": [
+   "3457741851397"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "3457741851397"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "3457741851397"
+  },
+  "photo": "2026-10-05 10.58.22.jpg",
+  "id": "D01",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "1215031693773",
+  "opencv_reads": [
+   "1215031693773"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "1215031693773"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "1215031693773"
+  },
+  "photo": "2026-10-05 10.58.22.jpg",
+  "id": "D02",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "5413808592403",
+  "opencv_reads": [
+   "5413808592403"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "5413808592403"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "5413808592403"
+  },
+  "photo": "2026-10-05 10.58.22.jpg",
+  "id": "D03",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0287217960710",
+  "opencv_reads": [
+   "0287217960710"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "0287217960710"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0287217960710"
+  },
+  "photo": "2026-10-05 10.58.22.jpg",
+  "id": "D04",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "7000201497770",
+  "opencv_reads": [
+   "7000201497770"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "7000201497770"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "7000201497770"
+  },
+  "photo": "2026-10-05 10.58.22.jpg",
+  "id": "D05",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "3620564679626",
+  "opencv_reads": [
+   "3620564679626"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "3620564679626"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "3620564679626"
+  },
+  "photo": "2026-10-05 10.58.22.jpg",
+  "id": "D06",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "7626500793575",
+  "opencv_reads": [
+   "7626500793575"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "7626500793575"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "7626500793575"
+  },
+  "photo": "2026-10-05 10.58.22.jpg",
+  "id": "D07",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "7558078544610",
+  "opencv_reads": [
+   "7558078544610"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "7558078544610"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "7558078544610"
+  },
+  "photo": "2026-10-05 10.58.22.jpg",
+  "id": "D08",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "1350011574311",
+  "opencv_reads": [
+   "1350011574311"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "1350011574311"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "1350011574311"
+  },
+  "photo": "2026-10-05 10.58.22.jpg",
+  "id": "D09",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0959872547239",
+  "opencv_reads": [
+   "0959872547239"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "0959872547239"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0959872547239"
+  },
+  "photo": "2026-10-05 10.58.22.jpg",
+  "id": "D10",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "8468978819192",
+  "opencv_reads": [
+   "8468978819192"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "8468978819192"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "8468978819192"
+  },
+  "photo": "2026-10-05 10.58.22.jpg",
+  "id": "D11",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "5092283237100",
+  "opencv_reads": [
+   "5092283237100"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "5092283237100"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "5092283237100"
+  },
+  "photo": "2026-10-05 10.58.22.jpg",
+  "id": "D12",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "3495668447927",
+  "opencv_reads": [
+   "3495668447927"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "3495668447927"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "3495668447927"
+  },
+  "photo": "2026-10-05 10.58.43.jpg",
+  "id": "E01",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0467421407304",
+  "opencv_reads": [
+   "0467421407304"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "0467421407304"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0467421407304"
+  },
+  "photo": "2026-10-05 10.58.43.jpg",
+  "id": "E02",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "1155428409368",
+  "opencv_reads": [
+   "1155428409368"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "1155428409368"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "1155428409368"
+  },
+  "photo": "2026-10-05 10.58.43.jpg",
+  "id": "E03",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "7738988404178",
+  "opencv_reads": [
+   "7738988404178"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "7738988404178"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "7738988404178"
+  },
+  "photo": "2026-10-05 10.58.43.jpg",
+  "id": "E04",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "5215929829846",
+  "opencv_reads": [
+   "5215929829846"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "5215929829846"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "5215929829846"
+  },
+  "photo": "2026-10-05 10.58.43.jpg",
+  "id": "E05",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0503035709998",
+  "opencv_reads": [
+   "0503035709998"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "0503035709998"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0503035709998"
+  },
+  "photo": "2026-10-05 10.58.43.jpg",
+  "id": "E06",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0960291884799",
+  "opencv_reads": [
+   "0960291884799"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "0960291884799"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0960291884799"
+  },
+  "photo": "2026-10-05 10.58.43.jpg",
+  "id": "E07",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "8209000182279",
+  "opencv_reads": [
+   "8209000182279"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "8209000182279"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "8209000182279"
+  },
+  "photo": "2026-10-05 10.58.43.jpg",
+  "id": "E08",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "1131319667444",
+  "opencv_reads": [
+   "1131319667444"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "1131319667444"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "1131319667444"
+  },
+  "photo": "2026-10-05 10.58.43.jpg",
+  "id": "E09",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "7640876079521",
+  "opencv_reads": [
+   "7640876079521"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "7640876079521"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "7640876079521"
+  },
+  "photo": "2026-10-05 10.58.43.jpg",
+  "id": "E10",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "3397833976907",
+  "opencv_reads": [
+   "3397833976907"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "3397833976907"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "3397833976907"
+  },
+  "photo": "2026-10-05 10.58.43.jpg",
+  "id": "E11",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "8457894637478",
+  "opencv_reads": [
+   "8457894637478"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "8457894637478"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "8457894637478"
+  },
+  "photo": "2026-10-05 10.58.43.jpg",
+  "id": "E12",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "3495668447927",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "status": "reconstructed",
+   "code": null
+  },
+  "cascade": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "path": "",
+   "status": "rejected",
+   "code": null
+  },
+  "photo": "2026-10-05 10.58.46.jpg",
+  "id": "E01",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0467421407304",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "status": "reconstructed",
+   "code": null
+  },
+  "cascade": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "path": "",
+   "status": "rejected",
+   "code": null
+  },
+  "photo": "2026-10-05 10.58.46.jpg",
+  "id": "E02",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "1155428409368",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "1155428409368"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "1155428409368"
+  },
+  "photo": "2026-10-05 10.58.46.jpg",
+  "id": "E03",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": true,
+  "truth": "7738988404178",
+  "opencv_reads": [
+   "7738988404178",
+   "0467421407304"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": true
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "7738988404178"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "7738988404178"
+  },
+  "photo": "2026-10-05 10.58.46.jpg",
+  "id": "E04",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "5215929829846",
+  "opencv_reads": [
+   "5215929829846"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "status": "reconstructed",
+   "code": null
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "5215929829846"
+  },
+  "photo": "2026-10-05 10.58.46.jpg",
+  "id": "E05",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0503035709998",
+  "opencv_reads": [
+   "0503035709998"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "0503035709998"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0503035709998"
+  },
+  "photo": "2026-10-05 10.58.46.jpg",
+  "id": "E06",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0960291884799",
+  "opencv_reads": [
+   "0960291884799"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "0960291884799"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0960291884799"
+  },
+  "photo": "2026-10-05 10.58.46.jpg",
+  "id": "E07",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "8209000182279",
+  "opencv_reads": [
+   "8209000182279"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "8209000182279"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "8209000182279"
+  },
+  "photo": "2026-10-05 10.58.46.jpg",
+  "id": "E08",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "1131319667444",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "1131319667444"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "1131319667444"
+  },
+  "photo": "2026-10-05 10.58.46.jpg",
+  "id": "E09",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "7640876079521",
+  "opencv_reads": [
+   "7640876079521"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "7640876079521"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "7640876079521"
+  },
+  "photo": "2026-10-05 10.58.46.jpg",
+  "id": "E10",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "3397833976907",
+  "opencv_reads": [
+   "3397833976907"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "3397833976907"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "3397833976907"
+  },
+  "photo": "2026-10-05 10.58.46.jpg",
+  "id": "E11",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "8457894637478",
+  "opencv_reads": [
+   "8457894637478"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "8457894637478"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "8457894637478"
+  },
+  "photo": "2026-10-05 10.58.46.jpg",
+  "id": "E12",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "9443789678632",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "9443789678632"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "read",
+   "code": "9443789678632"
+  },
+  "photo": "2026-10-05 10.59.08.jpg",
+  "id": "F01",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "5908628874933",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "5908628874933"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "5908628874933"
+  },
+  "photo": "2026-10-05 10.59.08.jpg",
+  "id": "F02",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "2473296352630",
+  "opencv_reads": [
+   "2473296352630"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "2473296352630"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "2473296352630"
+  },
+  "photo": "2026-10-05 10.59.08.jpg",
+  "id": "F03",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "9120547365484",
+  "opencv_reads": [
+   "9120547365484"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "9120547365484"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "9120547365484"
+  },
+  "photo": "2026-10-05 10.59.08.jpg",
+  "id": "F04",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "6978805497025",
+  "opencv_reads": [
+   "6978805497025"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "6978805497025"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "6978805497025"
+  },
+  "photo": "2026-10-05 10.59.08.jpg",
+  "id": "F05",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "6083517202543",
+  "opencv_reads": [
+   "6083517202543"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "6083517202543"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "6083517202543"
+  },
+  "photo": "2026-10-05 10.59.08.jpg",
+  "id": "F06",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0005604256792",
+  "opencv_reads": [
+   "0005604256792"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "0005604256792"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0005604256792"
+  },
+  "photo": "2026-10-05 10.59.08.jpg",
+  "id": "F07",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "3309680351929",
+  "opencv_reads": [
+   "3309680351929"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "3309680351929"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "3309680351929"
+  },
+  "photo": "2026-10-05 10.59.08.jpg",
+  "id": "F08",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "2413239925903",
+  "opencv_reads": [
+   "2413239925903"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "2413239925903"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "2413239925903"
+  },
+  "photo": "2026-10-05 10.59.08.jpg",
+  "id": "F09",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "4931716019719",
+  "opencv_reads": [
+   "4931716019719"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "4931716019719"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "4931716019719"
+  },
+  "photo": "2026-10-05 10.59.08.jpg",
+  "id": "F10",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "6120991441317",
+  "opencv_reads": [
+   "6120991441317"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "6120991441317"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "6120991441317"
+  },
+  "photo": "2026-10-05 10.59.08.jpg",
+  "id": "F11",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "6068946507032",
+  "opencv_reads": [
+   "6068946507032"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "6068946507032"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "6068946507032"
+  },
+  "photo": "2026-10-05 10.59.08.jpg",
+  "id": "F12",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "9443789678632",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "9443789678632"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "read",
+   "code": "9443789678632"
+  },
+  "photo": "2026-10-05 10.59.11.jpg",
+  "id": "F01",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "5908628874933",
+  "opencv_reads": [
+   "5908628874933"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "5908628874933"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "5908628874933"
+  },
+  "photo": "2026-10-05 10.59.11.jpg",
+  "id": "F02",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "2473296352630",
+  "opencv_reads": [
+   "2473296352630"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "2473296352630"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "2473296352630"
+  },
+  "photo": "2026-10-05 10.59.11.jpg",
+  "id": "F03",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "9120547365484",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "9120547365484"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "9120547365484"
+  },
+  "photo": "2026-10-05 10.59.11.jpg",
+  "id": "F04",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "6978805497025",
+  "opencv_reads": [
+   "6978805497025"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "6978805497025"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "6978805497025"
+  },
+  "photo": "2026-10-05 10.59.11.jpg",
+  "id": "F05",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "6083517202543",
+  "opencv_reads": [
+   "6083517202543"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "6083517202543"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "6083517202543"
+  },
+  "photo": "2026-10-05 10.59.11.jpg",
+  "id": "F06",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0005604256792",
+  "opencv_reads": [
+   "0005604256792"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "0005604256792"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0005604256792"
+  },
+  "photo": "2026-10-05 10.59.11.jpg",
+  "id": "F07",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "3309680351929",
+  "opencv_reads": [
+   "3309680351929"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "3309680351929"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "3309680351929"
+  },
+  "photo": "2026-10-05 10.59.11.jpg",
+  "id": "F08",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "2413239925903",
+  "opencv_reads": [
+   "2413239925903"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "2413239925903"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "2413239925903"
+  },
+  "photo": "2026-10-05 10.59.11.jpg",
+  "id": "F09",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "4931716019719",
+  "opencv_reads": [
+   "4931716019719"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "4931716019719"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "4931716019719"
+  },
+  "photo": "2026-10-05 10.59.11.jpg",
+  "id": "F10",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "6120991441317",
+  "opencv_reads": [
+   "6120991441317"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "6120991441317"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "6120991441317"
+  },
+  "photo": "2026-10-05 10.59.11.jpg",
+  "id": "F11",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "6068946507032",
+  "opencv_reads": [
+   "6068946507032"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "6068946507032"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "6068946507032"
+  },
+  "photo": "2026-10-05 10.59.11.jpg",
+  "id": "F12",
+  "damage": "clean"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "3686808208007",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "3686808208007"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "3686808208007"
+  },
+  "photo": "2026-10-05 11.00.50.jpg",
+  "id": "A02",
+  "damage": "glare"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0988207781376",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "status": "reconstructed",
+   "code": null
+  },
+  "cascade": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "path": "",
+   "status": "rejected",
+   "code": null
+  },
+  "photo": "2026-10-05 11.00.50.jpg",
+  "id": "A03",
+  "damage": "glare"
+ },
+ {
+  "relabelled_from": null,
+  "multi": true,
+  "truth": "0980067650533",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "0980067650533"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "0980067650533"
+  },
+  "photo": "2026-10-05 11.00.50.jpg",
+  "id": "A04",
+  "damage": "glare"
+ },
+ {
+  "relabelled_from": null,
+  "multi": true,
+  "truth": "2306825549129",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "status": "reconstructed",
+   "code": null
+  },
+  "cascade": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "path": "",
+   "status": "rejected",
+   "code": null
+  },
+  "photo": "2026-10-05 11.00.50.jpg",
+  "id": "A05",
+  "damage": "glare"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "5776852741570",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "5776852741570"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "5776852741570"
+  },
+  "photo": "2026-10-05 11.00.50.jpg",
+  "id": "A06",
+  "damage": "glare"
+ },
+ {
+  "relabelled_from": null,
+  "multi": true,
+  "truth": "3512445453909",
+  "opencv_reads": [
+   "3512445453909"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "3512445453909"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "3512445453909"
+  },
+  "photo": "2026-10-05 11.00.50.jpg",
+  "id": "A07",
+  "damage": "glare"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "3463581050845",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "3463581050845"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "3463581050845"
+  },
+  "photo": "2026-10-05 11.00.50.jpg",
+  "id": "A08",
+  "damage": "glare"
+ },
+ {
+  "relabelled_from": null,
+  "multi": true,
+  "truth": "0141833038706",
+  "opencv_reads": [
+   "0141833038706",
+   "0141833038706"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "0141833038706"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0141833038706"
+  },
+  "photo": "2026-10-05 11.00.50.jpg",
+  "id": "A09",
+  "damage": "glare"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "8346077379475",
+  "opencv_reads": [
+   "8346077379475"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "8346077379475"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "8346077379475"
+  },
+  "photo": "2026-10-05 11.00.50.jpg",
+  "id": "A10",
+  "damage": "glare"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "2341436572418",
+  "opencv_reads": [
+   "2341436572418"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "2341436572418"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "2341436572418"
+  },
+  "photo": "2026-10-05 11.00.50.jpg",
+  "id": "A11",
+  "damage": "glare"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "8062499517058",
+  "opencv_reads": [
+   "8062499517058"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "8062499517058"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "8062499517058"
+  },
+  "photo": "2026-10-05 11.00.50.jpg",
+  "id": "A12",
+  "damage": "glare"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "4977328803292",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "4977328803292"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "read",
+   "code": "4977328803292"
+  },
+  "photo": "2026-10-05 11.01.05.jpg",
+  "id": "B01",
+  "damage": "glare"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "9045919442979",
+  "opencv_reads": [
+   "9045919442979"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "9045919442979"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "9045919442979"
+  },
+  "photo": "2026-10-05 11.01.05.jpg",
+  "id": "B02",
+  "damage": "glare"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0483044521814",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "0483044521814"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "0483044521814"
+  },
+  "photo": "2026-10-05 11.01.05.jpg",
+  "id": "B03",
+  "damage": "glare"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "9029951399682",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "9029951399682"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "9029951399682"
+  },
+  "photo": "2026-10-05 11.01.05.jpg",
+  "id": "B04",
+  "damage": "glare"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0409546400099",
+  "opencv_reads": [
+   "0409546400099"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "0409546400099"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0409546400099"
+  },
+  "photo": "2026-10-05 11.01.05.jpg",
+  "id": "B05",
+  "damage": "glare"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0780980231327",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "0780980231327"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "0780980231327"
+  },
+  "photo": "2026-10-05 11.01.05.jpg",
+  "id": "B06",
+  "damage": "glare"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0012972593503",
+  "opencv_reads": [
+   "0012972593503"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "0012972593503"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0012972593503"
+  },
+  "photo": "2026-10-05 11.01.05.jpg",
+  "id": "B07",
+  "damage": "glare"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0350038585148",
+  "opencv_reads": [
+   "0350038585148"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "0350038585148"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0350038585148"
+  },
+  "photo": "2026-10-05 11.01.05.jpg",
+  "id": "B08",
+  "damage": "glare"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "2813757667154",
+  "opencv_reads": [
+   "2813757667154"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "2813757667154"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "2813757667154"
+  },
+  "photo": "2026-10-05 11.01.05.jpg",
+  "id": "B09",
+  "damage": "glare"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "2606655689867",
+  "opencv_reads": [
+   "2606655689867"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "2606655689867"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "2606655689867"
+  },
+  "photo": "2026-10-05 11.01.05.jpg",
+  "id": "B10",
+  "damage": "glare"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "2280889960390",
+  "opencv_reads": [
+   "2280889960390"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "2280889960390"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "2280889960390"
+  },
+  "photo": "2026-10-05 11.01.05.jpg",
+  "id": "B11",
+  "damage": "glare"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "9384698294165",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "9384698294165"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "9384698294165"
+  },
+  "photo": "2026-10-05 11.01.05.jpg",
+  "id": "B12",
+  "damage": "glare"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "4977328803292",
+  "opencv_reads": [
+   "4977328803292"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "4977328803292"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "4977328803292"
+  },
+  "photo": "2026-10-05 11.04.20.jpg",
+  "id": "B01",
+  "damage": "tear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "9045919442979",
+  "opencv_reads": [
+   "9045919442979"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "9045919442979"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "9045919442979"
+  },
+  "photo": "2026-10-05 11.04.20.jpg",
+  "id": "B02",
+  "damage": "tear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0483044521814",
+  "opencv_reads": [
+   "0483044521814"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "0483044521814"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0483044521814"
+  },
+  "photo": "2026-10-05 11.04.20.jpg",
+  "id": "B03",
+  "damage": "tear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": true,
+  "truth": "9029951399682",
+  "opencv_reads": [
+   "9029951399682"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "9029951399682"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "9029951399682"
+  },
+  "photo": "2026-10-05 11.04.20.jpg",
+  "id": "B04",
+  "damage": "tear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0409546400099",
+  "opencv_reads": [
+   "0409546400099"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "0409546400099"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0409546400099"
+  },
+  "photo": "2026-10-05 11.04.20.jpg",
+  "id": "B05",
+  "damage": "tear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0780980231327",
+  "opencv_reads": [
+   "0780980231327"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "0780980231327"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0780980231327"
+  },
+  "photo": "2026-10-05 11.04.20.jpg",
+  "id": "B06",
+  "damage": "tear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0012972593503",
+  "opencv_reads": [
+   "0012972593503"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "0012972593503"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0012972593503"
+  },
+  "photo": "2026-10-05 11.04.20.jpg",
+  "id": "B07",
+  "damage": "tear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0350038585148",
+  "opencv_reads": [
+   "0350038585148"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "0350038585148"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0350038585148"
+  },
+  "photo": "2026-10-05 11.04.20.jpg",
+  "id": "B08",
+  "damage": "tear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "2813757667154",
+  "opencv_reads": [
+   "2813757667154"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "2813757667154"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "2813757667154"
+  },
+  "photo": "2026-10-05 11.04.20.jpg",
+  "id": "B09",
+  "damage": "tear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": true,
+  "truth": "2606655689867",
+  "opencv_reads": [
+   "2606655689867"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "2606655689867"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "2606655689867"
+  },
+  "photo": "2026-10-05 11.04.20.jpg",
+  "id": "B10",
+  "damage": "tear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "2280889960390",
+  "opencv_reads": [
+   "2280889960390"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "2280889960390"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "2280889960390"
+  },
+  "photo": "2026-10-05 11.04.20.jpg",
+  "id": "B11",
+  "damage": "tear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "9384698294165",
+  "opencv_reads": [
+   "9384698294165"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "9384698294165"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "9384698294165"
+  },
+  "photo": "2026-10-05 11.04.20.jpg",
+  "id": "B12",
+  "damage": "tear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "6232260287424",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "6232260287424"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "6232260287424"
+  },
+  "photo": "2026-10-05 11.05.25.jpg",
+  "id": "C01",
+  "damage": "crumple"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "9077486093162",
+  "opencv_reads": [
+   "9077486093162"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "9077486093162"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "9077486093162"
+  },
+  "photo": "2026-10-05 11.05.25.jpg",
+  "id": "C02",
+  "damage": "crumple"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "6482437956749",
+  "opencv_reads": [
+   "6482437956749"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "6482437956749"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "6482437956749"
+  },
+  "photo": "2026-10-05 11.05.25.jpg",
+  "id": "C03",
+  "damage": "crumple"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "9390373224853",
+  "opencv_reads": [
+   "9390373224853"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "9390373224853"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "9390373224853"
+  },
+  "photo": "2026-10-05 11.05.25.jpg",
+  "id": "C04",
+  "damage": "crumple"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "4775971246264",
+  "opencv_reads": [
+   "4775971246264"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "4775971246264"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "4775971246264"
+  },
+  "photo": "2026-10-05 11.05.25.jpg",
+  "id": "C05",
+  "damage": "crumple"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "5709838114877",
+  "opencv_reads": [
+   "5709838114877"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "5709838114877"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "path": "arpi-over-opencv",
+   "status": "disputed",
+   "code": null
+  },
+  "photo": "2026-10-05 11.05.25.jpg",
+  "id": "C06",
+  "damage": "crumple"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "9828685569701",
+  "opencv_reads": [
+   "9828685569701"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "status": "reconstructed",
+   "code": null
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "path": "arpi-over-opencv",
+   "status": "disputed",
+   "code": null
+  },
+  "photo": "2026-10-05 11.05.25.jpg",
+  "id": "C07",
+  "damage": "crumple"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "3321294129817",
+  "opencv_reads": [
+   "3321294129817"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "3321294129817"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "3321294129817"
+  },
+  "photo": "2026-10-05 11.05.25.jpg",
+  "id": "C08",
+  "damage": "crumple"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "4775111367019",
+  "opencv_reads": [
+   "4775111367019"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "4775111367019"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "4775111367019"
+  },
+  "photo": "2026-10-05 11.05.25.jpg",
+  "id": "C09",
+  "damage": "crumple"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "1290452442919",
+  "opencv_reads": [
+   "1290452442919"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "1290452442919"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "1290452442919"
+  },
+  "photo": "2026-10-05 11.05.25.jpg",
+  "id": "C10",
+  "damage": "crumple"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "4404393826364",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "4404393826364"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "4404393826364"
+  },
+  "photo": "2026-10-05 11.05.25.jpg",
+  "id": "C11",
+  "damage": "crumple"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "1264114651827",
+  "opencv_reads": [
+   "1264114651827"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "1264114651827"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "1264114651827"
+  },
+  "photo": "2026-10-05 11.05.25.jpg",
+  "id": "C12",
+  "damage": "crumple"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "3457741851397",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "3457741851397"
+  },
+  "cascade": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "path": "",
+   "status": "rejected",
+   "code": null
+  },
+  "photo": "2026-10-05 11.06.18.jpg",
+  "id": "D01",
+  "damage": "fade"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "1215031693773",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "1215031693773"
+  },
+  "cascade": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "path": "",
+   "status": "rejected",
+   "code": null
+  },
+  "photo": "2026-10-05 11.06.18.jpg",
+  "id": "D02",
+  "damage": "fade"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "5413808592403",
+  "opencv_reads": [
+   "5413808592403"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "5413808592403"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "5413808592403"
+  },
+  "photo": "2026-10-05 11.06.18.jpg",
+  "id": "D03",
+  "damage": "fade"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0287217960710",
+  "opencv_reads": [
+   "0287217960710"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "0287217960710"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0287217960710"
+  },
+  "photo": "2026-10-05 11.06.18.jpg",
+  "id": "D04",
+  "damage": "fade"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "7000201497770",
+  "opencv_reads": [
+   "7000201497770"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "7000201497770"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "7000201497770"
+  },
+  "photo": "2026-10-05 11.06.18.jpg",
+  "id": "D05",
+  "damage": "fade"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "3620564679626",
+  "opencv_reads": [
+   "3620564679626"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "3620564679626"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "3620564679626"
+  },
+  "photo": "2026-10-05 11.06.18.jpg",
+  "id": "D06",
+  "damage": "fade"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "7626500793575",
+  "opencv_reads": [
+   "7626500793575"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "7626500793575"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "7626500793575"
+  },
+  "photo": "2026-10-05 11.06.18.jpg",
+  "id": "D07",
+  "damage": "fade"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "7558078544610",
+  "opencv_reads": [
+   "7558078544610"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "7558078544610"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "7558078544610"
+  },
+  "photo": "2026-10-05 11.06.18.jpg",
+  "id": "D08",
+  "damage": "fade"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "1350011574311",
+  "opencv_reads": [
+   "1350011574311"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "1350011574311"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "1350011574311"
+  },
+  "photo": "2026-10-05 11.06.18.jpg",
+  "id": "D09",
+  "damage": "fade"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0959872547239",
+  "opencv_reads": [
+   "0959872547239"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "0959872547239"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0959872547239"
+  },
+  "photo": "2026-10-05 11.06.18.jpg",
+  "id": "D10",
+  "damage": "fade"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "8468978819192",
+  "opencv_reads": [
+   "8468978819192"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "8468978819192"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "8468978819192"
+  },
+  "photo": "2026-10-05 11.06.18.jpg",
+  "id": "D11",
+  "damage": "fade"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "5092283237100",
+  "opencv_reads": [
+   "5092283237100"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "5092283237100"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "5092283237100"
+  },
+  "photo": "2026-10-05 11.06.18.jpg",
+  "id": "D12",
+  "damage": "fade"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "3495668447927",
+  "opencv_reads": [
+   "3495668447927"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "3495668447927"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "3495668447927"
+  },
+  "photo": "2026-10-05 11.07.03.jpg",
+  "id": "E01",
+  "damage": "smear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0467421407304",
+  "opencv_reads": [
+   "0467421407304"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "0467421407304"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0467421407304"
+  },
+  "photo": "2026-10-05 11.07.03.jpg",
+  "id": "E02",
+  "damage": "smear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "1155428409368",
+  "opencv_reads": [
+   "1155428409368"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "1155428409368"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "1155428409368"
+  },
+  "photo": "2026-10-05 11.07.03.jpg",
+  "id": "E03",
+  "damage": "smear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "7738988404178",
+  "opencv_reads": [
+   "7738988404178"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "7738988404178"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "7738988404178"
+  },
+  "photo": "2026-10-05 11.07.03.jpg",
+  "id": "E04",
+  "damage": "smear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "5215929829846",
+  "opencv_reads": [
+   "5215929829846"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "5215929829846"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "5215929829846"
+  },
+  "photo": "2026-10-05 11.07.03.jpg",
+  "id": "E05",
+  "damage": "smear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0503035709998",
+  "opencv_reads": [
+   "0503035709998"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "0503035709998"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0503035709998"
+  },
+  "photo": "2026-10-05 11.07.03.jpg",
+  "id": "E06",
+  "damage": "smear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0960291884799",
+  "opencv_reads": [
+   "0960291884799"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "0960291884799"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0960291884799"
+  },
+  "photo": "2026-10-05 11.07.03.jpg",
+  "id": "E07",
+  "damage": "smear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "8209000182279",
+  "opencv_reads": [
+   "8209000182279"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "8209000182279"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "8209000182279"
+  },
+  "photo": "2026-10-05 11.07.03.jpg",
+  "id": "E08",
+  "damage": "smear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "1131319667444",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "1131319667444"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "1131319667444"
+  },
+  "photo": "2026-10-05 11.07.03.jpg",
+  "id": "E09",
+  "damage": "smear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "7640876079521",
+  "opencv_reads": [
+   "7640876079521"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "7640876079521"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "7640876079521"
+  },
+  "photo": "2026-10-05 11.07.03.jpg",
+  "id": "E10",
+  "damage": "smear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "3397833976907",
+  "opencv_reads": [
+   "3397833976907"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "3397833976907"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "3397833976907"
+  },
+  "photo": "2026-10-05 11.07.03.jpg",
+  "id": "E11",
+  "damage": "smear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "8457894637478",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "status": "reconstructed",
+   "code": null
+  },
+  "cascade": {
+   "top1": false,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "path": "",
+   "status": "rejected",
+   "code": null
+  },
+  "photo": "2026-10-05 11.07.03.jpg",
+  "id": "E12",
+  "damage": "smear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "4977328803292",
+  "opencv_reads": [
+   "4977328803292"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "4977328803292"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "4977328803292"
+  },
+  "photo": "2026-10-05 11.39.38.jpg",
+  "id": "B01",
+  "damage": "tear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "9045919442979",
+  "opencv_reads": [
+   "9045919442979"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "9045919442979"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "9045919442979"
+  },
+  "photo": "2026-10-05 11.39.38.jpg",
+  "id": "B02",
+  "damage": "tear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0483044521814",
+  "opencv_reads": [
+   "0483044521814"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "0483044521814"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0483044521814"
+  },
+  "photo": "2026-10-05 11.39.38.jpg",
+  "id": "B03",
+  "damage": "tear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "9029951399682",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "9029951399682"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "9029951399682"
+  },
+  "photo": "2026-10-05 11.39.38.jpg",
+  "id": "B04",
+  "damage": "tear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0409546400099",
+  "opencv_reads": [
+   "0409546400099"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "0409546400099"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0409546400099"
+  },
+  "photo": "2026-10-05 11.39.38.jpg",
+  "id": "B05",
+  "damage": "tear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0780980231327",
+  "opencv_reads": [
+   "0780980231327"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "0780980231327"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0780980231327"
+  },
+  "photo": "2026-10-05 11.39.38.jpg",
+  "id": "B06",
+  "damage": "tear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0012972593503",
+  "opencv_reads": [
+   "0012972593503"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "0012972593503"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "0012972593503"
+  },
+  "photo": "2026-10-05 11.39.38.jpg",
+  "id": "B07",
+  "damage": "tear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0350038585148",
+  "opencv_reads": [
+   "0350038589900"
+  ],
+  "opencv": {
+   "right": false,
+   "wrong": true
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "0350038585148"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "0350038585148"
+  },
+  "photo": "2026-10-05 11.39.38.jpg",
+  "id": "B08",
+  "damage": "tear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "2813757667154",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "2813757667154"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "2813757667154"
+  },
+  "photo": "2026-10-05 11.39.38.jpg",
+  "id": "B09",
+  "damage": "tear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "2606655689867",
+  "opencv_reads": [
+   "2606655689867"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "read",
+   "code": "2606655689867"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "2606655689867"
+  },
+  "photo": "2026-10-05 11.39.38.jpg",
+  "id": "B10",
+  "damage": "tear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "2280889960390",
+  "opencv_reads": [
+   "2280889960390"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "2280889960390"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "2280889960390"
+  },
+  "photo": "2026-10-05 11.39.38.jpg",
+  "id": "B11",
+  "damage": "tear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "9384698294165",
+  "opencv_reads": [
+   "9384698294165"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "9384698294165"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "path": "arpi-over-opencv",
+   "status": "disputed",
+   "code": null
+  },
+  "photo": "2026-10-05 11.39.38.jpg",
+  "id": "B12",
+  "damage": "tear"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "9443789678632",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "9443789678632"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "9443789678632"
+  },
+  "photo": "2026-10-05 11.42.30.jpg",
+  "id": "F01",
+  "damage": "occlusion"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "5908628874933",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "5908628874933"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "5908628874933"
+  },
+  "photo": "2026-10-05 11.42.30.jpg",
+  "id": "F02",
+  "damage": "occlusion"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "2473296352630",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "2473296352630"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "2473296352630"
+  },
+  "photo": "2026-10-05 11.42.30.jpg",
+  "id": "F03",
+  "damage": "occlusion"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "9120547365484",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "9120547365484"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "9120547365484"
+  },
+  "photo": "2026-10-05 11.42.30.jpg",
+  "id": "F04",
+  "damage": "occlusion"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "6978805497025",
+  "opencv_reads": [
+   "6978805497025"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "6978805497025"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "6978805497025"
+  },
+  "photo": "2026-10-05 11.42.30.jpg",
+  "id": "F05",
+  "damage": "occlusion"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "6083517202543",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "6083517202543"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "6083517202543"
+  },
+  "photo": "2026-10-05 11.42.30.jpg",
+  "id": "F06",
+  "damage": "occlusion"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "0005604256792",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "0005604256792"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "0005604256792"
+  },
+  "photo": "2026-10-05 11.42.30.jpg",
+  "id": "F07",
+  "damage": "occlusion"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "3309680351929",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "3309680351929"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "3309680351929"
+  },
+  "photo": "2026-10-05 11.42.30.jpg",
+  "id": "F08",
+  "damage": "occlusion"
+ },
+ {
+  "relabelled_from": null,
+  "multi": true,
+  "truth": "2413239925903",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "2413239925903"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "arpi",
+   "status": "unique-in-list",
+   "code": "2413239925903"
+  },
+  "photo": "2026-10-05 11.42.30.jpg",
+  "id": "F09",
+  "damage": "occlusion"
+ },
+ {
+  "relabelled_from": null,
+  "multi": true,
+  "truth": "4931716019719",
+  "opencv_reads": [
+   "4931716019719"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "4931716019719"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "4931716019719"
+  },
+  "photo": "2026-10-05 11.42.30.jpg",
+  "id": "F10",
+  "damage": "occlusion"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "6120991441317",
+  "opencv_reads": [],
+  "opencv": {
+   "right": false,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "status": "reconstructed",
+   "code": null
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": false,
+   "right": false,
+   "wrong": false,
+   "path": "arpi",
+   "status": "reconstructed",
+   "code": null
+  },
+  "photo": "2026-10-05 11.42.30.jpg",
+  "id": "F11",
+  "damage": "occlusion"
+ },
+ {
+  "relabelled_from": null,
+  "multi": false,
+  "truth": "6068946507032",
+  "opencv_reads": [
+   "6068946507032"
+  ],
+  "opencv": {
+   "right": true,
+   "wrong": false
+  },
+  "arpi": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "status": "unique-in-list",
+   "code": "6068946507032"
+  },
+  "cascade": {
+   "top1": true,
+   "asserted": true,
+   "right": true,
+   "wrong": false,
+   "path": "opencv-verified",
+   "status": "read",
+   "code": "6068946507032"
+  },
+  "photo": "2026-10-05 11.42.30.jpg",
+  "id": "F12",
+  "damage": "occlusion"
+ }
+]

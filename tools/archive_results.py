@@ -86,8 +86,7 @@ def singles_table(rows):
     single = [r for r in rows if not r.get("multi")]
     n, multi = len(single), len(rows) - len(single)
     f = lambda who, k: sum(1 for r in single if r[who][k])  # noqa: E731
-    return "
-".join([
+    return "\n".join([
         "| | count of {} single-code crops |".format(n), "|---|---|",
         "| OpenCV right / wrong | {} / {} |".format(f("opencv", "right"), f("opencv", "wrong")),
         "| ARPI ranked first / asserted / wrong | {} / {} / {} |".format(
@@ -127,6 +126,19 @@ def main():
         md += ["## {}".format(name.replace("_", ", ")), ""]
         md.append(singles_table(data) if name.startswith("singles") else sheets_table(data))
         md.append("")
+    # The synthetic sweep: rendered labels, not photos. Labelled as such.
+    syn = ROOT / "build" / "synthetic.json"
+    if syn.exists():
+        shutil.copy(syn, out / "synthetic.json")
+        if (ROOT / "build" / "synthetic.txt").exists():
+            shutil.copy(ROOT / "build" / "synthetic.txt", out / "synthetic.txt")
+        t = json.loads(syn.read_text(encoding="utf-8"))["total"]
+        md += ["## synthetic (rendered labels, not photos)", "",
+               "| | count of {} images |".format(t["n"]), "|---|---|",
+               "| OpenCV right | {} |".format(t["baseline"]),
+               "| ARPI right code ranked first | {} |".format(t["top1"]),
+               "| ARPI asserted / wrong | {} / {} |".format(t["asserted"], t["false_pos"]),
+               ""]
     (out / "summary.md").write_text("\n".join(md), encoding="utf-8")
     print("wrote", out.relative_to(ROOT))
     return 0

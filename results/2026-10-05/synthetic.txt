@@ -1,0 +1,32 @@
+kind         sev    n |   opencv  read  top1  top3 | false+  naive+ |   live
+clean        0.0    8 |        8     8     8     8 |      0       0 |    1.0
+scratch      0.2    8 |        7     5     8     8 |      0       0 |    1.0
+scratch      0.5    8 |        6     1     8     8 |      0       0 |    1.0
+scratch      0.8    8 |        7     0     8     8 |      0       0 |    1.0
+tear        0.06    8 |        0     0     6     6 |      0       0 |    6.5
+tear        0.12    8 |        0     0     2     5 |      0       0 |   22.0
+tear         0.2    8 |        0     0     0     3 |      0       0 |   32.0
+occlusion   0.06    8 |        5     1     8     8 |      0       0 |    1.0
+occlusion   0.12    8 |        6     0     7     7 |      0       0 |    1.0
+occlusion    0.2    8 |        2     0     8     8 |      0       0 |   20.0
+smear        0.1    8 |        7     3     6     6 |      0       0 |    1.0
+smear       0.25    8 |        6     3     8     8 |      0       0 |    1.0
+smear        0.4    8 |        5     6     7     7 |      0       0 |    1.0
+fade         0.5    8 |        8     8     8     8 |      0       0 |    1.0
+fade        0.75    8 |        8     8     8     8 |      0       0 |    1.0
+fade         0.9    8 |        1     8     8     8 |      0       0 |    1.0
+glare        0.4    8 |        6     4     8     8 |      0       0 |    1.0
+glare        0.8    8 |        8     1     8     8 |      0       0 |    1.0
+glare        1.2    8 |        6     2     7     7 |      0       0 |    1.0
+motion       0.5    8 |        8     8     8     8 |      0       0 |    1.0
+motion       1.0    8 |        4     5     8     8 |      0       0 |    1.0
+motion       1.5    8 |        2     3     3     3 |      0       0 |  135.0
+wrinkle      0.3    8 |        8     4     8     8 |      0       0 |    1.0
+wrinkle      0.6    8 |        8     1     8     8 |      0       0 |    1.0
+wrinkle      1.0    8 |        7     2     6     7 |      0       0 |    2.0
+displaced    0.2    8 |        7     2     7     7 |      0       0 |    1.0
+displaced    0.4    8 |        4     2     4     4 |      0       0 |    5.0
+displaced    0.7    8 |        0     0     3     3 |      0       0 |    7.5
+
+all: 224 images, opencv 144, top1 186, top3 193, asserted 85 with 0 wrong, naive asserted 156 with 0 wrong
+487s, synthetic
