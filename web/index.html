@@ -108,6 +108,14 @@
                     border: 1px solid var(--amber); padding: 8px 10px; margin: 6px 6px 0 0; }
   #cascade .confirmed { color: var(--ok); margin-top: 6px; }
 
+  /* Copy: the code goes to the clipboard, so a read can be pasted into
+     whatever system needs it instead of typed by hand. */
+  button.copy, #cascade button.copy, #verdict button.copy { font: 12px var(--mono); color: var(--ink); background: transparent;
+                border: 1px solid var(--hud-dim); padding: 4px 8px; margin: 0 0 0 10px;
+                letter-spacing: 0.04em; text-transform: none; vertical-align: middle;
+                cursor: pointer; }
+  button.copy.done, #cascade button.copy.done, #verdict button.copy.done { color: var(--ok); border-color: var(--ok); }
+
   /* Candidates without a list: shown, not chosen. Digits where the candidates
      differ are marked, so the damage is visible in the numbers themselves. */
   .cands { margin-top: 6px; }
@@ -503,14 +511,14 @@ function renderVerdict() {
   const order = r.candidate_order || [];
   if (r.status === "read") {
     v.classList.add("read");
-    line("big", r.code);
+    line("big", r.code).appendChild(copyButton(r.code));
     line("", r.path === "opencv-verified" ? "Read by OpenCV, the bars agree" : "Read from the bars");
     return;
   }
   if (r.status === "unique-in-list") {
     // With a list there is a real decision to sign off, so this one asks.
     v.classList.add("recon");
-    line("big", r.code);
+    line("big", r.code).appendChild(copyButton(r.code));
     line("", "Reconstructed. Only this code in your list fits.");
     const b = document.createElement("button");
     b.textContent = S.confirmed ? "Confirmed" : "Confirm";
@@ -528,6 +536,40 @@ function renderVerdict() {
   }
   v.appendChild(candidateRows(r, order, 3));
   if (r.status !== "disputed" && r.live_count > 3 && !S.known) line("dim", "A code list would narrow this down.");
+}
+
+// ---- copy to clipboard -------------------------------------------------------------
+async function copyText(text) {
+  try {
+    await navigator.clipboard.writeText(text);
+    return true;
+  } catch (e) {
+    // Older browsers, or a page not on https: the textarea route.
+    const t = document.createElement("textarea");
+    t.value = text;
+    t.setAttribute("readonly", "");
+    t.style.position = "fixed"; t.style.opacity = "0";
+    document.body.appendChild(t);
+    t.select();
+    let ok = false;
+    try { ok = document.execCommand("copy"); } catch (e2) { ok = false; }
+    t.remove();
+    return ok;
+  }
+}
+
+function copyButton(code) {
+  const b = document.createElement("button");
+  b.className = "copy";
+  b.textContent = "Copy";
+  b.onclick = async (ev) => {
+    ev.stopPropagation();
+    const ok = await copyText(code);
+    b.textContent = ok ? "Copied" : "Copy failed";
+    b.classList.toggle("done", ok);
+    setTimeout(() => { b.textContent = "Copy"; b.classList.remove("done"); }, 1500);
+  };
+  return b;
 }
 
 // ---- the last result, held -------------------------------------------------------
@@ -593,6 +635,7 @@ function candidateRows(r, order, n) {
     fit.textContent = c ? "fit " + Math.round(c.share * 100) + "%" :
       (r.opencv && r.opencv.read === code ? "OpenCV" : "");
     row.appendChild(fit);
+    row.appendChild(copyButton(code));
     box.appendChild(row);
   });
   return box;
@@ -659,9 +702,10 @@ function renderCascade() {
   }
   // Locked.
   const order = r.candidate_order || [];
-  if (r.status === "read") { say(arpiEl, "good code", r.code); return; }
+  if (r.status === "read") { say(arpiEl, "good code", r.code); arpiEl.appendChild(copyButton(r.code)); return; }
   if (r.status === "unique-in-list") {
     say(arpiEl, "warn code", r.code);
+    arpiEl.appendChild(copyButton(r.code));
     const n = document.createElement("div"); n.className = "say warn";
     n.textContent = "Reconstructed. Only this code in your list fits.";
     more.appendChild(n);

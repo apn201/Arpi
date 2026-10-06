@@ -42,7 +42,7 @@
 <body>
 
 <h1>ARPI</h1>
-<div class="sub">Reads barcodes too damaged to scan. Technical report, OpenCV AI Competition 2026.</div>
+<div class="sub">Agentic Reconstruction of Partial Identifiers. Reads barcodes too damaged to scan.<br>Technical report, OpenCV AI Competition 2026.</div>
 
 <div class="meta">
   <div>Author: Juha Lilja (APN201)</div>
@@ -85,7 +85,7 @@
   <li>The answer is one of four things: a clean read, the only code in your list that fits, ranked candidates, or just the digits that were readable.</li>
 </ul>
 
-<p>The safety rule: ARPI never asserts a code it had to reconstruct. A reconstruction is shown as options with their fit and the person picks. When the list leaves only one code, the page says "Reconstructed. Only this code in your list fits" and still asks the person to confirm. The system selects, the human confirms.</p>
+<p>The safety rule: ARPI never asserts a code it had to reconstruct. A reconstruction is shown as options with their fit, and the digits they differ in are marked. There is nothing to pick. When the list leaves only one code, the page says "Reconstructed. Only this code in your list fits" and still asks the person to confirm. The system selects, the human confirms.</p>
 
 <div class="two">
   <figure>
@@ -105,7 +105,7 @@
   <figcaption>The deployed system. One Lambda container serves the page and the decoder. The phone holds the accumulated evidence and sends it back with each frame, so the function is stateless.</figcaption>
 </figure>
 
-<p>The phone side is a single HTML page with no framework: camera through getUserMedia, a canvas HUD, and a loop that sends the next frame as soon as the last answer is back. The server side is one Lambda function behind a Function URL. Serving the page from the same function gives the phone https, which a camera needs, without a separate web host.</p>
+<p>The phone side is a single HTML page with no framework: camera through getUserMedia, a canvas HUD, and a loop that sends the next frame as soon as the last answer is back. A scan locks when the leading code holds steady over a few frames, and the result stays on screen after the code is taken away, until a different code is in view. Phones have several rear cameras, so the page checks each once and keeps the one that reports continuous autofocus. The server side is one Lambda function behind a Function URL. Serving the page from the same function gives the phone https, which a camera needs, without a separate web host.</p>
 
 <p>The function holds nothing between requests. The evidence for the code being scanned is a few hundred numbers (a log-likelihood per digit per position). The phone keeps it and sends it back with the next frame. That is what makes a multi-frame scanner fit on Lambda.</p>
 
@@ -141,6 +141,11 @@
 
 <h2>7. The agent</h2>
 
+<figure>
+  <img src="agent.png" alt="Agent workflow: perceive with OpenCV, decide with rules, act by stopping or asking the person, next frame">
+  <figcaption>Perception, decision and action. The measurements come from OpenCV; the decision is a request with the measurement behind it; the person's next shot is the action that closes the loop.</figcaption>
+</figure>
+
 <p>After each frame the agent reads the scan's measurements (glare fraction, sharpness, contrast, per-half confidence, what the printed digits gave, how the code resolved) and returns one decision with the evidence it acted on:</p>
 
 <table class="text">
@@ -148,7 +153,7 @@
   <tr><td>aim</td><td>no code in view, or the frame was skipped (bad grid fit, low contrast)</td></tr>
   <tr><td>stop</td><td>read and checked</td></tr>
   <tr><td>stop, confirm</td><td>only one code in the list fits</td></tr>
-  <tr><td>stop, pick one</td><td>many frames and still no single answer: more of the same view will not help</td></tr>
+  <tr><td>stop</td><td>many frames and still no single answer: more of the same view will not help</td></tr>
   <tr><td>reshoot: tilt</td><td>share of the code washed white by glare over the limit</td></tr>
   <tr><td>reshoot: hold still</td><td>sharpness under the limit</td></tr>
   <tr><td>reshoot: one half</td><td>the halves differ ("right half confidence 0.38, other half 1.00")</td></tr>
@@ -160,6 +165,30 @@
 <p>Each request changes what the person does next, and the next frame's evidence is added to what is already known. That is the loop: an OpenCV measurement leads to a request, the request leads to a different picture, the picture changes the answer.</p>
 
 <p>The rules are deterministic and are the default. I also wired Claude on Bedrock to the same decision, given the same measurements and the rules' proposal, and required to cite what it acted on. In live use it added long, often pointless comments on codes that were already read, every one a model call, and it made the same decisions as the rules. So it is switched off and kept switchable. Bedrock (Claude Haiku 4.5) does one job in the deployed version: it phrases the measured damage facts in at most two sentences when a scan locks. The facts are extracted in code. Model output that gives advice or runs long is discarded and the template version of the same facts is shown.</p>
+
+<h3>Measured on real photos</h3>
+<p><code>tools/agent_trace.py</code> runs the loop on the physical set. For each label, frame 1 is a crop from the harder photo of its sheet (an angled shot, or the sheet in a plastic sleeve under glare) and frame 2 a crop from the straight photo of the same sheet. Frame 1 goes through exactly the phone's path. If the rules say stop, the scan ends there; otherwise frame 2 goes in with the evidence carried over in the state. 80 labels from seven photo pairs. One crop that showed the neighbouring label is not scored, and one pair could not be located.</p>
+<table>
+  <tr><th></th><th>no list</th><th>72-code list</th></tr>
+  <tr><td>stopped on frame 1</td><td>49</td><td>64</td></tr>
+  <tr><td>&nbsp;&nbsp;right / wrong</td><td>49 / 0</td><td>64 / 0</td></tr>
+  <tr><td>asked for another frame</td><td>31</td><td>16</td></tr>
+  <tr><td>&nbsp;&nbsp;settled right by frame 2</td><td>31</td><td>16</td></tr>
+  <tr><td>&nbsp;&nbsp;wrong, or still open</td><td>0</td><td>0</td></tr>
+</table>
+<p>So the agent never stopped on a wrong code, and every time it asked for more, the next frame settled it. Two things limit what that shows. The second photo was not taken in answer to the request, so this tests the decision to continue, not that a specific instruction ("the right half") was the one that helped. And frame 2 is the easy straight photo: OpenCV read every one of those 31 on its own. Requests on frame 1 without the list: 14 reshoot, 12 aim (frame not trusted), 4 load a list, 1 show the digits.</p>
+
+<p>One trace, label A02 in the plastic sleeve:</p>
+<pre>frame 1  OpenCV: no read.  ARPI: reconstructed, top candidate 3686808208137 (wrong, not asserted)
+         contrast 0.18, sharpness 0.86, left half 1.00, right half 0.55
+         agent: reshoot  "Try the right half from another angle, the other half is already read."
+                reason   "Right half confidence 0.55, other half 1.00."
+frame 2  out of the sleeve, evidence carried over
+         OpenCV: 3686808208007, checked against the bars: read
+         agent: stop  "Read and checked."            truth 3686808208007</pre>
+<p>The OpenCV measurement (right half confidence) chose the request, the request named the half that was wrong, and the answer was held back until it was settled.</p>
+
+<p>The glare rule never fired on these photos. It looks for pixels at full white, and a plastic sleeve under diffuse light lowers contrast (0.17 to 0.31 here) instead of blowing anything out. The agent asked for the weak half or a list instead, which still worked, but "tilt the label" was not what it said.</p>
 
 <h2>8. AWS deployment</h2>
 
@@ -237,13 +266,13 @@
   <li>The list in the physical test is 72 codes from random prefixes, which is forgiving.</li>
   <li>Rectification assumes a flat label. A long code wrapped round a can is not handled.</li>
   <li>Single crops are at about 4.7 px per module. A code filling the frame at close range has not been measured on its own.</li>
-  <li>The agent's requests are tested in code and used live, but how often a request turned a failure into a read has not been measured.</li>
+  <li>The agent's loop is measured on pairs of existing photos (section 7), not on second shots taken in answer to its requests. The glare rule looks for blown-out pixels and misses diffuse glare.</li>
   <li>The demo's daily scan ceiling can run out under heavy use, and then it returns 429 until midnight UTC.</li>
 </ul>
 
 <h2>11. Responsible use</h2>
 <ul>
-  <li><b>Never assert a reconstruction.</b> A code that had to be filled in is shown as candidates with their fit, or as the only list code that fits, and a person confirms. This is in the UI, not a footnote. The false positive rate is measured and published above, including the cases where it was not zero.</li>
+  <li><b>Never assert a reconstruction.</b> A code that had to be filled in is shown as candidates with their fit, or as the only list code that fits, which a person confirms. This is in the UI, not a footnote. The false positive rate is measured and published above, including the cases where it was not zero.</li>
   <li><b>No storage.</b> Camera frames are decoded in memory and not stored. Full-size photos go through a private bucket, are deleted after decoding, and anything left behind expires in a day.</li>
   <li><b>No personal data in the test set.</b> The physical set is printed test codes. Photos stay out of the repo; their hashes are in the manifest.</li>
   <li><b>The model does not decide.</b> Decoding and the candidate engine are deterministic. The model only phrases measured facts, and its output is checked and replaced if it advises or runs long.</li>
@@ -262,6 +291,7 @@ python tools/serve_local.py               # scanner page at http://localhost:801
 python -m arpi photo.jpg --known codes.csv
 python tools/eval_sheets.py data/physical/photos --cascade
 python tools/eval_singles.py data/physical/photos
+python tools/agent_trace.py data/physical/photos --out results/agent-2026-10-05
 python tools/evaluate.py --n 8            # synthetic sweep
 
 aws sso login --profile &lt;profile&gt;

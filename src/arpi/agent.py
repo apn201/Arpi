@@ -51,7 +51,7 @@ def decide_rules(scan):
                          "Only one code in the list fits.",
                          {"live_count": scan.get("live_count")})
     if frames >= MAX_FRAMES:
-        return _decision("stop", "Pick one of the candidates or scan again.",
+        return _decision("stop", "Scan again from another angle, or load a code list.",
                          "{} frames and still no single answer. More frames of the same "
                          "view will not help.".format(frames), {"frames": frames})
 

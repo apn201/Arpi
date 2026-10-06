@@ -2,69 +2,113 @@
 
 ## Cards
 
-Short, one per screen. Pick what fits the cut; the order follows the story.
+One or two technical facts per card. Numbers are from results/2026-10-05
+(whole sheets, 240 codes) unless the card says otherwise.
 
 ```
-ARPI
-Reads barcodes too damaged to scan.
-```
-
-```
-Beep. Try again.
-Type the digits by hand.
+OpenCV 63% right. ARPI + code list 95%.
+240 printed codes, real phone photos.
 ```
 
 ```
-OpenCV reads it first.
-ARPI takes what it can't.
+OpenCV: 2 wrong reads, checksum passes.
+ARPI: 0 wrong.
 ```
 
 ```
-OpenCV: 0350038583700
-Wrong. The checksum still passes.
+OpenCV goes first.
+Its reads are checked against the bars.
 ```
 
 ```
-ARPI: 0350038585148
-Same as the print.
+Catches the EAN-8 that OpenCV reads
+out of half a torn EAN-13.
 ```
 
 ```
-Filled-in digits are options.
-You pick. It never guesses.
+32 scanlines per code.
+Each votes on every module.
 ```
 
 ```
-Load your code list.
-Only one code fits.
+Grid fit: offset, module width,
+perspective bend. Per scanline.
 ```
 
 ```
-"Tilt the label, glare."
-It asks for the next shot.
+Fits digits, not edges.
+Survives destroyed guard bars.
 ```
 
 ```
-240 printed codes, real photos.
-OpenCV: 2 wrong reads. ARPI: 0.
+Piecewise warp.
+Realigns torn pieces put back crooked.
 ```
 
 ```
-OpenCV 5. AWS Lambda. Bedrock.
+95 modules: bar probability
++ confidence. Never collapsed.
 ```
 
 ```
-Next: long GS1-128 on ink tins.
-Invoice barcodes off a screen.
+Measures contrast, sharpness, glare.
+Skips frames it can't trust.
 ```
 
 ```
-Try it on your phone:
-github.com/apn201/Arpi
+OCR reads the printed digits.
+CRNN on cv2.dnn, cells cut by bar geometry.
 ```
 
-The 240 / 2 / 0 card is the whole-sheet run in results/2026-10-05. Keep it as
-it is or drop it; do not round it into "never wrong".
+```
+Orientation from the bars' parity.
+Never from the text.
+```
+
+```
+First digit hidden? Parity carries it.
+54 of 64 patterns are illegal.
+```
+
+```
+Exact K-best search.
+Checksum, parity, GS1 prefix stay hard.
+```
+
+```
+Every source: log-likelihood
+per digit, per position. They add.
+```
+
+```
+Frames add up.
+Glare moves, the hidden modules don't.
+```
+
+```
+Over 2% of the code blown white: "tilt".
+Halves differ by 0.3: "reshoot the weak half".
+```
+
+```
+Code list from your ERP:
+scored directly, often one survivor.
+```
+
+```
+Filled-in digits never asserted.
+Ranked candidates, person confirms.
+```
+
+```
+Stateless Lambda.
+The phone carries the evidence.
+```
+
+```
+Bedrock writes two sentences.
+Facts measured in code. Advice discarded.
+```
 
 ## YouTube
 
@@ -87,7 +131,7 @@ ARPI: a phone scanner for torn and taped barcodes
 **Description**
 
 ```
-ARPI reads barcodes that are too damaged to scan. When part of the code is gone, it works out what the code must have been, shows its working, and lets you pick. It never asserts a code it had to fill in.
+ARPI, Agentic Reconstruction of Partial Identifiers, reads barcodes that are too damaged to scan. When part of the code is gone, it works out what the code must have been, shows its working, and shows the options. It never asserts a code it had to fill in.
 
 Entry for the OpenCV AI Competition 2026, powered by AWS.
 

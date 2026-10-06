@@ -1,0 +1,3097 @@
+[
+ {
+  "id": "A01",
+  "truth": "2843146184269",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.57.41",
+   "2026-10-05 10.57.34"
+  ],
+  "frames": [
+   {
+    "status": "unreadable",
+    "path": null,
+    "code": null,
+    "top": null,
+    "opencv": null,
+    "facts": {},
+    "action": "reshoot",
+    "request": "Try a slightly different angle.",
+    "reason": "Not settled yet. Another view adds evidence."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "2843146184269",
+    "top": "2843146184269",
+    "opencv": "2843146184269",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.982,
+     "contrast": 0.457,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "2843146184269",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "A02",
+  "truth": "3686808208007",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.57.41",
+   "2026-10-05 10.57.34"
+  ],
+  "frames": [
+   {
+    "status": "rejected",
+    "path": "",
+    "code": null,
+    "top": null,
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.963,
+     "contrast": 0.004,
+     "left_quality": 0.484,
+     "right_quality": 0.434
+    },
+    "action": "aim",
+    "request": "Hold still, code inside the frame.",
+    "reason": "Frame skipped, grid did not fit (fit 0.54)."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "3686808208007",
+    "top": "3686808208007",
+    "opencv": "3686808208007",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.975,
+     "contrast": 0.325,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "3686808208007",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "A03",
+  "truth": "0988207781376",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.57.41",
+   "2026-10-05 10.57.34"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "arpi",
+    "code": "0988207781376",
+    "top": "0988207781376",
+    "opencv": "98221721",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.758,
+     "contrast": 0.174,
+     "left_quality": 0.958,
+     "right_quality": 0.958
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "0988207781376",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "A04",
+  "truth": "0980067650533",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.57.41",
+   "2026-10-05 10.57.34"
+  ],
+  "frames": [
+   {
+    "status": "rejected",
+    "path": "",
+    "code": null,
+    "top": null,
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.786,
+     "contrast": 0.108,
+     "left_quality": 0.665,
+     "right_quality": 0.844
+    },
+    "action": "aim",
+    "request": "Hold still, code inside the frame.",
+    "reason": "Frame skipped, too little contrast (0.11)."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "0980067650533",
+    "top": "0980067650533",
+    "opencv": "0980067650533",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.954,
+     "contrast": 0.381,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "0980067650533",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "A05",
+  "truth": "2306825549129",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.57.41",
+   "2026-10-05 10.57.34"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "2306825549129",
+    "top": "2306825549129",
+    "opencv": "2306825549129",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.891,
+     "contrast": 0.349,
+     "left_quality": 0.99,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "2306825549129",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "A06",
+  "truth": "5776852741570",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.57.41",
+   "2026-10-05 10.57.34"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "5776852741570",
+    "top": "5776852741570",
+    "opencv": "5776852741570",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.881,
+     "contrast": 0.294,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "5776852741570",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "A07",
+  "truth": "3512445453909",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.57.41",
+   "2026-10-05 10.57.34"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "3512445453909",
+    "top": "3512445453909",
+    "opencv": "3512445453909",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.953,
+     "contrast": 0.497,
+     "left_quality": 0.998,
+     "right_quality": 0.998
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "3512445453909",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "A08",
+  "truth": "3463581050845",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.57.41",
+   "2026-10-05 10.57.34"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "3463581050845",
+    "top": "3463581050845",
+    "opencv": "3463581050845",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.969,
+     "contrast": 0.563,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "3463581050845",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "A09",
+  "truth": "0141833038706",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.57.41",
+   "2026-10-05 10.57.34"
+  ],
+  "frames": [
+   {
+    "status": "reconstructed",
+    "path": "arpi",
+    "code": null,
+    "top": "0141833038706",
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.952,
+     "contrast": 0.425,
+     "left_quality": 0.651,
+     "right_quality": 1.0
+    },
+    "action": "reshoot",
+    "request": "Try the left half from another angle, the other half is already read.",
+    "reason": "Left half confidence 0.65, other half 1.00."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "0141833038706",
+    "top": "0141833038706",
+    "opencv": "0141833038706",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.96,
+     "contrast": 0.452,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "0141833038706",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "A10",
+  "truth": "8346077379475",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.57.41",
+   "2026-10-05 10.57.34"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "8346077379475",
+    "top": "8346077379475",
+    "opencv": "8346077379475",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.979,
+     "contrast": 0.53,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "8346077379475",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "A11",
+  "truth": "2341436572418",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.57.41",
+   "2026-10-05 10.57.34"
+  ],
+  "frames": [
+   {
+    "status": "rejected",
+    "path": "",
+    "code": null,
+    "top": null,
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.983,
+     "contrast": 0.02,
+     "left_quality": 0.546,
+     "right_quality": 0.13
+    },
+    "action": "aim",
+    "request": "Hold still, code inside the frame.",
+    "reason": "Frame skipped, grid did not fit (fit 0.57)."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "2341436572418",
+    "top": "2341436572418",
+    "opencv": "2341436572418",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.967,
+     "contrast": 0.472,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "2341436572418",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "A12",
+  "truth": "8062499517058",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.57.41",
+   "2026-10-05 10.57.34"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "8062499517058",
+    "top": "8062499517058",
+    "opencv": "8062499517058",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.87,
+     "contrast": 0.292,
+     "left_quality": 0.993,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "8062499517058",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "B03",
+  "truth": "0483044521814",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.57.53",
+   "2026-10-05 10.57.48"
+  ],
+  "frames": [
+   {
+    "status": "unreadable",
+    "path": null,
+    "code": null,
+    "top": null,
+    "opencv": null,
+    "facts": {},
+    "action": "reshoot",
+    "request": "Try a slightly different angle.",
+    "reason": "Not settled yet. Another view adds evidence."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "0483044521814",
+    "top": "0483044521814",
+    "opencv": "0483044521814",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.94,
+     "contrast": 0.37,
+     "left_quality": 0.988,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "0483044521814",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "B04",
+  "truth": "9029951399682",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.57.53",
+   "2026-10-05 10.57.48"
+  ],
+  "frames": [
+   {
+    "status": "unreadable",
+    "path": null,
+    "code": null,
+    "top": null,
+    "opencv": null,
+    "facts": {},
+    "action": "reshoot",
+    "request": "Try a slightly different angle.",
+    "reason": "Not settled yet. Another view adds evidence."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "9029951399682",
+    "top": "9029951399682",
+    "opencv": "9029951399682",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.915,
+     "contrast": 0.303,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "9029951399682",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "B05",
+  "truth": "0409546400099",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.57.53",
+   "2026-10-05 10.57.48"
+  ],
+  "frames": [
+   {
+    "status": "rejected",
+    "path": "",
+    "code": null,
+    "top": null,
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.785,
+     "contrast": 0.077,
+     "left_quality": 0.308,
+     "right_quality": 0.49
+    },
+    "action": "aim",
+    "request": "Hold still, code inside the frame.",
+    "reason": "Frame skipped, grid did not fit (fit 0.62)."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "0409546400099",
+    "top": "0409546400099",
+    "opencv": "0409546400099",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.956,
+     "contrast": 0.445,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "0409546400099",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "B06",
+  "truth": "0780980231327",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.57.53",
+   "2026-10-05 10.57.48"
+  ],
+  "frames": [
+   {
+    "status": "rejected",
+    "path": "",
+    "code": null,
+    "top": null,
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.971,
+     "contrast": 0.008,
+     "left_quality": 0.186,
+     "right_quality": 0.333
+    },
+    "action": "aim",
+    "request": "Hold still, code inside the frame.",
+    "reason": "Frame skipped, grid did not fit (fit 0.56)."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "0780980231327",
+    "top": "0780980231327",
+    "opencv": "0780980231327",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.944,
+     "contrast": 0.421,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "0780980231327",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "B07",
+  "truth": "0012972593503",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.57.53",
+   "2026-10-05 10.57.48"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "0012972593503",
+    "top": "0012972593503",
+    "opencv": "0012972593503",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.904,
+     "contrast": 0.299,
+     "left_quality": 0.998,
+     "right_quality": 0.97
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "0012972593503",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "B08",
+  "truth": "0350038585148",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.57.53",
+   "2026-10-05 10.57.48"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "0350038585148",
+    "top": "0350038585148",
+    "opencv": "0350038585148",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.929,
+     "contrast": 0.332,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "0350038585148",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "B09",
+  "truth": "2813757667154",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.57.53",
+   "2026-10-05 10.57.48"
+  ],
+  "frames": [
+   {
+    "status": "reconstructed",
+    "path": "arpi",
+    "code": null,
+    "top": "2813757667154",
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.965,
+     "contrast": 0.482,
+     "left_quality": 1.0,
+     "right_quality": 0.996
+    },
+    "action": "reshoot",
+    "request": "Try a slightly different angle.",
+    "reason": "Not settled yet. Another view adds evidence."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "2813757667154",
+    "top": "2813757667154",
+    "opencv": "2813757667154",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.975,
+     "contrast": 0.525,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "2813757667154",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "B10",
+  "truth": "2606655689867",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.57.53",
+   "2026-10-05 10.57.48"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "2606655689867",
+    "top": "2606655689867",
+    "opencv": "2606655689867",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.979,
+     "contrast": 0.526,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "2606655689867",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "B11",
+  "truth": "2280889960390",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.57.53",
+   "2026-10-05 10.57.48"
+  ],
+  "frames": [
+   {
+    "status": "rejected",
+    "path": "",
+    "code": null,
+    "top": null,
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.96,
+     "contrast": 0.064,
+     "left_quality": 0.371,
+     "right_quality": 0.574
+    },
+    "action": "aim",
+    "request": "Hold still, code inside the frame.",
+    "reason": "Frame skipped, grid did not fit (fit 0.59)."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "2280889960390",
+    "top": "2280889960390",
+    "opencv": "2280889960390",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.972,
+     "contrast": 0.47,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "2280889960390",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "B12",
+  "truth": "9384698294165",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.57.53",
+   "2026-10-05 10.57.48"
+  ],
+  "frames": [
+   {
+    "status": "reconstructed",
+    "path": "arpi",
+    "code": null,
+    "top": "9384698294165",
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.909,
+     "contrast": 0.361,
+     "left_quality": 0.957,
+     "right_quality": 0.998
+    },
+    "action": "reshoot",
+    "request": "Try a slightly different angle.",
+    "reason": "Not settled yet. Another view adds evidence."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "9384698294165",
+    "top": "9384698294165",
+    "opencv": "9384698294165",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.962,
+     "contrast": 0.511,
+     "left_quality": 0.988,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "9384698294165",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "C01",
+  "truth": "6232260287424",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.58.11",
+   "2026-10-05 10.58.06"
+  ],
+  "frames": [
+   {
+    "status": "unreadable",
+    "path": null,
+    "code": null,
+    "top": null,
+    "opencv": null,
+    "facts": {},
+    "action": "reshoot",
+    "request": "Try a slightly different angle.",
+    "reason": "Not settled yet. Another view adds evidence."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "6232260287424",
+    "top": "6232260287424",
+    "opencv": "6232260287424",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.979,
+     "contrast": 0.436,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "6232260287424",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "C02",
+  "truth": "9077486093162",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.58.11",
+   "2026-10-05 10.58.06"
+  ],
+  "frames": [
+   {
+    "status": "rejected",
+    "path": "",
+    "code": null,
+    "top": null,
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.949,
+     "contrast": 0.004,
+     "left_quality": 0.102,
+     "right_quality": 0.156
+    },
+    "action": "aim",
+    "request": "Hold still, code inside the frame.",
+    "reason": "Frame skipped, grid did not fit (fit 0.52)."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "9077486093162",
+    "top": "9077486093162",
+    "opencv": "9077486093162",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.953,
+     "contrast": 0.258,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "9077486093162",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "C03",
+  "truth": "6482437956749",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.58.11",
+   "2026-10-05 10.58.06"
+  ],
+  "frames": [
+   {
+    "status": "rejected",
+    "path": "",
+    "code": null,
+    "top": null,
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 1.0,
+     "contrast": 0.026,
+     "left_quality": 0.613,
+     "right_quality": 0.61
+    },
+    "action": "aim",
+    "request": "Hold still, code inside the frame.",
+    "reason": "Frame skipped, grid did not fit (fit 0.64)."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "6482437956749",
+    "top": "6482437956749",
+    "opencv": "6482437956749",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.962,
+     "contrast": 0.442,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "6482437956749",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "C04",
+  "truth": "9390373224853",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.58.11",
+   "2026-10-05 10.58.06"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "9077486093162",
+    "top": "9077486093162",
+    "opencv": "9077486093162",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.889,
+     "contrast": 0.168,
+     "left_quality": 0.999,
+     "right_quality": 0.992
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "9077486093162",
+  "right": false,
+  "wrong": true,
+  "neighbour": true
+ },
+ {
+  "id": "C05",
+  "truth": "4775971246264",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.58.11",
+   "2026-10-05 10.58.06"
+  ],
+  "frames": [
+   {
+    "status": "reconstructed",
+    "path": "arpi",
+    "code": null,
+    "top": "4775971246264",
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.96,
+     "contrast": 0.46,
+     "left_quality": 0.986,
+     "right_quality": 0.988
+    },
+    "action": "reshoot",
+    "request": "Try a slightly different angle.",
+    "reason": "Not settled yet. Another view adds evidence."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "4775971246264",
+    "top": "4775971246264",
+    "opencv": "4775971246264",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.97,
+     "contrast": 0.492,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "4775971246264",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "C06",
+  "truth": "5709838114877",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.58.11",
+   "2026-10-05 10.58.06"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "5709838114877",
+    "top": "5709838114877",
+    "opencv": "5709838114877",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.962,
+     "contrast": 0.471,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "5709838114877",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "C07",
+  "truth": "9828685569701",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.58.11",
+   "2026-10-05 10.58.06"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "9828685569701",
+    "top": "9828685569701",
+    "opencv": "9828685569701",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.969,
+     "contrast": 0.591,
+     "left_quality": 1.0,
+     "right_quality": 0.997
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "9828685569701",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "C08",
+  "truth": "3321294129817",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.58.11",
+   "2026-10-05 10.58.06"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "3321294129817",
+    "top": "3321294129817",
+    "opencv": "3321294129817",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.978,
+     "contrast": 0.592,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "3321294129817",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "C09",
+  "truth": "4775111367019",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.58.11",
+   "2026-10-05 10.58.06"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "arpi",
+    "code": "4775111367019",
+    "top": "4775111367019",
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.985,
+     "contrast": 0.618,
+     "left_quality": 0.994,
+     "right_quality": 0.973
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "4775111367019",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "C10",
+  "truth": "1290452442919",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.58.11",
+   "2026-10-05 10.58.06"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "1290452442919",
+    "top": "1290452442919",
+    "opencv": "1290452442919",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.959,
+     "contrast": 0.454,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "1290452442919",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "C11",
+  "truth": "4404393826364",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.58.11",
+   "2026-10-05 10.58.06"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "4404393826364",
+    "top": "4404393826364",
+    "opencv": "4404393826364",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.948,
+     "contrast": 0.4,
+     "left_quality": 1.0,
+     "right_quality": 0.995
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "4404393826364",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "C12",
+  "truth": "1264114651827",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.58.11",
+   "2026-10-05 10.58.06"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "arpi",
+    "code": "1264114651827",
+    "top": "1264114651827",
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.734,
+     "contrast": 0.201,
+     "left_quality": 0.997,
+     "right_quality": 0.961
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "1264114651827",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "E01",
+  "truth": "3495668447927",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.58.46",
+   "2026-10-05 10.58.43"
+  ],
+  "frames": [
+   {
+    "status": "rejected",
+    "path": "",
+    "code": null,
+    "top": null,
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.949,
+     "contrast": 0.006,
+     "left_quality": 0.939,
+     "right_quality": 0.373
+    },
+    "action": "aim",
+    "request": "Hold still, code inside the frame.",
+    "reason": "Frame skipped, grid did not fit (fit 0.63)."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "3495668447927",
+    "top": "3495668447927",
+    "opencv": "3495668447927",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.983,
+     "contrast": 0.567,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "3495668447927",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "E02",
+  "truth": "0467421407304",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.58.46",
+   "2026-10-05 10.58.43"
+  ],
+  "frames": [
+   {
+    "status": "rejected",
+    "path": "",
+    "code": null,
+    "top": null,
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 1.0,
+     "contrast": 0.007,
+     "left_quality": 0.153,
+     "right_quality": 0.106
+    },
+    "action": "aim",
+    "request": "Hold still, code inside the frame.",
+    "reason": "Frame skipped, grid did not fit (fit 0.47)."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "0467421407304",
+    "top": "0467421407304",
+    "opencv": "0467421407304",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.947,
+     "contrast": 0.411,
+     "left_quality": 0.992,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "0467421407304",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "E03",
+  "truth": "1155428409368",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.58.46",
+   "2026-10-05 10.58.43"
+  ],
+  "frames": [
+   {
+    "status": "reconstructed",
+    "path": "arpi",
+    "code": null,
+    "top": "1155428409368",
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.856,
+     "contrast": 0.252,
+     "left_quality": 0.985,
+     "right_quality": 0.97
+    },
+    "action": "reshoot",
+    "request": "Try a slightly different angle.",
+    "reason": "Not settled yet. Another view adds evidence."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "1155428409368",
+    "top": "1155428409368",
+    "opencv": "1155428409368",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.981,
+     "contrast": 0.607,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "1155428409368",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "E04",
+  "truth": "7738988404178",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.58.46",
+   "2026-10-05 10.58.43"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "7738988404178",
+    "top": "7738988404178",
+    "opencv": "7738988404178",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.902,
+     "contrast": 0.3,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "7738988404178",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "E05",
+  "truth": "5215929829846",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.58.46",
+   "2026-10-05 10.58.43"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "5215929829846",
+    "top": "5215929829846",
+    "opencv": "5215929829846",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.92,
+     "contrast": 0.392,
+     "left_quality": 0.99,
+     "right_quality": 0.986
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "5215929829846",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "E06",
+  "truth": "0503035709998",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.58.46",
+   "2026-10-05 10.58.43"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "0503035709998",
+    "top": "0503035709998",
+    "opencv": "0503035709998",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.96,
+     "contrast": 0.372,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "0503035709998",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "E07",
+  "truth": "0960291884799",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.58.46",
+   "2026-10-05 10.58.43"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "0960291884799",
+    "top": "0960291884799",
+    "opencv": "0960291884799",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.962,
+     "contrast": 0.489,
+     "left_quality": 1.0,
+     "right_quality": 0.987
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "0960291884799",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "E08",
+  "truth": "8209000182279",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.58.46",
+   "2026-10-05 10.58.43"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "8209000182279",
+    "top": "8209000182279",
+    "opencv": "8209000182279",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.976,
+     "contrast": 0.508,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "8209000182279",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "E09",
+  "truth": "1131319667444",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.58.46",
+   "2026-10-05 10.58.43"
+  ],
+  "frames": [
+   {
+    "status": "reconstructed",
+    "path": "arpi",
+    "code": null,
+    "top": "1131319667444",
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.98,
+     "contrast": 0.534,
+     "left_quality": 1.0,
+     "right_quality": 0.98
+    },
+    "action": "reshoot",
+    "request": "Try a slightly different angle.",
+    "reason": "Not settled yet. Another view adds evidence."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "1131319667444",
+    "top": "1131319667444",
+    "opencv": "1131319667444",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.984,
+     "contrast": 0.62,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "1131319667444",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "E10",
+  "truth": "7640876079521",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.58.46",
+   "2026-10-05 10.58.43"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "7640876079521",
+    "top": "7640876079521",
+    "opencv": "7640876079521",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.978,
+     "contrast": 0.521,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "7640876079521",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "E11",
+  "truth": "3397833976907",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.58.46",
+   "2026-10-05 10.58.43"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "3397833976907",
+    "top": "3397833976907",
+    "opencv": "3397833976907",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.988,
+     "contrast": 0.592,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "3397833976907",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "E12",
+  "truth": "8457894637478",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.58.46",
+   "2026-10-05 10.58.43"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "8457894637478",
+    "top": "8457894637478",
+    "opencv": "8457894637478",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.942,
+     "contrast": 0.406,
+     "left_quality": 1.0,
+     "right_quality": 0.989
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "8457894637478",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "F01",
+  "truth": "9443789678632",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.59.11",
+   "2026-10-05 10.59.08"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "arpi",
+    "code": "9443789678632",
+    "top": "9443789678632",
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.866,
+     "contrast": 0.194,
+     "left_quality": 0.986,
+     "right_quality": 0.993
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "9443789678632",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "F02",
+  "truth": "5908628874933",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.59.11",
+   "2026-10-05 10.59.08"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "5908628874933",
+    "top": "5908628874933",
+    "opencv": "5908628874933",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.858,
+     "contrast": 0.21,
+     "left_quality": 0.985,
+     "right_quality": 0.954
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "5908628874933",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "F03",
+  "truth": "2473296352630",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.59.11",
+   "2026-10-05 10.59.08"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "2473296352630",
+    "top": "2473296352630",
+    "opencv": "2473296352630",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.936,
+     "contrast": 0.332,
+     "left_quality": 0.999,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "2473296352630",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "F04",
+  "truth": "9120547365484",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.59.11",
+   "2026-10-05 10.59.08"
+  ],
+  "frames": [
+   {
+    "status": "reconstructed",
+    "path": "arpi",
+    "code": null,
+    "top": "9120547365484",
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.931,
+     "contrast": 0.292,
+     "left_quality": 0.994,
+     "right_quality": 0.969
+    },
+    "action": "reshoot",
+    "request": "Try a slightly different angle.",
+    "reason": "Not settled yet. Another view adds evidence."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "9120547365484",
+    "top": "9120547365484",
+    "opencv": "9120547365484",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.855,
+     "contrast": 0.209,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "9120547365484",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "F05",
+  "truth": "6978805497025",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.59.11",
+   "2026-10-05 10.59.08"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "6978805497025",
+    "top": "6978805497025",
+    "opencv": "6978805497025",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.971,
+     "contrast": 0.488,
+     "left_quality": 0.995,
+     "right_quality": 0.974
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "6978805497025",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "F06",
+  "truth": "6083517202543",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.59.11",
+   "2026-10-05 10.59.08"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "6083517202543",
+    "top": "6083517202543",
+    "opencv": "6083517202543",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.96,
+     "contrast": 0.362,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "6083517202543",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "F07",
+  "truth": "0005604256792",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.59.11",
+   "2026-10-05 10.59.08"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "0005604256792",
+    "top": "0005604256792",
+    "opencv": "0005604256792",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.982,
+     "contrast": 0.571,
+     "left_quality": 0.999,
+     "right_quality": 0.992
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "0005604256792",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "F08",
+  "truth": "3309680351929",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.59.11",
+   "2026-10-05 10.59.08"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "3309680351929",
+    "top": "3309680351929",
+    "opencv": "3309680351929",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.978,
+     "contrast": 0.485,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "3309680351929",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "F09",
+  "truth": "2413239925903",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.59.11",
+   "2026-10-05 10.59.08"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "2413239925903",
+    "top": "2413239925903",
+    "opencv": "2413239925903",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.982,
+     "contrast": 0.594,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "2413239925903",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "F10",
+  "truth": "4931716019719",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.59.11",
+   "2026-10-05 10.59.08"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "4931716019719",
+    "top": "4931716019719",
+    "opencv": "4931716019719",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.981,
+     "contrast": 0.546,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "4931716019719",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "F11",
+  "truth": "6120991441317",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.59.11",
+   "2026-10-05 10.59.08"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "6120991441317",
+    "top": "6120991441317",
+    "opencv": "6120991441317",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.977,
+     "contrast": 0.538,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "6120991441317",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "F12",
+  "truth": "6068946507032",
+  "change": "angled, then straight",
+  "photos": [
+   "2026-10-05 10.59.11",
+   "2026-10-05 10.59.08"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "6068946507032",
+    "top": "6068946507032",
+    "opencv": "6068946507032",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.965,
+     "contrast": 0.509,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "6068946507032",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "A02",
+  "truth": "3686808208007",
+  "change": "glare in a sleeve, then out of it",
+  "photos": [
+   "2026-10-05 11.00.50",
+   "2026-10-05 10.57.34"
+  ],
+  "frames": [
+   {
+    "status": "reconstructed",
+    "path": "arpi",
+    "code": null,
+    "top": "3686808208137",
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.859,
+     "contrast": 0.18,
+     "left_quality": 1.0,
+     "right_quality": 0.554
+    },
+    "action": "reshoot",
+    "request": "Try the right half from another angle, the other half is already read.",
+    "reason": "Right half confidence 0.55, other half 1.00."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "3686808208007",
+    "top": "3686808208007",
+    "opencv": "3686808208007",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.975,
+     "contrast": 0.325,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "3686808208007",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "A03",
+  "truth": "0988207781376",
+  "change": "glare in a sleeve, then out of it",
+  "photos": [
+   "2026-10-05 11.00.50",
+   "2026-10-05 10.57.34"
+  ],
+  "frames": [
+   {
+    "status": "rejected",
+    "path": "",
+    "code": null,
+    "top": null,
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.008,
+     "sharpness": 0.977,
+     "contrast": 0.014,
+     "left_quality": 0.139,
+     "right_quality": 0.37
+    },
+    "action": "aim",
+    "request": "Hold still, code inside the frame.",
+    "reason": "Frame skipped, too little contrast (0.01)."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "0988207781376",
+    "top": "0988207781376",
+    "opencv": "0988207781376",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.969,
+     "contrast": 0.474,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "0988207781376",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "A04",
+  "truth": "0980067650533",
+  "change": "glare in a sleeve, then out of it",
+  "photos": [
+   "2026-10-05 11.00.50",
+   "2026-10-05 10.57.34"
+  ],
+  "frames": [
+   {
+    "status": "reconstructed",
+    "path": "arpi",
+    "code": null,
+    "top": "0980067650533",
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.853,
+     "contrast": 0.287,
+     "left_quality": 1.0,
+     "right_quality": 0.784
+    },
+    "action": "show_digits",
+    "request": "Show the printed digits under the bars, positions 12.",
+    "reason": "The bars give nothing at those positions. The printed digits might."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "0980067650533",
+    "top": "0980067650533",
+    "opencv": "0980067650533",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.954,
+     "contrast": 0.381,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "0980067650533",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "A05",
+  "truth": "2306825549129",
+  "change": "glare in a sleeve, then out of it",
+  "photos": [
+   "2026-10-05 11.00.50",
+   "2026-10-05 10.57.34"
+  ],
+  "frames": [
+   {
+    "status": "rejected",
+    "path": "",
+    "code": null,
+    "top": null,
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.002,
+     "sharpness": 0.92,
+     "contrast": 0.022,
+     "left_quality": 0.177,
+     "right_quality": 0.077
+    },
+    "action": "aim",
+    "request": "Hold still, code inside the frame.",
+    "reason": "Frame skipped, grid did not fit (fit 0.58)."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "2306825549129",
+    "top": "2306825549129",
+    "opencv": "2306825549129",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.973,
+     "contrast": 0.518,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "2306825549129",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "A06",
+  "truth": "5776852741570",
+  "change": "glare in a sleeve, then out of it",
+  "photos": [
+   "2026-10-05 11.00.50",
+   "2026-10-05 10.57.34"
+  ],
+  "frames": [
+   {
+    "status": "reconstructed",
+    "path": "arpi",
+    "code": null,
+    "top": "5776852741570",
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.013,
+     "sharpness": 0.87,
+     "contrast": 0.313,
+     "left_quality": 0.955,
+     "right_quality": 0.669
+    },
+    "action": "load_list",
+    "request": "Load a list of valid codes, or try another frame.",
+    "reason": "19 codes fit what is visible."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "5776852741570",
+    "top": "5776852741570",
+    "opencv": "5776852741570",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.973,
+     "contrast": 0.496,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "5776852741570",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "A07",
+  "truth": "3512445453909",
+  "change": "glare in a sleeve, then out of it",
+  "photos": [
+   "2026-10-05 11.00.50",
+   "2026-10-05 10.57.34"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "3512445453909",
+    "top": "3512445453909",
+    "opencv": "3512445453909",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.97,
+     "contrast": 0.452,
+     "left_quality": 1.0,
+     "right_quality": 0.983
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "3512445453909",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "A08",
+  "truth": "3463581050845",
+  "change": "glare in a sleeve, then out of it",
+  "photos": [
+   "2026-10-05 11.00.50",
+   "2026-10-05 10.57.34"
+  ],
+  "frames": [
+   {
+    "status": "reconstructed",
+    "path": "arpi",
+    "code": null,
+    "top": "3463581050845",
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.845,
+     "contrast": 0.376,
+     "left_quality": 1.0,
+     "right_quality": 0.892
+    },
+    "action": "reshoot",
+    "request": "Try a slightly different angle.",
+    "reason": "Not settled yet. Another view adds evidence."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "3463581050845",
+    "top": "3463581050845",
+    "opencv": "3463581050845",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.978,
+     "contrast": 0.539,
+     "left_quality": 0.999,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "3463581050845",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "A09",
+  "truth": "0141833038706",
+  "change": "glare in a sleeve, then out of it",
+  "photos": [
+   "2026-10-05 11.00.50",
+   "2026-10-05 10.57.34"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "0141833038706",
+    "top": "0141833038706",
+    "opencv": "0141833038706",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.968,
+     "contrast": 0.444,
+     "left_quality": 0.99,
+     "right_quality": 0.99
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "0141833038706",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "A10",
+  "truth": "8346077379475",
+  "change": "glare in a sleeve, then out of it",
+  "photos": [
+   "2026-10-05 11.00.50",
+   "2026-10-05 10.57.34"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "8346077379475",
+    "top": "8346077379475",
+    "opencv": "8346077379475",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.984,
+     "contrast": 0.445,
+     "left_quality": 0.994,
+     "right_quality": 0.935
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "8346077379475",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "A11",
+  "truth": "2341436572418",
+  "change": "glare in a sleeve, then out of it",
+  "photos": [
+   "2026-10-05 11.00.50",
+   "2026-10-05 10.57.34"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "2341436572418",
+    "top": "2341436572418",
+    "opencv": "2341436572418",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.968,
+     "contrast": 0.456,
+     "left_quality": 1.0,
+     "right_quality": 0.988
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "2341436572418",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "A12",
+  "truth": "8062499517058",
+  "change": "glare in a sleeve, then out of it",
+  "photos": [
+   "2026-10-05 11.00.50",
+   "2026-10-05 10.57.34"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "8062499517058",
+    "top": "8062499517058",
+    "opencv": "8062499517058",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.958,
+     "contrast": 0.439,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "8062499517058",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "B01",
+  "truth": "4977328803292",
+  "change": "glare in a sleeve, then out of it",
+  "photos": [
+   "2026-10-05 11.01.05",
+   "2026-10-05 10.57.48"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "arpi",
+    "code": "4977328803292",
+    "top": "4977328803292",
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.711,
+     "contrast": 0.129,
+     "left_quality": 0.971,
+     "right_quality": 0.99
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "4977328803292",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "B02",
+  "truth": "9045919442979",
+  "change": "glare in a sleeve, then out of it",
+  "photos": [
+   "2026-10-05 11.01.05",
+   "2026-10-05 10.57.48"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "9045919442979",
+    "top": "9045919442979",
+    "opencv": "9045919442979",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.814,
+     "contrast": 0.195,
+     "left_quality": 0.992,
+     "right_quality": 0.992
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "9045919442979",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "B03",
+  "truth": "0483044521814",
+  "change": "glare in a sleeve, then out of it",
+  "photos": [
+   "2026-10-05 11.01.05",
+   "2026-10-05 10.57.48"
+  ],
+  "frames": [
+   {
+    "status": "reconstructed",
+    "path": "arpi",
+    "code": null,
+    "top": "0483044521814",
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.853,
+     "contrast": 0.172,
+     "left_quality": 0.814,
+     "right_quality": 1.0
+    },
+    "action": "load_list",
+    "request": "Load a list of valid codes, or try another frame.",
+    "reason": "2 codes fit what is visible."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "0483044521814",
+    "top": "0483044521814",
+    "opencv": "0483044521814",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.94,
+     "contrast": 0.37,
+     "left_quality": 0.988,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "0483044521814",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "B04",
+  "truth": "9029951399682",
+  "change": "glare in a sleeve, then out of it",
+  "photos": [
+   "2026-10-05 11.01.05",
+   "2026-10-05 10.57.48"
+  ],
+  "frames": [
+   {
+    "status": "reconstructed",
+    "path": "arpi",
+    "code": null,
+    "top": "9029951399682",
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.857,
+     "contrast": 0.226,
+     "left_quality": 1.0,
+     "right_quality": 0.865
+    },
+    "action": "load_list",
+    "request": "Load a list of valid codes, or try another frame.",
+    "reason": "8 codes fit what is visible."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "9029951399682",
+    "top": "9029951399682",
+    "opencv": "9029951399682",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.915,
+     "contrast": 0.303,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "9029951399682",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "B05",
+  "truth": "0409546400099",
+  "change": "glare in a sleeve, then out of it",
+  "photos": [
+   "2026-10-05 11.01.05",
+   "2026-10-05 10.57.48"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "0409546400099",
+    "top": "0409546400099",
+    "opencv": "0409546400099",
+    "facts": {
+     "glare_fraction": 0.001,
+     "sharpness": 0.932,
+     "contrast": 0.338,
+     "left_quality": 0.999,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "0409546400099",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "B06",
+  "truth": "0780980231327",
+  "change": "glare in a sleeve, then out of it",
+  "photos": [
+   "2026-10-05 11.01.05",
+   "2026-10-05 10.57.48"
+  ],
+  "frames": [
+   {
+    "status": "reconstructed",
+    "path": "arpi",
+    "code": null,
+    "top": "0780980231327",
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.896,
+     "contrast": 0.299,
+     "left_quality": 1.0,
+     "right_quality": 0.969
+    },
+    "action": "reshoot",
+    "request": "Try a slightly different angle.",
+    "reason": "Not settled yet. Another view adds evidence."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "0780980231327",
+    "top": "0780980231327",
+    "opencv": "0780980231327",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.944,
+     "contrast": 0.421,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "0780980231327",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "B07",
+  "truth": "0012972593503",
+  "change": "glare in a sleeve, then out of it",
+  "photos": [
+   "2026-10-05 11.01.05",
+   "2026-10-05 10.57.48"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "0012972593503",
+    "top": "0012972593503",
+    "opencv": "0012972593503",
+    "facts": {
+     "glare_fraction": 0.002,
+     "sharpness": 0.957,
+     "contrast": 0.356,
+     "left_quality": 1.0,
+     "right_quality": 0.811
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "0012972593503",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "B08",
+  "truth": "0350038585148",
+  "change": "glare in a sleeve, then out of it",
+  "photos": [
+   "2026-10-05 11.01.05",
+   "2026-10-05 10.57.48"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "0350038585148",
+    "top": "0350038585148",
+    "opencv": "0350038585148",
+    "facts": {
+     "glare_fraction": 0.005,
+     "sharpness": 0.892,
+     "contrast": 0.359,
+     "left_quality": 0.855,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "0350038585148",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "B09",
+  "truth": "2813757667154",
+  "change": "glare in a sleeve, then out of it",
+  "photos": [
+   "2026-10-05 11.01.05",
+   "2026-10-05 10.57.48"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "2813757667154",
+    "top": "2813757667154",
+    "opencv": "2813757667154",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.952,
+     "contrast": 0.44,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "2813757667154",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "B10",
+  "truth": "2606655689867",
+  "change": "glare in a sleeve, then out of it",
+  "photos": [
+   "2026-10-05 11.01.05",
+   "2026-10-05 10.57.48"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "2606655689867",
+    "top": "2606655689867",
+    "opencv": "2606655689867",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.854,
+     "contrast": 0.341,
+     "left_quality": 1.0,
+     "right_quality": 0.855
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "2606655689867",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "B11",
+  "truth": "2280889960390",
+  "change": "glare in a sleeve, then out of it",
+  "photos": [
+   "2026-10-05 11.01.05",
+   "2026-10-05 10.57.48"
+  ],
+  "frames": [
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "2280889960390",
+    "top": "2280889960390",
+    "opencv": "2280889960390",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.947,
+     "contrast": 0.434,
+     "left_quality": 1.0,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "2280889960390",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ },
+ {
+  "id": "B12",
+  "truth": "9384698294165",
+  "change": "glare in a sleeve, then out of it",
+  "photos": [
+   "2026-10-05 11.01.05",
+   "2026-10-05 10.57.48"
+  ],
+  "frames": [
+   {
+    "status": "reconstructed",
+    "path": "arpi",
+    "code": null,
+    "top": "9384698294165",
+    "opencv": null,
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.916,
+     "contrast": 0.308,
+     "left_quality": 1.0,
+     "right_quality": 0.948
+    },
+    "action": "load_list",
+    "request": "Load a list of valid codes, or try another frame.",
+    "reason": "2 codes fit what is visible."
+   },
+   {
+    "status": "read",
+    "path": "opencv-verified",
+    "code": "9384698294165",
+    "top": "9384698294165",
+    "opencv": "9384698294165",
+    "facts": {
+     "glare_fraction": 0.0,
+     "sharpness": 0.962,
+     "contrast": 0.511,
+     "left_quality": 0.988,
+     "right_quality": 1.0
+    },
+    "action": "stop",
+    "request": "",
+    "reason": "Read and checked."
+   }
+  ],
+  "final_code": "9384698294165",
+  "right": true,
+  "wrong": false,
+  "neighbour": false
+ }
+]

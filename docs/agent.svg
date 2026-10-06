@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" font-family="Consolas, Menlo, monospace">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#333"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="800" fill="#ffffff"/>
+  <text x="40" y="56" font-size="28" font-weight="bold" fill="#d62a1e">The agent loop</text>
+  <text x="40" y="84" font-size="16" fill="#555">OpenCV measurements decide the next request. The request changes the next picture.</text>
+
+  <!-- column headers -->
+  <text x="40" y="132" font-size="18" font-weight="bold" fill="#d62a1e">PERCEIVE</text>
+  <text x="430" y="132" font-size="18" font-weight="bold" fill="#3a6fd8">DECIDE</text>
+  <text x="820" y="132" font-size="18" font-weight="bold" fill="#1f9d55">ACT</text>
+
+  <!-- perceive -->
+  <rect x="40" y="145" width="340" height="80" rx="10" fill="#fff6f5" stroke="#d62a1e" stroke-width="2"/>
+  <text x="58" y="177" font-size="16" font-weight="bold" fill="#111">Frame from the phone</text>
+  <text x="58" y="201" font-size="13" fill="#333">+ evidence so far (state)</text>
+
+  <rect x="40" y="245" width="340" height="80" rx="10" fill="#fff6f5" stroke="#d62a1e" stroke-width="2"/>
+  <text x="58" y="277" font-size="16" font-weight="bold" fill="#111">OpenCV 5</text>
+  <text x="58" y="301" font-size="13" fill="#333">decoder, then ARPI grid fit,</text>
+  <text x="58" y="319" font-size="13" fill="#333">confidence map, CRNN digits</text>
+
+  <rect x="40" y="345" width="340" height="250" rx="10" fill="#fff6f5" stroke="#d62a1e" stroke-width="2"/>
+  <text x="58" y="377" font-size="16" font-weight="bold" fill="#111">Measurements</text>
+  <text x="58" y="405" font-size="13" fill="#333">glare fraction</text>
+  <text x="58" y="427" font-size="13" fill="#333">sharpness, contrast, grid fit</text>
+  <text x="58" y="449" font-size="13" fill="#333">left / right half confidence</text>
+  <text x="58" y="471" font-size="13" fill="#333">positions the bars cannot read</text>
+  <text x="58" y="493" font-size="13" fill="#333">printed digits read or not</text>
+  <text x="58" y="515" font-size="13" fill="#333">how many codes still fit</text>
+  <text x="58" y="537" font-size="13" fill="#333">status: read / one in list /</text>
+  <text x="58" y="555" font-size="13" fill="#333">        reconstructed</text>
+  <text x="58" y="577" font-size="13" fill="#333">path: OpenCV checked / ARPI</text>
+
+  <line x1="210" y1="225" x2="210" y2="240" stroke="#333" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="210" y1="325" x2="210" y2="340" stroke="#333" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- decide -->
+  <rect x="430" y="145" width="340" height="250" rx="10" fill="#f2f6ff" stroke="#3a6fd8" stroke-width="2"/>
+  <text x="448" y="177" font-size="16" font-weight="bold" fill="#111">Rules (default)</text>
+  <text x="448" y="203" font-size="13" fill="#333">deterministic, free, every frame</text>
+  <text x="448" y="231" font-size="13" fill="#333">read or one in list   -&gt; stop</text>
+  <text x="448" y="253" font-size="13" fill="#333">glare over 2%         -&gt; tilt</text>
+  <text x="448" y="275" font-size="13" fill="#333">sharpness low         -&gt; hold still</text>
+  <text x="448" y="297" font-size="13" fill="#333">halves differ by 0.3  -&gt; that half</text>
+  <text x="448" y="319" font-size="13" fill="#333">bars and text blank   -&gt; digits</text>
+  <text x="448" y="341" font-size="13" fill="#333">many codes fit        -&gt; list</text>
+  <text x="448" y="363" font-size="13" fill="#333">6 frames, no answer   -&gt; stop</text>
+  <text x="448" y="385" font-size="13" fill="#333">otherwise             -&gt; new angle</text>
+
+  <rect x="430" y="415" width="340" height="120" rx="10" fill="#ffffff" stroke="#3a6fd8" stroke-width="2" stroke-dasharray="7 5"/>
+  <text x="448" y="445" font-size="16" font-weight="bold" fill="#111">Claude on Bedrock (off)</text>
+  <text x="448" y="469" font-size="13" fill="#333">same measurements + the rules'</text>
+  <text x="448" y="487" font-size="13" fill="#333">proposal; must cite evidence.</text>
+  <text x="448" y="511" font-size="13" fill="#333">Fails or over budget: rules stand</text>
+
+  <rect x="430" y="555" width="340" height="80" rx="10" fill="#f2f6ff" stroke="#3a6fd8" stroke-width="2"/>
+  <text x="448" y="585" font-size="15" font-weight="bold" fill="#111">Decision</text>
+  <text x="448" y="609" font-size="13" fill="#333">action, request, reason, evidence</text>
+
+  <polyline points="380,400 405,400 405,200 425,200" fill="none" stroke="#333" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="600" y1="395" x2="600" y2="410" stroke="#3a6fd8" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#a)"/>
+  <polyline points="770,380 785,380 785,580 775,580" fill="none" stroke="#333" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="600" y1="535" x2="600" y2="550" stroke="#3a6fd8" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#a)"/>
+
+  <!-- act -->
+  <rect x="820" y="145" width="340" height="110" rx="10" fill="#effff4" stroke="#1f9d55" stroke-width="2"/>
+  <text x="838" y="177" font-size="16" font-weight="bold" fill="#111">Stop</text>
+  <text x="838" y="201" font-size="13" fill="#333">read: shown. One in list: shown</text>
+  <text x="838" y="219" font-size="13" fill="#333">with Confirm. Otherwise ranked</text>
+  <text x="838" y="237" font-size="13" fill="#333">options, never one answer</text>
+
+  <rect x="820" y="275" width="340" height="140" rx="10" fill="#effff4" stroke="#1f9d55" stroke-width="2"/>
+  <text x="838" y="307" font-size="16" font-weight="bold" fill="#111">Ask the person</text>
+  <text x="838" y="331" font-size="13" fill="#333">request on the HUD, with the</text>
+  <text x="838" y="349" font-size="13" fill="#333">measurement behind it:</text>
+  <text x="838" y="373" font-size="13" fill="#1f6fd8">"Try the right half from another</text>
+  <text x="838" y="391" font-size="13" fill="#1f6fd8"> angle." right half 0.38, other 1.00</text>
+
+  <rect x="820" y="435" width="340" height="100" rx="10" fill="#effff4" stroke="#1f9d55" stroke-width="2"/>
+  <text x="838" y="467" font-size="16" font-weight="bold" fill="#111">Person acts</text>
+  <text x="838" y="491" font-size="13" fill="#333">tilts, holds still, turns the</text>
+  <text x="838" y="509" font-size="13" fill="#333">label, shows digits, loads a CSV</text>
+
+  <polyline points="770,615 800,615 800,200 815,200" fill="none" stroke="#333" stroke-width="2" marker-end="url(#a)"/>
+  <polyline points="800,345 815,345" fill="none" stroke="#333" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="990" y1="415" x2="990" y2="430" stroke="#333" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- loop back -->
+  <polyline points="1160,485 1185,485 1185,110 210,110 210,140" fill="none" stroke="#1f9d55" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#a)"/>
+  <text x="900" y="104" font-size="13" fill="#1f9d55">next frame, evidence added to state</text>
+
+  <!-- bottom strips -->
+  <rect x="40" y="660" width="540" height="110" rx="10" fill="#fafafa" stroke="#999"/>
+  <text x="58" y="690" font-size="15" font-weight="bold" fill="#111">Observable</text>
+  <text x="58" y="714" font-size="13" fill="#333">every response carries the decision, its reason,</text>
+  <text x="58" y="732" font-size="13" fill="#333">its evidence and which policy made it. The HUD</text>
+  <text x="58" y="750" font-size="13" fill="#333">shows it ("[RULES] RESHOOT: ..."). CloudWatch logs.</text>
+
+  <rect x="620" y="660" width="540" height="110" rx="10" fill="#fafafa" stroke="#999"/>
+  <text x="638" y="690" font-size="15" font-weight="bold" fill="#111">Human control</text>
+  <text x="638" y="714" font-size="13" fill="#333">nothing reconstructed is asserted. The agent asks,</text>
+  <text x="638" y="732" font-size="13" fill="#333">the person does or does not. Confirm is a person.</text>
+  <text x="638" y="750" font-size="13" fill="#333">Model calls capped per request and per day.</text>
+</svg>

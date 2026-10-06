@@ -1,0 +1,6 @@
+labels: 80, plus 1 crop(s) showing the neighbouring label, not scored
+stopped after frame 1: 49  (right 49, wrong 0, no code 0)
+asked for another frame: 31
+  requests: {'reshoot': 14, 'aim': 12, 'show_digits': 1, 'load_list': 4}
+  settled by frame 2: right 31, wrong 0, still open 0
+  of those, OpenCV read neither frame: 0

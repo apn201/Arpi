@@ -1,8 +1,10 @@
 # ARPI
 
+Agentic Reconstruction of Partial Identifiers. (Also Finnish for scar.)
+
 Reads barcodes that are too damaged to scan. When part of the code is gone, it
-works out what the code must have been, shows its working, and lets a person
-pick. It never asserts a code it had to fill in.
+works out what the code must have been, shows its working, and shows the
+options instead of an answer. It never asserts a code it had to fill in.
 
 EAN-13 and UPC-A. OpenCV AI Competition 2026.
 
@@ -35,6 +37,8 @@ shot ("right half confidence 0.38, other half 1.00"). The rules make that
 decision. Bedrock (Claude Haiku 4.5) only phrases the damage report.
 
 ![One frame through ARPI](docs/pipeline.png)
+
+![The agent loop](docs/agent.png)
 
 ![Architecture on AWS](docs/architecture.png)
 
@@ -102,6 +106,7 @@ anywhere; CDK reads it from the profile.
 python tools/evaluate.py --n 8                              # synthetic sweep
 python tools/eval_sheets.py data/physical/photos --cascade  # whole sheets
 python tools/eval_singles.py data/physical/photos           # one code per crop
+python tools/agent_trace.py data/physical/photos            # the agent loop on photo pairs
 python tools/archive_results.py --date <yyyy-mm-dd>         # freeze a run
 ```
 
@@ -121,7 +126,7 @@ damaged and shot, so it can be rebuilt with `tools/print_sheet.py`.
 | `src/arpi/session.py` | frames of one label, fused |
 | `src/arpi/cascade.py` | OpenCV first, and the check on its reads |
 | `src/arpi/live.py` | the phone's path, one aimed code |
-| `src/arpi/agent.py` | stop or ask for a better shot |
+| `src/arpi/agent.py` | stop or ask for a better shot; `tools/agent_trace.py` measures it |
 | `src/arpi/report.py` | the damage report, facts from code, wording from Bedrock |
 | `src/arpi/handler.py`, `limits.py` | Lambda entry, spend caps |
 | `web/index.html` | the scanner page |
